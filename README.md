@@ -1,3 +1,3 @@
-# Dave-Kent.github.io
+# dave-kent.github.io
 my personal webpage
 
