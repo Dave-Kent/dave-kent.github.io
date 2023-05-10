@@ -4,10 +4,40 @@
         <title>Our family story</title>
     </head>
     <body>
-        <p>And here's a picture</p>
+        <!--<p>And here's a picture</p>
         <img src="pictures/Scan F02edit0.jpg" width="198">
-        <img src="pictures/Scan0013Aedit0.jpg" width="198">
+        <img src="pictures/Scan0013Aedit0.jpg" width="198"> -->
         <!-- <img src="https://drive.google.com/file/d/1UIZ9Y9KibvmfZCP3EhodXtOviai4Rrcd/view?usp=sharing" width="198"> -->
-        <p>Sunday morning version</p>
+        
+        <!-- ===========here's one I did earlier========== -->
+      
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <style>
+      .hor{border-top-style:solid;border-left-style:solid;border-color:#808080;
+          height:1px;border-width:3px;position:absolute;z-index:-1;}
+
+      .vert{border-top-style:solid;border-left-style:solid;border-color:#808080;
+          width:1px;border-width:3px;position:absolute;z-index:-1;}
+    
+      div#cage{margin-left:auto; margin-right:auto; margin-top:5%; margin-bottom:5%; 
+      position: static; width:75%; height:50%;}
+      button{height:60px;width:200px;border-radius:8px;font-size:14px;
+          box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+  </style>
+  <!-- <div class="col-sm-8"> -->
+  <div id="cage">
+      <button id="btn" style="position:absolute;left:5%;top:25%;" onclick="location.href'????'">Herbert Walter Smith<br>1955-2023</button>      
+
+      <div id="tTop" class="hor"style="width:60%;top:30%;left:10%">ONE</div> 
+      <div id="tDown" class="vert"style="height:50%; top: 30%; left:40%;"></div>
+      <div class="vert"style="height:10%;top:25%;left:70%"></div>
+      <div class="vert"style="height:50%; top: 50%; left:60%;"></div>       
+  </div>
+          <script>
+              var size = $("#cage").width();
+              $("#btn").html(size)
+              //alert("hello " + size);
+          </script>  
     </body>
 </html>
