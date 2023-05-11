@@ -3,19 +3,16 @@
     <head>
         <title>Our family story</title>
         <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
   
-       <script>
-        var size = $("#cage").width();
-        $("#btn").html(size);
-        //alert("hello " + size);
-    </script>
+    
      </head>
      <body>
   
-  <div id="cage" style="width:75%">
+  <div id="cage">
       <button id="btn" style="position:absolute;left:5%;top:25%;">Herbert Walter Smith<br>1956-2023</button>      
 
       <div id="tTop" class="hor"style="width:60%;top:30%;left:10%">ONE</div> 
@@ -27,7 +24,11 @@
         <img src="pictures/Scan F02edit0.jpg" width="198">
         <img src="pictures/Scan0013Aedit0.jpg" width="198"> -->
         <!-- <img src="https://drive.google.com/file/d/1UIZ9Y9KibvmfZCP3EhodXtOviai4Rrcd/view?usp=sharing" width="198"> -->
-        
+        <script>
+            var size = $("#cage").width();
+            $("#btn").html(size);
+            //alert("hello " + size);
+        </script>      
 
     </body>
 </html>
