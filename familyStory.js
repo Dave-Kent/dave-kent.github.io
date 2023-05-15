@@ -1,16 +1,17 @@
 
 
-function init()
+
+$(document).ready(function()
 {
- //   document.getElementById("panel").innerHTML="Hello from external js";
 
 var size = $("#cage").width();
 $("#panel").html(size);
 
-/* $("#btn").cick(function()
-{
-document.getElementById("panel2").innerHTML"CLICK-CLICK";
-});
-*/
-}
-window.onload = init;
+ $("#btn").click(function(){
+$("#panel2").text("CLICK-CLICK");
+
+}); // end of btn click function
+
+}); // end of document ready function
+
+
