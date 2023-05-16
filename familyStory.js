@@ -19,9 +19,12 @@ $("#panel").html(size);
 
 // this bit works, I should be able to set up the click responses like this
  $("#dadBtn").click(function(){
-$("#panel2").text("CLICK-CLICK");
+$("#panel2").text("CLICK-ONCE");
 
 }); // end of btn click function
+$("#dadBtn").dblclick(function(){
+    $("#panel2").text("DOUBLE-CLICK-CLICK");
+}); // end of double click function!!! yippee!!
 
 }); // end of document ready function
 
