@@ -1,17 +1,25 @@
 
 var dadDetail = "Fred Bloggs<br>1952-1999";
-
-$(document).ready(function()
+function shortVertical(x,y)
 {
+    return '<div class="vert"style="height:70px;top:'
+    + y + 'px;left:'+ x +'px"></div>';
+}
+function longVertical(x,y)
+{
+    return '<div class="vert"style="height:200px;top:'
+    + y + 'px;left:'+ x +'px"></div>';
+}
+
 
 // this bit works, I should be able to construct the contents of the main div and load it this way
-var cageContents = '<button id="dadBtn" style="position:absolute;left:5%;top:25%;">'+dadDetail+'\
-</button><div id="tTop" class="hor"style="width:60%;top:30%;left:10%"></div>\
-      <div id="tDown" class="vert"style="height:50%; top: 30%; left:40%;"></div>\
-      <div class="vert"style="height:10%;top:25%;left:70%"></div>\
-      <div class="vert"style="height:50%;top:50%;left:60%;"></div>'
+var cageContents = '<button id="dadBtn" style="position:absolute;left:25px;top:200px;">'+dadDetail+
+'</button><div id="tTop" class="hor"style="width:60px;top:230px;left:200px"></div>'
+      + longVertical("300","190") + shortVertical("240","230")
 
-$("#cage").html(cageContents);
+      $(document).ready(function()
+      {
+      $("#cage").html(cageContents);
 
 
 var size = $("#cage").width();
