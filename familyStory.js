@@ -13,7 +13,7 @@
 // 
 const families = [
     { // Family 0
-    dad : { name: "Fred", dates: "1900", vektr:1},
+    dad : { name: "Fred01", dates: "1900", vektr:1},
     mum : { name: "Mary", dates: "1901", vektr:1},
     kids : [{ name: "Jimmy", dates: "1950", vektr:1},
     { name: "Janey", dates: "1951", vektr:1}
@@ -54,10 +54,12 @@ function parents(x,y,nFamily)
 } // end of parents fn
 
 // draws a single child button on a short vertical 130px high, 200px wide
-function shortChild(n,x,y,detail)
+function shortChild(n,x,y,nFamily)
 {
-    return shortVertical(x,y) + '<button id="kid[n]" style="position:absolute;left:'+(x-100)+
-    'px;top:'+(y+70)+'px;">'+ detail +'</button>'
+    return shortVertical(x,y) + '<button id="kids['+n+']" onclick="kliq(' // ???????
+    +n+','+  nFamily+')" style="position:absolute;left:'+(x-100)+
+    'px;top:'+(y+70)+'px;">'+families[nFamily].kids[n].name+'<br>'
+    +families[nFamily].kids[n].dates+'</button>';
 }
 // sets out family tree
 function tree(familyIndex)
@@ -73,8 +75,7 @@ function tree(familyIndex)
     for(i= 0 ; i < nkids; i++)
     {
         allTheKids = allTheKids + 
-        shortChild(i,(startPoint+(i*210)),panelHalf,families[familyIndex].kids[i].name +
-        "<br>" + families[familyIndex].kids[i].dates); //<<< CHANGE 150 TO FLOATING HEIGHT!!
+        shortChild(i,(startPoint+(i*210)),panelHalf,familyIndex); //<<< CHANGE 150 TO FLOATING HEIGHT!!
     }
     // HEY REMEMBER ONE CHILD = ZERO OFFSET!!!
     var crossPiece = '<div id="crossPiece" class="hor"style="width:'+(nkids*100)+'px;top:' // HAHA!!
@@ -88,6 +89,10 @@ function klik(person,thisFamily)
 {
     $("#mainPanel").html(tree(families[thisFamily][person.id].vektr));
     //$("#mainPanel").fadeIn("slow");
+}
+function kliq(n,thisFamily)
+{
+    $("#mainPanel").html(tree(families[thisFamily].kids[n].vektr));
 }
 
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
