@@ -1,4 +1,10 @@
+//  title: familyStory.js
+// author: David Kent (dk.davidkent@gmail.com)
 
+//       Family Tree View
+//       ================
+// Dimensions: buttons 200px wide 60px high
+// short verticals 70px, long verticals 200px
 
 // array of families data. See VSCode snippets:
 // 'fm' calls familyStory-familiesArray:
@@ -7,16 +13,16 @@
 // 
 const families = [
     { // Family 0
-    dad : { name: "Fred", dates: "1900", link:1},
-    mum : { name: "Mary", dates: "1901", link:1},
-    kids : [{ name: "Jimmy", dates: "1950", link:1},
-    { name: "Janey", dates: "1951", link:1}
+    dad : { name: "Fred", dates: "1900", vektr:1},
+    mum : { name: "Mary", dates: "1901", vektr:1},
+    kids : [{ name: "Jimmy", dates: "1950", vektr:1},
+    { name: "Janey", dates: "1951", vektr:1}
     ]
     },
     { // Family 1
-    dad : { name: "Burt", dates: "1900", link:0},
-    mum : { name: "Mable", dates: "1901", link:0},
-    kids : [{ name: "Tommy", dates: "1950", link:0}
+    dad : { name: "Burt", dates: "1900", vektr:0},
+    mum : { name: "Mable", dates: "1901", vektr:0},
+    kids : [{ name: "Tommy", dates: "1950", vektr:0}
     ]
     }
 ]
@@ -32,15 +38,16 @@ function longVertical(x,y) // draws a 200px vertical line down
     + y + 'px;left:'+ x +'px"></div>';
 } // end of longVertical fn
 
-// draws a complete parent block 430px wide,100px high
+// draws a complete parent block 430px wide,100px high. (nFamily is the index of
+// the families array, 'this' refers to the current button object).
 function parents(x,y,nFamily)
 {
-    return '<button id="dad" style="position:absolute;left:'
+    return '<button id="dad" onclick="klik(this,'+nFamily+')" style="position:absolute;left:'
     + (x-215) +'px;top:'+ y +'px;">'+families[nFamily].dad.name+
     '<br>'+families[nFamily].dad.dates+
     '</button><div id="tTop" class="hor"style="width:30px;top:'
     + (y+30) +'px;left:'+ (x-15) +
-    'px"></div><button id="mum" style="position:absolute;left:'
+    'px"></div><button id="mum" onclick="klik(this,'+nFamily+')"style="position:absolute;left:'
     + (x+15) +'px;top:'+ y +'px;">'+families[nFamily].mum.name+
     '<br>'+families[nFamily].mum.dates
     +'</button>'+ shortVertical(x,y+30)
@@ -55,29 +62,39 @@ function shortChild(n,x,y,detail)
 // sets out family tree
 function tree(familyIndex)
 {
-    var size = $("#mainPanel").width();
-    var panelMiddle = size/2
-    return parents(panelMiddle,50,familyIndex) // should put
-    + shortChild(0,panelMiddle-50,150,"empty child<br>1980") 
+    var panelHalf = 300//$("#window").height()/2; 
+    var panelMiddle = $("#mainPanel").width()/2;
+    var nkids = families[familyIndex].kids.length;
+    $("#panel2").text(nkids);
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+    var startPoint = panelMiddle-210*(nkids-1)/2;
+    var allTheKids = '';
+    for(i= 0 ; i < nkids; i++)
+    {
+        allTheKids = allTheKids + 
+        shortChild(i,(startPoint+(i*210)),panelHalf,families[familyIndex].kids[i].name +
+        "<br>" + families[familyIndex].kids[i].dates); //<<< CHANGE 150 TO FLOATING HEIGHT!!
+    }
+    // HEY REMEMBER ONE CHILD = ZERO OFFSET!!!
+    var crossPiece = '<div id="crossPiece" class="hor"style="width:'+(nkids*100)+'px;top:' // HAHA!!
+    + panelHalf +'px;left:'+ (panelMiddle-nkids*50) +'px"></div>'
+    return parents(panelMiddle,(panelHalf-100),familyIndex) // should put
+    //+ shortChild(0,panelMiddle-50,150,"empty child<br>no date") + crossPiece;
+    + allTheKids + crossPiece;
+}
+// Click function for each family member (person)
+function klik(person,thisFamily)
+{
+    $("#mainPanel").html(tree(families[thisFamily][person.id].vektr));
+    //$("#mainPanel").fadeIn("slow");
 }
 
-//       <<<<<<<<<<<<<<<<<<<<<<===>>>>>>>>>>>>>>>>>>>>
+//       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
+
 $(document).ready(function()
 {
-    var index = 0;
-
-// MAYBE while true loop from here
-    $("#mainPanel").html(tree(index));
-
-
-    $("button").dblclick(function()
-    {
-
-    // 'this.id' identifies the button that was clicked, then
-    // this line calls the tree function with the link to the next family
-        $("#mainPanel").html(tree(families[index][this.id].link));
-//MAYBE - index = families[index][this.id].link;
-    }); // end of btn click function
+    $("#mainPanel").html(tree(0));
 
 }); // end of document ready function
 
