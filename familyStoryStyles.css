@@ -1,6 +1,6 @@
 /* familyStoryStyles.css 28th May 2023 Author David Kent (dk.davidkent@gmail.com)
 */
-      .hor{border-top-style:solid;border-left-style:solid;border-color:#808080;
+      /* .hor{border-top-style:solid;border-left-style:solid;border-color:#808080;
           height:1px;border-width:3px;position:absolute;z-index:-1;}
 
       .vert{border-top-style:solid;border-left-style:solid;border-color:#808080;
@@ -10,6 +10,53 @@
       position: static; width:100%; height: 500px;border-style:dashed}
       
       button{height:60px;width:200px;border-radius:8px;background:#facd8a;font-size:14px;
-          box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+          box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);} */
 
-       
+       *,
+       *::before,
+       *::after {
+        box-sizing: border-box;
+       }
+
+       * {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+       }
+
+       body {
+        font-family: 'Comic Neue', cursive;
+       }
+
+       .header {
+        height: 30vh;
+        background-image: url('./pictures/collage07.jpg');
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .header__title {
+        color: rgb(250, 207, 48);
+        font-size: 4rem;
+        text-shadow: black 3px 3px;
+       }
+
+       .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+       .hero__title {
+        margin: 10px;
+        color: darkgreen;
+       }
+       .hero__description {
+        max-width: 65ch;
+        margin: 0 20px;
+       }
