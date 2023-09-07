@@ -72,11 +72,25 @@
         background-color: #333;
        }
 
+       .open-switch {
+        font-size: 30px;
+        color: rgb(88, 1, 1);
+        background-color: #e3372e;
+        border: 2px solid maroon;
+        border-radius: 1000px;
+        padding: 0 5px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+       }
+
        @media screen and (min-width: 600px) {
         
         .sidebar {
+            /* background-color: red; */
             width: 100vw;
             padding: auto;
+
         }
 
         .menu {
