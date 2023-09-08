@@ -1,6 +1,6 @@
 /* familyStoryStyles.css 28th May 2023 Author David Kent (dk.davidkent@gmail.com)
 */
-      /* .hor{border-top-style:solid;border-left-style:solid;border-color:#808080;
+/* .hor{border-top-style:solid;border-left-style:solid;border-color:#808080;
           height:1px;border-width:3px;position:absolute;z-index:-1;}
 
       .vert{border-top-style:solid;border-left-style:solid;border-color:#808080;
@@ -12,96 +12,147 @@
       button{height:60px;width:200px;border-radius:8px;background:#facd8a;font-size:14px;
           box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);} */
 
-       *,
-       *::before,
-       *::after {
-        box-sizing: border-box;
-       }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-       * {
-        margin: 0;
-        padding: 0;
-        line-height: 1.5;
-       }
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
 
-       body {
-        font-family: 'Comic Neue', cursive;
-        /* display: flex; */
-       }
+body {
+  font-family: "Comic Neue", cursive;
+}
 
-       .header {
-        height: 20vh;
-        background-image: url('./pictures/collage07.jpg');
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       }
+.header {
+  height: 20vh;
+  background-image: url("./pictures/collage07.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-       .header__title {
-        color: rgb(250, 207, 48);
-        font-size: 4rem;
-        text-shadow: black 3px 3px;
-       }
+.header__title {
+  color: rgb(250, 207, 48);
+  font-size: 4rem;
+  text-shadow: black 3px 3px;
+}
 
-       .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       }
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
 
-       .hero__title {
-        margin: 10px;
-        color: darkgreen;
-       }
-       .hero__description {
-        max-width: 65ch;
-        margin: 0 20px;
-       }
+.hero__title {
+  margin: 10px;
+  color: darkgreen;
+}
+.hero__description {
+  max-width: 65ch;
+  margin: 0 20px;
+}
 
-       .menu {
-        color: white;
-        text-decoration: none;
-        border: 1px solid;
-        text-align: center;
-       }
-       .sidebar {
-        background-color: #333;
-       }
+.open-switch {
+    cursor: pointer;
+  font-size: 50px;
+  color: rgb(250, 207, 48);
+  background-color: #707070;
+  text-shadow: black 2px 4px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
 
-       .open-switch {
-        font-size: 30px;
-        color: rgb(88, 1, 1);
-        background-color: #e3372e;
-        border: 2px solid maroon;
-        border-radius: 1000px;
-        padding: 0 5px;
+.menu {
+    padding: 10px;
+    font-size: 2rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar {
+  background-color: #111;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+ @media screen and (min-width: 1000px) {
+    .open-switch {
+        display: none;
+    }
+    .closebtn {
+        display: none;
+    }
+
+    .content {
+        left: 250px;
+    
+    }
+
+    .sidebar {
         position: absolute;
-        top: 10px;
-        left: 10px;
-       }
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        /* transition: 0s; */
+        /* z-index: 0; */
+        /* position: fixed; */
+    }
 
-       @media screen and (min-width: 600px) {
-        
-        .sidebar {
-            /* background-color: red; */
+ }
+ /*       .sidebar {
+            
             width: 100vw;
             padding: auto;
 
         }
 
         .menu {
-            /* color: red; */
+            
             display: inline-block;
             margin: 0;
             padding: 10px 50px;
         }
-       }
-       
-       @media screen and (min-width: 1000px) {
+       } */
+
+/* @media screen and (min-width: 1000px) {
         
         body {
             display: flex;
@@ -112,22 +163,20 @@
         }
 
         .menu {
-            /* border: 1px solid; */
+            
             display: block;
-            /* text-align: center; */
+            
             padding: 16px;
         }
 
         .content {
             width: calc(100vw - 200px)
         }
-       }
+       } */
 
-       @media (hover:hover) {
-        .menu:hover {
-            background-color: gray;
-            cursor: pointer;
-        }
-       }
-
-       
+@media (hover: hover) {
+  .menu:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
+}
