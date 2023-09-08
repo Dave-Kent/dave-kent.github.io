@@ -42,7 +42,7 @@ body {
 
 .header__title {
   color: rgb(250, 207, 48);
-  font-size: 4rem;
+  font-size: 3rem;
   text-shadow: black 3px 3px;
 }
 
@@ -118,6 +118,9 @@ body {
     }
     .closebtn {
         display: none;
+    }
+    .header__title {
+        font-size: 4rem;
     }
 
     .content {
