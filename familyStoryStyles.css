@@ -64,7 +64,7 @@ body {
 
 .open-switch {
     cursor: pointer;
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(250, 207, 48);
   background-color: #707070;
   text-shadow: black 2px 4px;
