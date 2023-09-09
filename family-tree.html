@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Family Trees</title>
-</head>
-<body>
-    <h1>Family Trees</h1>
-    <h2>Under Construction</h2>
-</body>
+    <link rel="stylesheet" href="familyStoryStyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </head>
+  <body>
+    <nav id="mySidenav" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&#8678;</a
+      >
+      <a class="menu" href="./family-story.html">Home</a>
+      <a class="menu" href="./family-tree.html">Family Trees</a>
+      <a class="menu" href="./family-census.html">Census Records</a>
+      <a class="menu" href="./family-photos.html">Photos</a>
+      <a class="menu" href="./family-etc.html">Etc.</a>
+    </nav>
+    <main class="content">
+      <header class="header">
+        <span class="open-switch" onclick="openNav()">&#9776;</span>
+        <h1 class="header__title">Family Trees</h1>
+      </header>
+      <section>
+        <h1>Family Trees</h1>
+        <h2>Under Construction</h2>
+      </section>
+    </main>
+  </body>
 </html>

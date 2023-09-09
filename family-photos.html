@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Pictures</title>
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pictures</title>
+    <link rel="stylesheet" href="familyStoryStyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
-    <p>And here's a picture</p>
-        <img src="pictures/Scan F02edit0.jpg" width="198">
-        <img src="pictures/Scan0013Aedit0.jpg" width="198">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- <script src="familyStory.js"></script> -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav id="mySidenav" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&#8678;</a
+      >
+      <a class="menu" href="./family-story.html">Home</a>
+      <a class="menu" href="./family-tree.html">Family Trees</a>
+      <a class="menu" href="./family-census.html">Census Records</a>
+      <a class="menu" href="./family-photos.html">Photographs</a>
+      <a class="menu" href="./family-etc.html">Etc.</a>
+    </nav>
+    <main class="content">
+      <header class="header">
+        <span class="open-switch" onclick="openNav()">&#9776;</span>
+        <h1 class="header__title">Photographs</h1>
+      </header>
+      <section>
+        <h1>Under Construction</h1>
+        <img src="pictures/Scan F02edit0.jpg" width="198" />
+        <img src="pictures/Scan0013Aedit0.jpg" width="198" />
         <!-- <img src="https://drive.google.com/file/d/1UIZ9Y9KibvmfZCP3EhodXtOviai4Rrcd/view?usp=sharing" width="198"> -->
-</body>
+      </section>
+    </main>
+  </body>
+</html>
