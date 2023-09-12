@@ -17,6 +17,17 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+function openCens(message, details) {
+    const bar = document.getElementById("census-details");
+    bar.innerHTML += details;
+    const space = document.getElementById("imgSpace");
+    space.innerHTML = '<img src="./censuses/' + message + '" width="100%" />';
+
+    document.getElementById("census-pannel").style.width = "100%"; 
+}
+function closeCens() {
+    document.getElementById("census-pannel").style.width = "0";
+}
 
 // const families = [
 //     { // Family 0

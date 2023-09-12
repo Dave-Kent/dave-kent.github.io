@@ -17,8 +17,7 @@
   <body>
     <nav id="mySidenav" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&#8678;</a
-      >
+        >&#8678;</a>
       <a class="menu" href="./family-story.html">Home</a>
       <a class="menu" href="./family-tree.html">Family Trees</a>
       <a class="menu" href="./family-census.html">Census Records</a>
@@ -30,8 +29,14 @@
         <span class="open-switch" onclick="openNav()">&#9776;</span>
         <h1 class="header__title">Census Records</h1>
       </header>
+      <div class="sliding-pannel" id="census-pannel">
+        <div class="detail-bar" id="census-details">
+            <span class="return" onclick="closeCens()">&times;</span></div>
+            <div id="imgSpace"></div>
+        </div>
       <section>
         <h1>Under Construction</h1>
+        <span class="open-census" onclick="openCens('GKent1851Census.jpg', 'Hello World')">TEST</span>
       </section>
     </main>
   </body>
