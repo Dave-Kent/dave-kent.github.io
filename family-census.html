@@ -9,15 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <script src="familyStory.js"></script>
-    
   </head>
   <body>
+    <!-- Navigation sidebar used on all pages -->
     <nav id="mySidenav" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&#8678;</a>
+        >&#8678;</a
+      >
       <a class="menu" href="./family-story.html">Home</a>
       <a class="menu" href="./family-tree.html">Family Trees</a>
       <a class="menu" href="./family-census.html">Census Records</a>
@@ -29,14 +31,35 @@
         <span class="open-switch" onclick="openNav()">&#9776;</span>
         <h1 class="header__title">Census Records</h1>
       </header>
+
       <div class="sliding-pannel" id="census-pannel">
-        <div class="detail-bar" id="census-details">
-            <span class="return" onclick="closeCens()">&times;</span></div>
-            <div id="imgSpace"></div>
+        <div class="detail-container">
+          <div class="return" onclick="closeCens()">&times;</div>
+          <div class="detail-bar" id="census-details"></div>
         </div>
-      <section>
-        <h1>Under Construction</h1>
-        <span class="open-census" onclick="openCens('GKent1851Census.jpg', 'Hello World')">TEST</span>
+        <div id="imgSpace"></div>
+      </div>
+      <section class="censuses-container">
+        <h1>John Kent 1818-1???</h1>
+        <div class="censuses-table">
+          <div
+            class="open-census wide-census"
+            onclick="openCens('GKent1851Census.jpg', 
+        'John Kent 33, Agricultural Lab; Elizabeth 29, Wife; George 6; MaryAnn 3; Reuben 4M')"
+            >1851</div
+          >
+          <div
+            class="open-census narrow-census"
+            onclick="openCens('GKent1851CensusV.jpg',
+         'John Kent 33, Agricultural Lab; Elizabeth 29, Wife; George 6; MaryAnn 3; Reuben 4M')"
+            >1851</div
+          >
+          <a class="census-address" href="https://goo.gl/maps/jGsTm1gXRZo2dM8C7"
+            >Old Moor, Milton, Berkshire</a
+          >
+
+          
+        </div>
       </section>
     </main>
   </body>

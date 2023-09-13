@@ -19,7 +19,7 @@ function closeNav() {
 }
 function openCens(message, details) {
     const bar = document.getElementById("census-details");
-    bar.innerHTML += details;
+    bar.innerHTML = details;
     const space = document.getElementById("imgSpace");
     space.innerHTML = '<img src="./censuses/' + message + '" width="100%" />';
 
