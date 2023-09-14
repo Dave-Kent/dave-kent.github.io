@@ -63,7 +63,7 @@ body {
 }
 
 .open-switch {
-    cursor: pointer;
+  cursor: pointer;
   font-size: 30px;
   color: rgb(250, 207, 48);
   background-color: #707070;
@@ -76,8 +76,8 @@ body {
 }
 
 .menu {
-    padding: 10px;
-    font-size: 2rem;
+  padding: 10px;
+  font-size: 2rem;
   display: block;
   color: white;
   text-decoration: none;
@@ -98,120 +98,116 @@ body {
 }
 
 .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    color: white;
-    text-decoration: none;
-    font-size: 50px;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
 }
 
 .content {
-    position: absolute;
-    left: 0;
-    right: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .censuses-container {
-    padding: 20px;
+  padding: 20px;
 }
 .censuses-table {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .open-census {
-    color: white;
-    background-color: blue;
-    padding: 5px;
+  color: white;
+  background-color: blue;
+  padding: 5px;
 }
 .census-address {
-    background-color: aqua;
+  background-color: aqua;
 }
 /* On a (narrow) phone display, the census date switch
 goes to a vertical census report, the switch to the
 wide screen option is not seen */
 .wide-census {
-    display: none;
+  display: none;
 }
 .narrow-census {
-    display: inline;
+  display: inline;
 }
 /* The sliding pannel shows the census report prints
 with a top bar showing the details relevant to us */
 .sliding-pannel {
-    background-color: red;
-    height: auto;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  /* The detail container holds the top bar and the
+  background-color: red;
+  height: auto;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+/* The detail container holds the top bar and the
   return switch */
 .detail-container {
-    display: flex;
+  display: flex;
 }
 /* The detail bar shows the details in the census
 report that are relevant to us */
-  .detail-bar {
-    width: 100%;
-    color: white;
-    background-color: blue;
-    padding-left: 10px;
-  }
-  
+.detail-bar {
+  width: 100%;
+  color: white;
+  background-color: blue;
+  padding-left: 10px;
+}
+
 /* This is the return switch for the sliding pannel */
-  .return {
-    line-height: .2;
-    padding: 5px;
-    font-size: 3rem;
-    background-color: rgb(209, 245, 46);
-    color: darkgreen;
-    cursor: pointer;
-  }
-  
- @media screen and (min-width: 1000px) {
-    .open-switch {
-        display: none;
-    }
-    .closebtn {
-        display: none;
-    }
-    .header__title {
-        font-size: 4rem;
-    }
-
-    .content {
-        left: 250px;
-    
-    }
-
-    .sidebar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100%;
-        /* transition: 0s; */
-        /* z-index: 0; */
-        /* position: fixed; */
-    }
-
- }
-
- @media screen and (min-width: 845px) {
-
-.wide-census {
-    display: inline;
+.return {
+  /* line-height: .2; */
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(209, 245, 46);
+  color: darkgreen;
+  cursor: pointer;
 }
-.narrow-census {
+
+@media screen and (min-width: 1000px) {
+  .open-switch {
     display: none;
+  }
+  .closebtn {
+    display: none;
+  }
+  .header__title {
+    font-size: 4rem;
+  }
+
+  .content {
+    left: 250px;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    /* transition: 0s; */
+    /* z-index: 0; */
+    /* position: fixed; */
+  }
 }
 
- }
- /*       .sidebar {
+@media screen and (min-width: 845px) {
+  .wide-census {
+    display: inline;
+  }
+  .narrow-census {
+    display: none;
+  }
+}
+/*       .sidebar {
             
             width: 100vw;
             padding: auto;
