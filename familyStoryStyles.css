@@ -116,12 +116,13 @@ body {
 }
 .censuses-table {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .open-census {
   color: white;
   background-color: blue;
   padding: 5px;
+  margin-left: 5px;
 }
 .census-address {
   background-color: aqua;
@@ -138,7 +139,7 @@ wide screen option is not seen */
 /* The sliding pannel shows the census report prints
 with a top bar showing the details relevant to us */
 .sliding-pannel {
-  background-color: red;
+  background-color: darkslategray;
   height: auto;
   width: 0;
   position: fixed;
