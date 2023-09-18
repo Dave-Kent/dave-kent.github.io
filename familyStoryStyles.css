@@ -28,6 +28,11 @@ body {
   font-family: "Comic Neue", cursive;
 }
 
+hr {
+    border: solid 1px;
+    margin: 10px 80px;
+}
+
 .header {
   height: 20vh;
   background-image: url("./pictures/collage07.jpg");
@@ -114,9 +119,12 @@ body {
 .censuses-container {
   padding: 20px;
 }
+.census-family {
+    font-size: 1.2rem;
+}
 .censuses-table {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .open-census {
   color: white;
@@ -125,7 +133,9 @@ body {
   margin-left: 5px;
 }
 .census-address {
+    padding: 5px;
   background-color: aqua;
+  text-decoration: none;
 }
 /* On a (narrow) phone display, the census date switch
 goes to a vertical census report, the switch to the
@@ -201,12 +211,18 @@ report that are relevant to us */
 }
 
 @media screen and (min-width: 845px) {
+ 
   .wide-census {
     display: inline;
   }
   .narrow-census {
     display: none;
   }
+}
+@media screen and (min-width: 600px) {
+    .census-family {
+        font-size: 1.5rem;
+    }
 }
 /*       .sidebar {
             
