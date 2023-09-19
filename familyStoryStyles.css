@@ -122,6 +122,10 @@ hr {
 .census-family {
     font-size: 1.2rem;
 }
+.new-address {
+    display: block;
+    padding: 5px;
+}
 .censuses-table {
   display: flex;
   justify-content: center;
