@@ -131,6 +131,7 @@ hr {
   justify-content: center;
 }
 .open-census {
+  cursor: pointer;
   color: white;
   background-color: blue;
   padding: 5px;
@@ -154,14 +155,22 @@ wide screen option is not seen */
 with a top bar showing the details relevant to us */
 .sliding-pannel {
   background-color: darkslategray;
-  height: auto;
+  height: 100%;
   width: 0;
+  display: flex;
+  flex-direction:column;
   position: fixed;
   z-index: 2;
   top: 0;
   right: 0;
   overflow-x: hidden;
   transition: 0.5s;
+}
+/* This is the box that an <img> fits into. It allows
+scrolling up and down (GOOD USE OF FLEXBOX!!) */
+#imgSpace {
+  flex-grow: 1;
+  overflow-y: auto;
 }
 /* The detail container holds the top bar and the
   return switch */

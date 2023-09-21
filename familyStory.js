@@ -21,7 +21,7 @@ function openCens(message, details) {
     const bar = document.getElementById("census-details");
     bar.innerHTML = details;
     const space = document.getElementById("imgSpace");
-    space.innerHTML = '<img src="./censuses/' + message + '" width="100%" />';
+    space.innerHTML = '<img src="https://www.dropbox.com/'+ message + '" width="100%" />';
 
     document.getElementById("census-pannel").style.width = "100%"; 
 }
