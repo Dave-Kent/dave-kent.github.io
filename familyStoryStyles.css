@@ -196,7 +196,7 @@ report that are relevant to us */
   cursor: pointer;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1015px) {
   .open-switch {
     display: none;
   }

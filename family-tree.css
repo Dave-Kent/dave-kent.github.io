@@ -1,0 +1,33 @@
+/* #tree-test {
+    color: red;
+} */
+
+#mainPanel {
+    /* border: 2px dashed; */
+    height: 79vh;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.tree-space {
+    /* display: flex; */
+    /* border: 1px solid red; */
+}
+.person {
+    padding: 8px;
+    text-align: center;
+    height:60px;
+    width: 200px;
+ 
+    border-radius:8px;
+    background:#facd8a;font-size:14px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hor{border-top-style:solid;border-left-style:solid;border-color:#808080;
+    height:1px;border-width:3px;position:absolute;z-index:-1;}
+
+.vert{border-top-style:solid;border-left-style:solid;border-color:#808080;
+    width:1px;border-width:3px;position:absolute;z-index:-1;}
