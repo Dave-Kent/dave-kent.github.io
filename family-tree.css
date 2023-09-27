@@ -11,7 +11,7 @@
 
 .tree-space {
     /* display: flex; */
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .person {
     padding: 8px;
