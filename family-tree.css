@@ -1,24 +1,17 @@
-/* #tree-test {
-    color: red;
-} */
 
 #mainPanel {
-    /* border: 2px dashed; */
-    height: 79vh;
+    position: relative;
+    height: 80vh;
     padding: 10px;
     overflow-y: auto;
 }
 
-.tree-space {
-    /* display: flex; */
-    border: 1px solid red;
-}
 .person {
+    position: absolute;
     padding: 8px;
     text-align: center;
     height:60px;
     width: 200px;
- 
     border-radius:8px;
     background:#facd8a;font-size:14px;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);

@@ -1,13 +1,15 @@
 //  title: familyStory.js
 // author: David Kent (dk.davidkent@gmail.com)
 
-// 
+// ========== controls for the navigation sidebar =============
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.left = "0";
 }
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.left = "-250px";
 }
+
+// ========= controls for the census sliding panel ===========
 function openCens(message, details) {
     const bar = document.getElementById("census-details");
     bar.innerHTML = details;
