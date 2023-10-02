@@ -1,9 +1,33 @@
-
-#mainPanel {
-    position: relative;
+.tree-section {
     height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+#ninetynine-message {
+    position: absolute;
+    border: 1px solid;
+    color: white;
+    background-color: darkred;
+    padding: 5px 20px;
+    border-radius: 20px;
+    top: -80px;
+    z-index: 1;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: .5s;
+}
+#mainPanel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
     padding: 10px;
     overflow-y: auto;
+    /* transition: 1.5s; */
 }
 
 .person {
@@ -24,3 +48,10 @@
 
 .vert{border-top-style:solid;border-left-style:solid;border-color:#808080;
     width:1px;border-width:3px;position:absolute;z-index:-1;}
+
+    @media screen and (max-width: 600px) {
+        #ninetynine-message {
+            font-size: 1.8rem;
+            padding: 5px 10px;
+        }
+    }

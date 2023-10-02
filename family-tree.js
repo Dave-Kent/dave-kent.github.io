@@ -19,18 +19,18 @@
 const families = [
     
 { // Family 0
-dad : { name: "Herbert Walter West", dates: "187?-195?", vektr:0},
-mum : { name: "Jessie Alice Annie Smith", dates: "1882-1973", vektr:0},
-kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:0},
-{ name: "Leonard Aubrey", dates: "1908-1991", vektr:0},
-{ name: "Joyce Evelyn", dates: "1911-19??", vektr:0},
-{ name: "Cyril Reginald", dates: "1913-19??", vektr:0},
-{ name: "Phyllis Mary", dates: "1916-199?", vektr:0},
+dad : { name: "Herbert Walter West", dates: "187?-195?", vektr:99},
+mum : { name: "Jessie Alice Annie Smith", dates: "1882-1973", vektr:99},
+kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
+{ name: "Leonard Aubrey", dates: "1908-1991", vektr:99},
+{ name: "Joyce Evelyn", dates: "1911-19??", vektr:99},
+{ name: "Cyril Reginald", dates: "1913-19??", vektr:99},
+{ name: "Phyllis Mary", dates: "1916-199?", vektr:99},
 { name: "Joan Olive", dates: "1916-1981", vektr:1}//NEXT
 ]
 },
 { // Family 1
-dad : { name: "Charles (Joe) Kent", dates: "1912-1990", vektr:1},
+dad : { name: "Charles (Joe) Kent", dates: "1912-1990", vektr:99},
 mum : { name: "Joan Olive West", dates: "1916-1981", vektr:0},
 kids : [{ name: "Peter Nicholas", dates: "1947", vektr:2},
 { name: "David Jonathan", dates: "1950", vektr:3},
@@ -39,23 +39,23 @@ kids : [{ name: "Peter Nicholas", dates: "1947", vektr:2},
 },
 { // Family 2
 dad : { name: "Peter Nicholas Kent", dates: "1947", vektr:1},
-mum : { name: "Ann", dates: "19??", vektr:2},
-kids : [{ name: "Katherine", dates: "19??", vektr:2},
-{ name: "Leah", dates: "19??", vektr:2}//NEXT
+mum : { name: "Ann", dates: "19??", vektr:99},
+kids : [{ name: "Katherine", dates: "19??", vektr:99},
+{ name: "Leah", dates: "19??", vektr:99}//NEXT
 ]
 },
 { // Family 3
 dad : { name: "David Jonathan Kent", dates: "1950", vektr:1},
-mum : { name: "Helen Patricia Atkinson", dates: "1956", vektr:3},
-kids : [{ name: "Benjamin", dates: "1980", vektr:3},
-{ name: "Nicola Claire", dates: "1983", vektr:3},
-{ name: "Gavin David", dates: "1985", vektr:3}//NEXT
+mum : { name: "Helen Patricia Atkinson", dates: "1956", vektr:99},
+kids : [{ name: "Benjamin", dates: "1980", vektr:99},
+{ name: "Nicola Claire", dates: "1983", vektr:99},
+{ name: "Gavin David", dates: "1985", vektr:99}//NEXT
 ]
 },
 { // Family 4
 dad : { name: "Simon James Kent", dates: "1955", vektr:1},
-mum : { name: "Susan", dates: "195?", vektr:4},
-kids : [{ name: "Jessica", dates: "19??", vektr:4}//NEXT
+mum : { name: "Susan", dates: "195?", vektr:99},
+kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT
 ]
 }//NEXT//NEXT
 ]
@@ -188,14 +188,43 @@ function tree(familyIndex)
 // (person object in a family object in the families array)
 function klik(person,thisFamily)
 {
-    $("#mainPanel").html(tree(families[thisFamily][person.id].vektr));
+    var vector = families[thisFamily][person.id].vektr;
+ 
+    if(vector === 99) // show the NOT AVAILABLE message
+    {  
+        document.getElementById("ninetynine-message").style.top = "30vh";  
+    }
+    else // get the next tree
+    {
+        // shift mainPanel up and change the contents
+        $("#mainPanel").animate({top: '-80vh'}, 600,function(){$("#mainPanel").html(tree(vector))});
+        // shift mainPanel back down
+        $("#mainPanel").animate({top: '0'}, 1000);
+    }
 }
 
 // Click function for each child 
 // (child object in a kids array in a family object in the families array)
 function kliq(n,thisFamily)
 {
-    $("#mainPanel").html(tree(families[thisFamily].kids[n].vektr));
+    var vector = families[thisFamily].kids[n].vektr;
+    if(vector === 99)
+    {
+        document.getElementById("ninetynine-message").style.top = "30vh";  
+    }
+    else
+    {
+        // shift mainPanel down and change the contents
+        $("#mainPanel").animate({top: '80vh'}, 600,function(){$("#mainPanel").html(tree(vector))});
+        // shift mainPanel back down
+        $("#mainPanel").animate({top: '0'}, 1000);
+        // $("#mainPanel").html(tree(vector));
+    }
+}
+
+function ninetynineBack()
+{
+    document.getElementById("ninetynine-message").style.top = "-80px"
 }
 
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>

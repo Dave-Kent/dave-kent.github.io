@@ -41,7 +41,7 @@ hr {
 }
 /* ===========================Intro page only===================================== */
 .hero {
-  border: 2px dashed;
+  /* border: 2px dashed; */
   display: flex;
   flex-direction: column;
   align-items: center;
