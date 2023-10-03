@@ -224,7 +224,7 @@ function kliq(n,thisFamily)
 
 function ninetynineBack()
 {
-    document.getElementById("ninetynine-message").style.top = "-80px"
+    document.getElementById("ninetynine-message").style.top = "-100px"
 }
 
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
