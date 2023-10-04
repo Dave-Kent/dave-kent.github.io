@@ -75,13 +75,23 @@ function shortVertical(x,y,h)
 // hSpace is the gap between the dad and the mum divs (though this is flexible too).
 function parents(x,y,hSpace,nFamily)
 {
+    var dadBorder = mumBorder ="darkred";
+
+    if (families[nFamily].dad.vektr === 99)
+    {
+        dadBorder = "#facd8a"
+    }
+    if (families[nFamily].mum.vektr === 99)
+    {
+        mumBorder = "#facd8a"
+    }
     return '<div class="person" id="dad" onclick="klik(this,'+nFamily+')" style="left:'
-    + (x-200-hSpace/2) +'px;top:'+ y +'px;">'+families[nFamily].dad.name+
+    + (x-200-hSpace/2) +'px;top:'+ y +'px;border-color:'+dadBorder+'">'+families[nFamily].dad.name+
     '<br>'+families[nFamily].dad.dates+
     '</div><div id="tTop" class="hor"style="width:130px;top:'
     + (y+30) +'px;left:'+ (x-hSpace/2-100) +
     'px"></div><div class="person" id="mum" onclick="klik(this,'+nFamily+')"style="left:'
-    + (x+hSpace/2) +'px;top:'+ y +'px;">'+families[nFamily].mum.name+
+    + (x+hSpace/2) +'px;top:'+ y +'px;border-color:'+mumBorder+'">'+families[nFamily].mum.name+
     '<br>'+families[nFamily].mum.dates
     +'</div>'+ shortVertical(x,y+30,70)
 } // end of parents fn
@@ -90,9 +100,15 @@ function parents(x,y,hSpace,nFamily)
 //zero vertical and horizontal is the top of the lolly stick
 function shortChild(n,x,y,ht,nFamily)
 {
+    var kidBorder = "darkred";
+    if (families[nFamily].kids[n].vektr === 99)
+    {
+        kidBorder = "#facd8a"
+    }
+
     return shortVertical(x,y,ht) + '<div class="person" id="kids['+n+']" onclick="kliq('
     +n+','+  nFamily+')" style="left:'+(x-100)+
-    'px;top:'+(y+ht)+'px;">'+families[nFamily].kids[n].name+'<br>'
+    'px;top:'+(y+ht)+'px;;border-color:'+kidBorder+'">'+families[nFamily].kids[n].name+'<br>'
     +families[nFamily].kids[n].dates+'</div>';
 } //end of shortChild fn
 
@@ -192,6 +208,7 @@ function klik(person,thisFamily)
  
     if(vector === 99) // show the NOT AVAILABLE message
     {  
+        $(".cover").css("display","block");
         document.getElementById("ninetynine-message").style.top = "30vh";  
     }
     else // get the next tree
@@ -210,6 +227,7 @@ function kliq(n,thisFamily)
     var vector = families[thisFamily].kids[n].vektr;
     if(vector === 99)
     {
+        $(".cover").css("display","block");
         document.getElementById("ninetynine-message").style.top = "30vh";  
     }
     else
@@ -224,9 +242,19 @@ function kliq(n,thisFamily)
 
 function ninetynineBack()
 {
-    document.getElementById("ninetynine-message").style.top = "-100px"
+    document.getElementById("ninetynine-message").style.top = "-100px";
+    $(".cover").css("display","none");
 }
-
+function openInfo()
+{
+    $(".cover").css("display","block");
+    document.getElementById("border-info").style.right = "20px";
+}
+function infoBack()
+{
+    document.getElementById("border-info").style.right = "-50%";
+    $(".cover").css("display","none");
+}
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
 
 $(document).ready(function()

@@ -4,7 +4,42 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    /* border: 2px dashed; */
     /* padding-bottom: 30px; */
+}
+.cover {
+    border: 2px dashed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+}
+.info-icon {
+    width: 40px;
+    position: fixed;
+    top: 22%;
+    right: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+#border-info {
+    width:50%;
+    font-size: 2rem;
+    background-color: lightgreen;
+    position: absolute;
+    right: -50%;
+    top: 10%;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.with-border {
+    border: 2px solid darkred;
+    border-radius: 4px;
+    background-color: #facd8a;
+    padding: 0 5px;
+    white-space: nowrap;
 }
 #ninetynine-message {
     position: absolute;
@@ -14,7 +49,7 @@
     padding: 5px 20px;
     border-radius: 20px;
     top: -100px;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
@@ -35,14 +70,15 @@
     position: absolute;
     padding: 8px;
     text-align: center;
+    border: 2px solid darkred;
     height:60px;
     width: 200px;
     border-radius:8px;
-    background:#facd8a;font-size:14px;
+    background:#facd8a;
+    font-size:14px;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     font-size: 1rem;
     cursor: pointer;
-    
 }
 
 .hor{border-top-style:solid;border-left-style:solid;border-color:#808080;

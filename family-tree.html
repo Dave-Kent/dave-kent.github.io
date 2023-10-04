@@ -31,12 +31,18 @@
       <a class="menu" href="./family-etc.html">Etc.</a>
     </nav>
     <main class="content">
+      
       <header class="header">
         <span class="open-switch" onclick="openNav()">&#9776;</span>
+
         <h1 class="header__title">Family Trees</h1>
       </header>
       <!-- mainPanel is controlled by script - famiy-tree.js -->
       <section class="tree-section">
+        <div class="cover"></div>
+        <img src="./pictures/info_icon.svg"alt="i" onclick="openInfo()" class="info-icon">
+        <div id="border-info"onclick="infoBack()">Where a tag in the diagram is highlighted 
+          <span class="with-border">like this</span> a further branch can be reached by tapping (or clicking) on that tag.</div>
         <div id="ninetynine-message" onclick="ninetynineBack()">Requested branch not available</div>
         <div id="mainPanel"></div>
       </section>
