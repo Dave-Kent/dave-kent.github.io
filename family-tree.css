@@ -7,27 +7,14 @@
     /* border: 2px dashed; */
     /* padding-bottom: 30px; */
 }
-.cover {
-    border: 2px dashed;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    display: none;
-}
-.info-icon {
-    width: 40px;
-    position: fixed;
-    top: 22%;
-    right: 25px;
-    cursor: pointer;
-    z-index: 1;
-}
+
+
 #border-info {
-    width:50%;
+    width:90%;
     font-size: 2rem;
     background-color: lightgreen;
     position: absolute;
-    right: -50%;
+    right: -90%;
     top: 10%;
     z-index: 2;
     padding: 10px;
@@ -91,5 +78,8 @@
         #ninetynine-message {
             font-size: 1.8rem;
             padding: 5px 10px;
+        }
+        #border-info {
+            font-size: 1.5rem;
         }
     }

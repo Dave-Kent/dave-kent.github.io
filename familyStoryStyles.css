@@ -33,12 +33,27 @@ hr {
   justify-content: center;
   align-items: center;
 }
-
+.info-icon {
+  width: 40px;
+  position: fixed;
+  top: 22%;
+  right: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+.cover {
+  border: 2px dashed;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  display: none;
+}
 .header__title {
   color: rgb(250, 207, 48);
   font-size: 3rem;
   text-shadow: black 3px 3px;
 }
+
 /* ===========================Intro page only===================================== */
 .hero {
   /* border: 2px dashed; */
@@ -129,12 +144,15 @@ hr {
   background-color: blue;
   padding: 5px;
   margin-left: 5px;
+  border-radius: 5px;
 }
 /* ===============================NOT THIS BIT???========= */
 .census-address {
     padding: 5px;
-  background-color: aqua;
+    color: white;
+  background-color: darkgreen;
   text-decoration: none;
+  border-radius: 5px;
 }
 /* On a (narrow) phone display, the census date switch
 goes to a vertical census report, the switch to the

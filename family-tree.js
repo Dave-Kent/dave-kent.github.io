@@ -252,7 +252,7 @@ function openInfo()
 }
 function infoBack()
 {
-    document.getElementById("border-info").style.right = "-50%";
+    document.getElementById("border-info").style.right = "-90%";
     $(".cover").css("display","none");
 }
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
