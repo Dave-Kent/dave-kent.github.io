@@ -19,8 +19,8 @@
 const families = [
     
 { // Family 0
-dad : { name: "Herbert Walter West", dates: "187?-195?", vektr:99},
-mum : { name: "Jessie Alice Annie Smith", dates: "1882-1973", vektr:99},
+dad : { name: "Herbert Walter West", dates: "187?-195?", vektr:6},
+mum : { name: "Jessie Alice Annie Smith", dates: "1882-1973", vektr:7},
 kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
 { name: "Leonard Aubrey", dates: "1908-1991", vektr:99},
 { name: "Joyce Evelyn", dates: "1911-19??", vektr:99},
@@ -30,7 +30,7 @@ kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
 ]
 },
 { // Family 1
-dad : { name: "Charles (Joe) Kent", dates: "1912-1990", vektr:99},
+dad : { name: "Charles (Joe) Kent", dates: "1911-1989", vektr:5},
 mum : { name: "Joan Olive West", dates: "1916-1981", vektr:0},
 kids : [{ name: "Peter Nicholas", dates: "1947", vektr:2},
 { name: "David Jonathan", dates: "1950", vektr:3},
@@ -57,7 +57,43 @@ dad : { name: "Simon James Kent", dates: "1955", vektr:1},
 mum : { name: "Susan", dates: "195?", vektr:99},
 kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT
 ]
-}//NEXT//NEXT
+},
+{ // Family 5
+dad : { name: "Albert Kent", dates: "1873-195?", vektr:99},
+mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
+kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
+{ name: "Charles", dates: "1911-1989", vektr:1}//NEXT
+]
+},
+{ // Family 6
+dad : { name: "Walter West", dates: "1855-1933", vektr:99},
+mum : { name: "Emma Keats", dates: "1855-19??", vektr:99},
+kids : [{ name: "William West", dates: "1873-1???", vektr:99},
+{ name: "Ella", dates: "1875-1???", vektr:99},
+{ name: "Herbert Walter", dates: "1877-195?", vektr:0},
+{ name: "William James", dates: "1880-1???", vektr:99},
+{ name: "Thomas", dates: "1883-1915", vektr:99},
+{ name: "Emma Rose", dates: "1885-1???", vektr:99},
+{ name: "George", dates: "1887-1???", vektr:99},
+{ name: "Emily Rose", dates: "1888-1???", vektr:99},
+{ name: "Reginald Edward", dates: "1895-19??", vektr:99}//NEXT
+]
+},
+{ // Family 7
+dad : { name: "William Smith", dates: "1851-19??", vektr:99},
+mum : { name: "Martha Louisa Hasler", dates: "1852-1935", vektr:8},
+kids : [{ name: "Jessica Alice Annie", dates: "1882-1973", vektr:0}//NEXT
+]
+},
+{ // Family 8
+dad : { name: "Henry Hasler", dates: "1826-1???", vektr:99},
+mum : { name: "Mary Ann", dates: "1829-1???", vektr:99},
+kids : [{ name: "Martha Louisa", dates: "1852-1935", vektr:7},
+{ name: "Peter", dates: "1854-1???", vektr:99},
+{ name: "Eliza", dates: "1856-1???", vektr:99},
+{ name: "Thomas", dates: "1859-1???", vektr:99}//NEXT
+]
+}//NEXT//NEXT//NEXT//NEXT//NEXT//NEXT
 ]
 
 // draws a vertical line down from x,y position by h pixels
