@@ -106,7 +106,7 @@ function shortVertical(x,y,h)
 // draws a complete parent block (400+hSpace)px wide,100px high. (nFamily is the index of
 // the families array, 'this' refers to the current .person object, 
 // x is the horizontal position of the middle point (note that the width of each person div
-// is flexible)
+// is 180px)
 // y is the vertical position of the top of the parent block.
 // hSpace is the gap between the dad and the mum divs (though this is flexible too).
 function parents(x,y,hSpace,nFamily)
@@ -122,7 +122,7 @@ function parents(x,y,hSpace,nFamily)
         mumBorder = "#facd8a"
     }
     return '<div class="person" id="dad" onclick="klik(this,'+nFamily+')" style="left:'
-    + (x-200-hSpace/2) +'px;top:'+ y +'px;border-color:'+dadBorder+'">'+families[nFamily].dad.name+
+    + (x-180-hSpace/2) +'px;top:'+ y +'px;border-color:'+dadBorder+'">'+families[nFamily].dad.name+
     '<br>'+families[nFamily].dad.dates+
     '</div><div id="tTop" class="hor"style="width:130px;top:'
     + (y+30) +'px;left:'+ (x-hSpace/2-100) +
@@ -143,7 +143,7 @@ function shortChild(n,x,y,ht,nFamily)
     }
 
     return shortVertical(x,y,ht) + '<div class="person" id="kids['+n+']" onclick="kliq('
-    +n+','+  nFamily+')" style="left:'+(x-100)+
+    +n+','+  nFamily+')" style="left:'+(x-90)+
     'px;top:'+(y+ht)+'px;;border-color:'+kidBorder+'">'+families[nFamily].kids[n].name+'<br>'
     +families[nFamily].kids[n].dates+'</div>';
 } //end of shortChild fn
@@ -212,7 +212,7 @@ function tree(familyIndex)
         // the first child comes below the dad
         // NB child positioning is from the MIDDLE of the div
         // var kidsStart = halfWidth-100-space/2;
-        var kidsStart = 120;
+        var kidsHorizontalStart = 120;
         //var crossPieceLength = (fullWidth+space)/2; // crosspiece for each child
         // drawn from the right
         //var crossPieceStart = 25; // a suitable distance from the right side
@@ -221,15 +221,16 @@ function tree(familyIndex)
         for(i=0; i<nkids; i++)
         {
             allTheKids = allTheKids + // step down the screen: 65px height of parent block: 100px
-            shortChild(i,kidsStart+step*i,(halfHeight)+50+i*65,0,familyIndex) // each child
+            shortChild(i,kidsHorizontalStart+step*i,(halfHeight)-10+i*65,0,familyIndex) // each child
             // each crosspiece
             // +'<div class="hor"style="width:'+(crossPieceLength-step*i)+'px;top:'
             // +(halfWidth+100+i*65)+'px;right:'+crossPieceStart+'px"></div>';
         }
-        var treeNet = '<div class="hor"style="top:'+halfHeight+'px;left:120px;right:120px"></div>'
-        + shortVertical(120,halfHeight,65) + shortVertical(fullWidth-122,halfHeight,nkids*65)
+        var treeNet = '<div class="hor"style="top:'+(halfHeight-40)+'px;left:120px;right:120px"></div>'
+        + shortVertical(120,(halfHeight-40),65) + shortVertical(fullWidth-120,(halfHeight-40),nkids*65)
+        + '<span style="position: absolute; left:120px; top:'+(halfHeight+nkids*65)+'px;">.</span>';
 
-        return parents(halfWidth,(halfHeight-100),space,familyIndex)+allTheKids+treeNet;
+        return parents(halfWidth,(halfHeight-140),space,familyIndex)+allTheKids+treeNet;
     }
 }
   
