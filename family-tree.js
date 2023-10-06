@@ -213,24 +213,19 @@ function tree(familyIndex)
         // NB child positioning is from the MIDDLE of the div
         // var kidsStart = halfWidth-100-space/2;
         var kidsHorizontalStart = 120;
-        //var crossPieceLength = (fullWidth+space)/2; // crosspiece for each child
-        // drawn from the right
-        //var crossPieceStart = 25; // a suitable distance from the right side
-        //console.log("fullWidth: "+fullWidth+" nkids: "+nkids+" step: "+step); //<<<
-        // var topScreen= 30; // topScreen is the gap above the parent divs
+        var verticalOffset = halfHeight-95;
+        
         for(i=0; i<nkids; i++)
         {
             allTheKids = allTheKids + // step down the screen: 65px height of parent block: 100px
-            shortChild(i,kidsHorizontalStart+step*i,(halfHeight)-10+i*65,0,familyIndex) // each child
-            // each crosspiece
-            // +'<div class="hor"style="width:'+(crossPieceLength-step*i)+'px;top:'
-            // +(halfWidth+100+i*65)+'px;right:'+crossPieceStart+'px"></div>';
+            shortChild(i,kidsHorizontalStart+step*i,verticalOffset+120+i*65,0,familyIndex) // each child
+            
         }
-        var treeNet = '<div class="hor"style="top:'+(halfHeight-40)+'px;left:120px;right:120px"></div>'
-        + shortVertical(120,(halfHeight-40),65) + shortVertical(fullWidth-120,(halfHeight-40),nkids*65)
-        + '<span style="position: absolute; left:120px; top:'+(halfHeight+nkids*65)+'px;">.</span>';
+        var treeNet = '<div class="hor"style="top:'+(verticalOffset+100)+'px;left:120px;width:'+(fullWidth-240)+'px"></div>'
+        + shortVertical(120,verticalOffset+100,65) + shortVertical(fullWidth-120,verticalOffset+100,nkids*65)
+        + '<span style="position: absolute; left:120px; top:'+(halfHeight+20+nkids*65)+'px;">.</span>';
 
-        return parents(halfWidth,(halfHeight-140),space,familyIndex)+allTheKids+treeNet;
+        return parents(halfWidth,verticalOffset,space,familyIndex)+allTheKids+treeNet;
     }
 }
   

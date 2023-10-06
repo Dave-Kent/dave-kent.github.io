@@ -69,10 +69,10 @@
 }
 
 .hor{border-top-style:solid;border-left-style:solid;border-color:#808080;
-    height:1px;border-width:3px;position:absolute;z-index:-1;}
+    height:0;border-width:3px;position:absolute;z-index:-1;}
 
-.vert{border-top-style:solid;border-left-style:solid;border-color:#808080;
-    width:1px;border-width:3px;position:absolute;z-index:-1;}
+.vert{border-left-style:solid;border-color:#808080;
+    width:0;border-width:3px;position:absolute;z-index:-1;}
 
     @media screen and (max-width: 600px) {
         #ninetynine-message {
