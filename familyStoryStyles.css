@@ -76,6 +76,11 @@ hr {
   max-width: 65ch;
   margin: 20px;
 }
+
+.twin-pic {
+  width: 35%;
+  max-width: 360px;
+}
 /* =====================Sliding NAV panel==================================== */
 
 .open-switch {

@@ -19,8 +19,8 @@
 const families = [
     
 { // Family 0
-dad : { name: "Herbert Walter West", dates: "187?-195?", vektr:6},
-mum : { name: "Jessie Alice Annie Smith", dates: "1882-1973", vektr:7},
+dad : { name: "Herbert West", dates: "187?-195?", vektr:6},
+mum : { name: "Jessie Smith", dates: "1882-1973", vektr:7},
 kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
 { name: "Leonard Aubrey", dates: "1908-1991", vektr:99},
 { name: "Joyce Evelyn", dates: "1911-19??", vektr:99},
@@ -30,30 +30,30 @@ kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
 ]
 },
 { // Family 1
-dad : { name: "Charles (Joe) Kent", dates: "1911-1989", vektr:5},
-mum : { name: "Joan Olive West", dates: "1916-1981", vektr:0},
+dad : { name: "Charles Kent", dates: "1911-1989", vektr:5},
+mum : { name: "Joan West", dates: "1916-1981", vektr:0},
 kids : [{ name: "Peter Nicholas", dates: "1947", vektr:2},
 { name: "David Jonathan", dates: "1950", vektr:3},
 { name: "Simon James", dates: "1955", vektr:4}//NEXT
 ]
 },
 { // Family 2
-dad : { name: "Peter Nicholas Kent", dates: "1947", vektr:1},
+dad : { name: "Peter Kent", dates: "1947", vektr:1},
 mum : { name: "Ann", dates: "19??", vektr:99},
 kids : [{ name: "Katherine", dates: "19??", vektr:99},
 { name: "Leah", dates: "19??", vektr:99}//NEXT
 ]
 },
 { // Family 3
-dad : { name: "David Jonathan Kent", dates: "1950", vektr:1},
-mum : { name: "Helen Patricia Atkinson", dates: "1956", vektr:99},
+dad : { name: "David Kent", dates: "1950", vektr:1},
+mum : { name: "Helen Atkinson", dates: "1956", vektr:99},
 kids : [{ name: "Benjamin", dates: "1980", vektr:99},
 { name: "Nicola Claire", dates: "1983", vektr:99},
 { name: "Gavin David", dates: "1985", vektr:99}//NEXT
 ]
 },
 { // Family 4
-dad : { name: "Simon James Kent", dates: "1955", vektr:1},
+dad : { name: "Simon Kent", dates: "1955", vektr:1},
 mum : { name: "Susan", dates: "195?", vektr:99},
 kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT
 ]
@@ -81,7 +81,7 @@ kids : [{ name: "William West", dates: "1873-1???", vektr:99},
 },
 { // Family 7
 dad : { name: "William Smith", dates: "1851-19??", vektr:99},
-mum : { name: "Martha Louisa Hasler", dates: "1852-1935", vektr:8},
+mum : { name: "Martha Hasler", dates: "1852-1935", vektr:8},
 kids : [{ name: "Jessica Alice Annie", dates: "1882-1973", vektr:0}//NEXT
 ]
 },
