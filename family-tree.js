@@ -68,7 +68,7 @@ kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
 { // Family 6
 dad : { name: "Walter West", dates: "1855-1933", vektr:99},
 mum : { name: "Emma Keats", dates: "1855-19??", vektr:99},
-kids : [{ name: "William West", dates: "1873-1???", vektr:99},
+kids : [{ name: "William", dates: "1873-1???", vektr:99},
 { name: "Ella", dates: "1875-1???", vektr:99},
 { name: "Herbert Walter", dates: "1877-195?", vektr:0},
 { name: "William James", dates: "1880-1???", vektr:99},
@@ -121,7 +121,7 @@ kids : [{ name: "Douglas William", dates: "1882-1965", vektr:12},
 ]
 },
 { // Family 12
-dad : { name: "Douglas William", dates: "1882-1965", vektr:11},
+dad : { name: "Douglas Hasler", dates: "1882-1965", vektr:11},
 mum : { name: "Violet Collins", dates: "1886-1968", vektr:99},
 kids : [{ name: "Joan Mary", dates: "1924-2022", vektr:99}//NEXT
 ]
