@@ -59,7 +59,7 @@ kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT
 ]
 },
 { // Family 5
-dad : { name: "Albert Kent", dates: "1873-195?", vektr:99},
+dad : { name: "Albert Kent", dates: "1873-195?", vektr:10},
 mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
 kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
 { name: "Charles", dates: "1911-1989", vektr:1}//NEXT
@@ -89,11 +89,43 @@ kids : [{ name: "Jessica Alice Annie", dates: "1882-1973", vektr:0}//NEXT
 dad : { name: "Henry Hasler", dates: "1826-1???", vektr:99},
 mum : { name: "Mary Ann", dates: "1829-1???", vektr:99},
 kids : [{ name: "Martha Louisa", dates: "1852-1935", vektr:7},
-{ name: "Peter", dates: "1854-1???", vektr:99},
+{ name: "William Peter", dates: "1854-1936", vektr:11},
 { name: "Eliza", dates: "1856-1???", vektr:99},
 { name: "Thomas", dates: "1859-1???", vektr:99}//NEXT
 ]
-}//NEXT//NEXT//NEXT//NEXT//NEXT//NEXT
+},
+{ // Family 9
+dad : { name: "John Kent", dates: "1820-1???", vektr:99},
+mum : { name: "Elizabeth", dates: "1818-1???", vektr:99},
+kids : [{ name: "George", dates: "1845-1???", vektr:10},
+{ name: "Mary Ann", dates: "1848-1???", vektr:99},
+{ name: "Reuben", dates: "1851-1???", vektr:99},
+{ name: "Martha", dates: "1854-1???", vektr:99}//NEXT
+]
+},
+{ // Family 10
+dad : { name: "George Kent", dates: "1847-1???", vektr:9},
+mum : { name: "Mary", dates: "1849-1???", vektr:99},
+kids : [{ name: "Henry", dates: "1870-1???", vektr:99},
+{ name: "Charles", dates: "1872-1???", vektr:99},
+{ name: "Albert", dates: "1873-195?", vektr:5},
+{ name: "Louisa", dates: "1875-1???", vektr:99},
+{ name: "Herbert", dates: "1884-1???", vektr:99}//NEXT
+]
+},
+{ // Family 11
+dad : { name: "William Hasler", dates: "1854-1936", vektr:8},
+mum : { name: "Maria Baker", dates: "1856-1934", vektr:99},
+kids : [{ name: "Douglas William", dates: "1882-1965", vektr:12},
+{ name: "Beatrice Ethel", dates: "1884-19??", vektr:99}//NEXT
+]
+},
+{ // Family 12
+dad : { name: "Douglas William", dates: "1882-1965", vektr:11},
+mum : { name: "Violet Collins", dates: "1886-1968", vektr:99},
+kids : [{ name: "Joan Mary", dates: "1924-2022", vektr:99}//NEXT
+]
+}//NEXT//NEXT//NEXT//NEXT/NEXT//NEXT//NEXT//NEXT//NEXT//NEXT
 ]
 
 // draws a vertical line down from x,y position by h pixels
