@@ -183,13 +183,13 @@ function shortChild(n,x,y,ht,nFamily)
 // sets out family tree
 function tree(familyIndex)
 {
-    var halfHeight = document.getElementById("mainPanel").offsetHeight/3; // vertical position datum
+    const halfHeight = document.getElementById("mainPanel").offsetHeight/3; // vertical position datum
    
     
     const fullWidth = document.getElementById("mainPanel").offsetWidth;
-    var halfWidth = fullWidth/2; // centre line
+    const halfWidth = fullWidth/2; // centre line
     console.log(fullWidth);
-    var nkids = families[familyIndex].kids.length; // number of children 
+    const nkids = families[familyIndex].kids.length; // number of children 
     
     // $("#panel").text($("#mainPanel").width());
     // $("#panel2").text(nkids); // <<<<<<<<<<<<<<<<<<<< DEBUGGING VARIABLE!!!
@@ -197,23 +197,23 @@ function tree(familyIndex)
 
 // Loop to set out the children - START
 
-    var allTheKids = '';
+    let allTheKids = '';
     if (fullWidth > (nkids * 210 + 20)) // wide screen, all children in a row.
     {
-        var startPoint = halfWidth-210*(nkids-1)/2; // horizontal position
+        const startPoint = halfWidth-210*(nkids-1)/2; // horizontal position
         for(i= 0 ; i < nkids; i++)
         {
             allTheKids = allTheKids + 
             shortChild(i,(startPoint+(i*210)),halfHeight+50,70,familyIndex);
         }
-        var crossPiece = '<div id="crossPiece" class="hor"style="width:'
+        const crossPiece = '<div id="crossPiece" class="hor"style="width:'
         +(nkids-1)*210+'px;top:'+ (halfHeight+50) +'px;left:'
         + (halfWidth-(nkids-1)*105) +'px"></div>';
         return parents(halfWidth,(halfHeight-50),30,familyIndex) + allTheKids + crossPiece;
     }
     else if (fullWidth > (nkids/2*220+110)) // mid-width screen, children in two rows
     {
-        var startPoint = halfWidth-220*(nkids-1)/4; // horizontal position
+        const startPoint = halfWidth-220*(nkids-1)/4; // horizontal position
         for(i=0 ; i < nkids; i++)
         {
             if(i&1) // test for odd number
@@ -226,26 +226,26 @@ function tree(familyIndex)
                 allTheKids = allTheKids +
                 shortChild(i,(startPoint+(i*110)),halfHeight,50,familyIndex);
             }
-            var crossPiece = '<div id="crossPiece" class="hor"style="width:'
+        }
+        const crossPiece = '<div id="crossPiece" class="hor"style="width:'
         +(nkids-1)*110+'px;top:'+ halfHeight +'px;left:'
         + (halfWidth-(nkids-1)*55) +'px"></div>' ;          
-        }
-        var space = 30;
+        
+        let space = 30;
         if (fullWidth<430){space=12}; // move parent divs closer if space is tight
-        console.log("halfWidth: "+halfWidth+" fullWidth: "+fullWidth)
+        // console.log("halfWidth: "+halfWidth+" fullWidth: "+fullWidth)
         return parents(halfWidth,(halfHeight-100),space,familyIndex) + allTheKids + crossPiece;
     }
     else // narrowest screen, children ranked vertically
     {
-        var space = 30; //standard spacing between parents
+        let space = 30; //standard spacing between parents
         if (fullWidth<500){space=12}; // move parent divs closer if space is tight
-        var step = (fullWidth-240)/(nkids-1);
-        // var step = (340+space)/2/(nkids-1); // children appear in a stepped rank
-        // the first child comes below the dad
+        const step = (fullWidth-240)/(nkids-1);// children appear in a stepped rank
+        
         // NB child positioning is from the MIDDLE of the div
         // var kidsStart = halfWidth-100-space/2;
-        var kidsHorizontalStart = 120;
-        var verticalOffset = halfHeight-95;
+        const kidsHorizontalStart = 120;
+        const verticalOffset = halfHeight-95;
         
         for(i=0; i<nkids; i++)
         {
@@ -253,7 +253,7 @@ function tree(familyIndex)
             shortChild(i,kidsHorizontalStart+step*i,verticalOffset+120+i*65,0,familyIndex) // each child
             
         }
-        var treeNet = '<div class="hor"style="top:'+(verticalOffset+100)+'px;left:120px;width:'+(fullWidth-240)+'px"></div>'
+        const treeNet = '<div class="hor"style="top:'+(verticalOffset+100)+'px;left:120px;width:'+(fullWidth-240)+'px"></div>'
         + shortVertical(120,verticalOffset+100,65) + shortVertical(fullWidth-120,verticalOffset+100,nkids*65)
         + '<span style="position: absolute; left:120px; top:'+(halfHeight+20+nkids*65)+'px;">.</span>';
 
@@ -268,7 +268,7 @@ function tree(familyIndex)
 // (person object in a family object in the families array)
 function klik(person,thisFamily)
 {
-    var vector = families[thisFamily][person.id].vektr;
+    const vector = families[thisFamily][person.id].vektr;
  
     if(vector === 99) // show the NOT AVAILABLE message
     {  
@@ -288,7 +288,7 @@ function klik(person,thisFamily)
 // (child object in a kids array in a family object in the families array)
 function kliq(n,thisFamily)
 {
-    var vector = families[thisFamily].kids[n].vektr;
+    const vector = families[thisFamily].kids[n].vektr;
     if(vector === 99)
     {
         $(".cover").css("display","block");
