@@ -204,7 +204,7 @@ function tree(familyIndex)
         let destination = './family-census.html#cens'+familyIndex;
         // display the tab and text separately
         let linkId = document.getElementById("census-link");
-        linkId.innerHTML = "census";
+        linkId.innerHTML = "censuses";
         linkId.style.height = "40px";
         // set up the anchor
         linkId.href = destination;
