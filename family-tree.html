@@ -25,7 +25,7 @@
         >&#9664;</a
       >
       <a class="menu" href="./family-story.html">Home</a>
-      <a class="menu" href="./family-tree.html">Family Trees</a>
+      <a class="menu" href="./family-tree.html?family=0">Family Trees</a>
       <a class="menu" href="./family-census.html">Census Records</a>
       <a class="menu" href="./family-photos.html">Photos</a>
       <a class="menu" href="./family-etc.html">Etc.</a>
@@ -40,6 +40,8 @@
       <!-- mainPanel is controlled by script - famiy-tree.js -->
       <section class="tree-section">
         <div class="cover"></div>
+        <a id="census-link" href="#">      </a>
+        <!-- <span id="census-link">census</span> -->
         <img src="./pictures/info_icon.svg"alt="i" onclick="openInfo()" class="info-icon">
         <div id="border-info"onclick="infoBack()">Where a tag in the diagram is highlighted 
           <span class="with-border">like this</span> a further branch can be reached by tapping (or clicking) on that tag.</div>

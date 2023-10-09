@@ -1,8 +1,3 @@
-// function test_tree() {
-//     const tryout = document.getElementById("tree-test");
-//     tryout.innerHTML = 'Hello tree!!';
-// }
-
 
 //       Family Tree View
 //       ================
@@ -19,6 +14,7 @@
 const families = [
     
 { // Family 0
+    census : 0,
 dad : { name: "Herbert West", dates: "187?-195?", vektr:6},
 mum : { name: "Jessie Smith", dates: "1882-1973", vektr:7},
 kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
@@ -30,6 +26,7 @@ kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
 ]
 },
 { // Family 1
+    census : 0,
 dad : { name: "Charles Kent", dates: "1911-1989", vektr:5},
 mum : { name: "Joan West", dates: "1916-1981", vektr:0},
 kids : [{ name: "Peter Nicholas", dates: "1947", vektr:2},
@@ -38,6 +35,7 @@ kids : [{ name: "Peter Nicholas", dates: "1947", vektr:2},
 ]
 },
 { // Family 2
+    census : 0,
 dad : { name: "Peter Kent", dates: "1947", vektr:1},
 mum : { name: "Ann", dates: "19??", vektr:99},
 kids : [{ name: "Katherine", dates: "19??", vektr:99},
@@ -45,6 +43,7 @@ kids : [{ name: "Katherine", dates: "19??", vektr:99},
 ]
 },
 { // Family 3
+    census : 0,
 dad : { name: "David Kent", dates: "1950", vektr:1},
 mum : { name: "Helen Atkinson", dates: "1956", vektr:99},
 kids : [{ name: "Benjamin", dates: "1980", vektr:99},
@@ -53,12 +52,14 @@ kids : [{ name: "Benjamin", dates: "1980", vektr:99},
 ]
 },
 { // Family 4
+    census : 0,
 dad : { name: "Simon Kent", dates: "1955", vektr:1},
 mum : { name: "Susan", dates: "195?", vektr:99},
 kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT
 ]
 },
 { // Family 5
+    census : 0,
 dad : { name: "Albert Kent", dates: "1873-195?", vektr:10},
 mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
 kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
@@ -66,6 +67,7 @@ kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
 ]
 },
 { // Family 6
+    census : 0,
 dad : { name: "Walter West", dates: "1855-1933", vektr:99},
 mum : { name: "Emma Keats", dates: "1855-19??", vektr:99},
 kids : [{ name: "William", dates: "1873-1???", vektr:99},
@@ -80,12 +82,14 @@ kids : [{ name: "William", dates: "1873-1???", vektr:99},
 ]
 },
 { // Family 7
+    census : 0,
 dad : { name: "William Smith", dates: "1851-19??", vektr:99},
 mum : { name: "Martha Hasler", dates: "1852-1935", vektr:8},
 kids : [{ name: "Jessica Alice Annie", dates: "1882-1973", vektr:0}//NEXT
 ]
 },
 { // Family 8
+    census : 0,
 dad : { name: "Henry Hasler", dates: "1826-1???", vektr:99},
 mum : { name: "Mary Ann", dates: "1829-1???", vektr:99},
 kids : [{ name: "Martha Louisa", dates: "1852-1935", vektr:7},
@@ -95,6 +99,7 @@ kids : [{ name: "Martha Louisa", dates: "1852-1935", vektr:7},
 ]
 },
 { // Family 9
+    census : 1,
 dad : { name: "John Kent", dates: "1820-1???", vektr:99},
 mum : { name: "Elizabeth", dates: "1818-1???", vektr:99},
 kids : [{ name: "George", dates: "1845-1???", vektr:10},
@@ -104,6 +109,7 @@ kids : [{ name: "George", dates: "1845-1???", vektr:10},
 ]
 },
 { // Family 10
+    census : 1,
 dad : { name: "George Kent", dates: "1847-1???", vektr:9},
 mum : { name: "Mary", dates: "1849-1???", vektr:99},
 kids : [{ name: "Henry", dates: "1870-1???", vektr:99},
@@ -114,6 +120,7 @@ kids : [{ name: "Henry", dates: "1870-1???", vektr:99},
 ]
 },
 { // Family 11
+    census : 0,
 dad : { name: "William Hasler", dates: "1854-1936", vektr:8},
 mum : { name: "Maria Baker", dates: "1856-1934", vektr:99},
 kids : [{ name: "Douglas William", dates: "1882-1965", vektr:12},
@@ -121,6 +128,7 @@ kids : [{ name: "Douglas William", dates: "1882-1965", vektr:12},
 ]
 },
 { // Family 12
+    census : 0,
 dad : { name: "Douglas Hasler", dates: "1882-1965", vektr:11},
 mum : { name: "Violet Collins", dates: "1886-1968", vektr:99},
 kids : [{ name: "Joan Mary", dates: "1924-2022", vektr:99}//NEXT
@@ -143,7 +151,7 @@ function shortVertical(x,y,h)
 // hSpace is the gap between the dad and the mum divs (though this is flexible too).
 function parents(x,y,hSpace,nFamily)
 {
-    var dadBorder = mumBorder ="darkred";
+    let dadBorder = mumBorder ="darkred";
 
     if (families[nFamily].dad.vektr === 99)
     {
@@ -164,16 +172,15 @@ function parents(x,y,hSpace,nFamily)
     +'</div>'+ shortVertical(x,y+30,70)
 } // end of parents fn
 
-// draws a single child div on a vertical lolly stick (ht)px high, 200px wide
+// draws a single child div on a vertical lolly stick (ht)px high, 180px wide (see family-tree.css)
 //zero vertical and horizontal is the top of the lolly stick
 function shortChild(n,x,y,ht,nFamily)
 {
-    var kidBorder = "darkred";
+    let kidBorder = "darkred";
     if (families[nFamily].kids[n].vektr === 99)
     {
         kidBorder = "#facd8a"
     }
-
     return shortVertical(x,y,ht) + '<div class="person" id="kids['+n+']" onclick="kliq('
     +n+','+  nFamily+')" style="left:'+(x-90)+
     'px;top:'+(y+ht)+'px;;border-color:'+kidBorder+'">'+families[nFamily].kids[n].name+'<br>'
@@ -188,14 +195,22 @@ function tree(familyIndex)
     
     const fullWidth = document.getElementById("mainPanel").offsetWidth;
     const halfWidth = fullWidth/2; // centre line
-    console.log(fullWidth);
-    const nkids = families[familyIndex].kids.length; // number of children 
     
-    // $("#panel").text($("#mainPanel").width());
-    // $("#panel2").text(nkids); // <<<<<<<<<<<<<<<<<<<< DEBUGGING VARIABLE!!!
- console.log("nkids: "+nkids+" panel width: "+$("#mainPanel").width());//<<<
+    const nkids = families[familyIndex].kids.length; // number of children 
 
-// Loop to set out the children - START
+    // if there is a census image available, display the 'census link' tab, with the appropriate href
+    if (families[familyIndex].census)
+    {
+        let destination = './family-census.html#cens'+familyIndex;
+        // display the tab and text separately
+        let linkId = document.getElementById("census-link");
+        linkId.innerHTML = "census";
+        linkId.style.height = "40px";
+        // set up the anchor
+        linkId.href = destination;
+    }
+    // Loops to set out the children - START
+    // The tree options depend on the width of the viewport:
 
     let allTheKids = '';
     if (fullWidth > (nkids * 210 + 20)) // wide screen, all children in a row.
@@ -258,16 +273,14 @@ function tree(familyIndex)
         + '<span style="position: absolute; left:120px; top:'+(halfHeight+20+nkids*65)+'px;">.</span>';
 
         return parents(halfWidth,verticalOffset,space,familyIndex)+allTheKids+treeNet;
-    }
+    }// Loop to set out the children - END
 }
   
-// Loop to set out the children - END
-    
-
 // Click function for each parent
 // (person object in a family object in the families array)
 function klik(person,thisFamily)
 {
+    document.getElementById("census-link").style.height = "0";
     const vector = families[thisFamily][person.id].vektr;
  
     if(vector === 99) // show the NOT AVAILABLE message
@@ -288,6 +301,7 @@ function klik(person,thisFamily)
 // (child object in a kids array in a family object in the families array)
 function kliq(n,thisFamily)
 {
+    document.getElementById("census-link").style.height = "0";
     const vector = families[thisFamily].kids[n].vektr;
     if(vector === 99)
     {
@@ -321,9 +335,10 @@ function infoBack()
 }
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
 
-$(document).ready(function()
-{
-    $("#mainPanel").html(tree(0));
-
+$(document).ready(function(){
+    // the first function is tree(). The first tree is given by the 
+    // query string, found by document.location.href, then split off
+    // into an array (index 1)
+    $("#mainPanel").html(tree(document.location.href.split('=')[1]));
 }); // end of document ready function
 

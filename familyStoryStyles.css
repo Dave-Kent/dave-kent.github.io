@@ -142,6 +142,8 @@ hr {
 }
 .census-family {
     font-size: 1.2rem;
+    text-decoration: none;
+    color: #111;
 }
 .new-address {
     display: block;
