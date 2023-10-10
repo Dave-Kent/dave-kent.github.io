@@ -20,7 +20,7 @@
     height: 0;
     transition: 1s;
     transition-delay: 1s;
-    z-index: 1;
+    z-index: -1;
 }
 .blue-tag {
     color: white;

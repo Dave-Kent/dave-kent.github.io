@@ -214,7 +214,7 @@ function tree(familyIndex)
         let destination = './family-census.html#cens'+familyIndex;
         // display the tab and text separately
         let linkId = document.getElementById("census-link");
-        linkId.innerHTML = "censuses";
+        linkId.style.zIndex = "1";
         linkId.style.height = "40px";
         // set up the anchor
         linkId.href = destination;
@@ -290,7 +290,10 @@ function tree(familyIndex)
 // (person object in a family object in the families array)
 function klik(person,thisFamily)
 {
-    document.getElementById("census-link").style.height = "0";
+    let linkId = document.getElementById("census-link");
+    linkId.style.height = "0"; 
+    linkId.style.zIndex = "-1";
+
     const vector = families[thisFamily][person.id].vektr;
  
     if(vector === 99) // show the NOT AVAILABLE message
@@ -311,7 +314,10 @@ function klik(person,thisFamily)
 // (child object in a kids array in a family object in the families array)
 function kliq(n,thisFamily)
 {
-    document.getElementById("census-link").style.height = "0";
+    let linkId = document.getElementById("census-link");
+    linkId.style.height = "0"; 
+    linkId.style.zIndex = "-1";
+    
     const vector = families[thisFamily].kids[n].vektr;
     if(vector === 99)
     {
