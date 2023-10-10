@@ -4,8 +4,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    /* border: 2px dashed; */
-    /* padding-bottom: 30px; */
+    
 }
 #census-link {
     position: fixed;
@@ -13,15 +12,21 @@
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
-    background-color: rgb(99, 99, 143);
+    background-color: white;
     padding: 0 10px;
     height: 40px;
     border-radius: 12px;
-    height: 0;
-    transition: 1s;
+    /* height: 0; */
+    transition: background-color, z-index;
     transition-delay: 1s;
+    transition-duration: 1s;
     z-index: -1;
 }
+/* #consus-link {
+    z-index: -1;
+    transition: 
+    transition-delay: 2s;
+} */
 .blue-tag {
     color: white;
     background-color: rgb(99, 99, 143);

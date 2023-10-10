@@ -215,7 +215,7 @@ function tree(familyIndex)
         // display the tab and text separately
         let linkId = document.getElementById("census-link");
         linkId.style.zIndex = "1";
-        linkId.style.height = "40px";
+        linkId.style.backgroundColor = "rgb(99, 99, 143)";
         // set up the anchor
         linkId.href = destination;
     }
@@ -291,7 +291,7 @@ function tree(familyIndex)
 function klik(person,thisFamily)
 {
     let linkId = document.getElementById("census-link");
-    linkId.style.height = "0"; 
+    linkId.style.backgroundColor = "white"; 
     linkId.style.zIndex = "-1";
 
     const vector = families[thisFamily][person.id].vektr;
@@ -315,7 +315,7 @@ function klik(person,thisFamily)
 function kliq(n,thisFamily)
 {
     let linkId = document.getElementById("census-link");
-    linkId.style.height = "0"; 
+    linkId.style.backgroundColor = "white"; 
     linkId.style.zIndex = "-1";
     
     const vector = families[thisFamily].kids[n].vektr;
