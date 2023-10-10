@@ -135,13 +135,24 @@ kids : [{ name: "Joan Mary", dates: "1924-2022", vektr:99}//NEXT
 ]
 }//NEXT//NEXT//NEXT//NEXT/NEXT//NEXT//NEXT//NEXT//NEXT//NEXT
 ]
-
+// ====================================================================
+// Array of messages to show in the info panel
+var information = ['Where a name-tag in the diagram is highlighted\
+ <span class="with-border">like this</span> a further branch can be reached \
+ by tapping (or clicking) on that tag.', 
+ 'When images of documents can be seen, the blue tag <span class="blue-tag">\
+ cencuses</span> provides a link.',
+ ]
+var infoIndex = 0;
 // draws a vertical line down from x,y position by h pixels
+// =====================================================================
+
 function shortVertical(x,y,h) 
 {
     return '<div class="vert"style="height:'+h+'px;top:'
     + y + 'px;left:'+ x +'px"></div>';
 } // end of shortVertical fn
+// ====================================================================
 
 // draws a complete parent block (400+hSpace)px wide,100px high. (nFamily is the index of
 // the families array, 'this' refers to the current .person object, 
@@ -186,13 +197,12 @@ function shortChild(n,x,y,ht,nFamily)
     'px;top:'+(y+ht)+'px;;border-color:'+kidBorder+'">'+families[nFamily].kids[n].name+'<br>'
     +families[nFamily].kids[n].dates+'</div>';
 } //end of shortChild fn
+// =============================================================================
 
 // sets out family tree
 function tree(familyIndex)
 {
-    const halfHeight = document.getElementById("mainPanel").offsetHeight/3; // vertical position datum
-   
-    
+    const halfHeight = document.getElementById("mainPanel").offsetHeight/3; // vertical position datum    
     const fullWidth = document.getElementById("mainPanel").offsetWidth;
     const halfWidth = fullWidth/2; // centre line
     
@@ -324,8 +334,13 @@ function ninetynineBack()
     $(".cover").css("display","none");
 }
 function openInfo()
+// responds to clicks on the info button
 {
+    // 1) covers the main display, so that the name tags are inactive
     $(".cover").css("display","block");
+    // 2) loads the next(cycled) message onto the info panel
+    $("#border-info").html(information[infoIndex++%information.length]);
+    // 3) shifts the info panel into view
     document.getElementById("border-info").style.right = "20px";
 }
 function infoBack()
@@ -336,9 +351,9 @@ function infoBack()
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
 
 $(document).ready(function(){
-    // the first function is tree(). The first tree is given by the 
-    // query string, found by document.location.href, then split off
-    // into an array (index 1)
+    // the first function to run is tree(). The first tree to load is given 
+    // by the query string, found by document.location.href, then split off
+    // (at the equals sign) into an array (index 1)
     $("#mainPanel").html(tree(document.location.href.split('=')[1]));
 }); // end of document ready function
 
