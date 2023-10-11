@@ -59,7 +59,7 @@ kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT
 ]
 },
 { // Family 5
-    census : 0,
+    census : 1,
 dad : { name: "Albert Kent", dates: "1873-195?", vektr:10},
 mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
 kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
