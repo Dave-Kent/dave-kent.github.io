@@ -67,7 +67,7 @@ kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
 ]
 },
 { // Family 6
-    census : 0,
+    census : 1,
 dad : { name: "Walter West", dates: "1855-1933", vektr:99},
 mum : { name: "Emma Keats", dates: "1855-19??", vektr:99},
 kids : [{ name: "William", dates: "1873-1???", vektr:99},
@@ -202,7 +202,8 @@ function shortChild(n,x,y,ht,nFamily)
 // sets out family tree
 function tree(familyIndex)
 {
-    const halfHeight = document.getElementById("mainPanel").offsetHeight/3; // vertical position datum    
+    const halfHeight = document.getElementById("mainPanel").offsetHeight/3+20; // vertical position datum   
+    
     const fullWidth = document.getElementById("mainPanel").offsetWidth;
     const halfWidth = fullWidth/2; // centre line
     
