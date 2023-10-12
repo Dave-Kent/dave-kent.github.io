@@ -18,6 +18,7 @@ body {
   font-family: "Comic Neue", cursive;
 }
 p {
+  max-width: 65ch;
   margin: 1rem;
 }
 /* hr = horizontal line (not touching the sides) */
@@ -75,7 +76,7 @@ hr {
   color: darkgreen;
 }
 .hero__description {
-  max-width: 65ch;
+  /* max-width: 65ch; */
   margin: 20px;
 }
 
@@ -83,6 +84,24 @@ hr {
   width: 35%;
   max-width: 360px;
 }
+.old-el-pic {
+  width: 50%;
+  max-width: 500px;
+}
+.el-shed-pic {
+  width: 50%;
+  max-width: 500px;
+  /* padding-bottom: 50px; */
+}
+.bathblitz-link {
+  color: white;
+  background-color: rgb(99, 99, 143);
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 50px;
+  padding: 8px;
+}
+
 /* =====================Sliding NAV panel================== */
 
 .open-switch {
