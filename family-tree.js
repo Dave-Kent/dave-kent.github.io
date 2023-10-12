@@ -291,10 +291,6 @@ function tree(familyIndex)
 // (person object in a family object in the families array)
 function klik(person,thisFamily)
 {
-    let linkId = document.getElementById("census-link");
-    linkId.style.backgroundColor = "white"; 
-    linkId.style.zIndex = "-1";
-
     const vector = families[thisFamily][person.id].vektr;
  
     if(vector === 99) // show the NOT AVAILABLE message
@@ -304,6 +300,9 @@ function klik(person,thisFamily)
     }
     else // get the next tree
     {
+        let linkId = document.getElementById("census-link");
+        linkId.style.backgroundColor = "white"; 
+        linkId.style.zIndex = "-1";
         // shift mainPanel up and change the contents
         $("#mainPanel").animate({top: '-80vh'}, 600,function(){$("#mainPanel").html(tree(vector))});
         // shift mainPanel back down
@@ -315,9 +314,7 @@ function klik(person,thisFamily)
 // (child object in a kids array in a family object in the families array)
 function kliq(n,thisFamily)
 {
-    let linkId = document.getElementById("census-link");
-    linkId.style.backgroundColor = "white"; 
-    linkId.style.zIndex = "-1";
+    
     
     const vector = families[thisFamily].kids[n].vektr;
     if(vector === 99)
@@ -327,6 +324,9 @@ function kliq(n,thisFamily)
     }
     else
     {
+        let linkId = document.getElementById("census-link");
+        linkId.style.backgroundColor = "white"; 
+        linkId.style.zIndex = "-1";
         // shift mainPanel down and change the contents
         $("#mainPanel").animate({top: '80vh'}, 600,function(){$("#mainPanel").html(tree(vector))});
         // shift mainPanel back down

@@ -22,11 +22,7 @@
     transition-duration: 1s;
     z-index: -1;
 }
-/* #consus-link {
-    z-index: -1;
-    transition: 
-    transition-delay: 2s;
-} */
+
 .blue-tag {
     color: white;
     background-color: rgb(99, 99, 143);
