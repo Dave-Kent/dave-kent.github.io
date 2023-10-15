@@ -94,11 +94,11 @@ figcaption {text-align: center;}
   max-width: 500px;
   /* padding-bottom: 50px; */
 }
-.somerset1903 {
+.full-width-figure {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 0 5%;
+  width: 93%;
+  max-width: 1000px;
   justify-content: center;
 }
 .bathblitz-link {
