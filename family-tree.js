@@ -15,13 +15,13 @@ const families = [
     
 { // Family 0
     census : 0,
-dad : { name: "Herbert West", dates: "187?-195?", vektr:6},
+dad : { name: "Herbert West", dates: "1877-1958", vektr:6},
 mum : { name: "Jessie Smith", dates: "1882-1973", vektr:7},
 kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
 { name: "Leonard Aubrey", dates: "1908-1991", vektr:99},
 { name: "Joyce Evelyn", dates: "1911-19??", vektr:99},
-{ name: "Cyril Reginald", dates: "1913-19??", vektr:99},
-{ name: "Phyllis Mary", dates: "1916-199?", vektr:99},
+{ name: "Cyril Reginald", dates: "1913-2002", vektr:99},
+{ name: "Phyllis Mary", dates: "1916-1991", vektr:99},
 { name: "Joan Olive", dates: "1916-1981", vektr:1}//NEXT
 ]
 },
@@ -60,7 +60,7 @@ kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT
 },
 { // Family 5
     census : 1,
-dad : { name: "Albert Kent", dates: "1873-195?", vektr:10},
+dad : { name: "Albert Kent", dates: "1873-1954", vektr:10},
 mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
 kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
 { name: "Charles", dates: "1911-1989", vektr:1}//NEXT
@@ -72,7 +72,7 @@ dad : { name: "Walter West", dates: "1855-1933", vektr:99},
 mum : { name: "Emma Keats", dates: "1855-19??", vektr:99},
 kids : [{ name: "William", dates: "1873-1???", vektr:99},
 { name: "Ella", dates: "1875-1???", vektr:99},
-{ name: "Herbert Walter", dates: "1877-195?", vektr:0},
+{ name: "Herbert Walter", dates: "1877-1958", vektr:0},
 { name: "William James", dates: "1880-1???", vektr:99},
 { name: "Thomas", dates: "1883-1915", vektr:99},
 { name: "Emma Rose", dates: "1885-1???", vektr:99},
@@ -114,7 +114,7 @@ dad : { name: "George Kent", dates: "1847-1???", vektr:9},
 mum : { name: "Mary", dates: "1849-1???", vektr:99},
 kids : [{ name: "Henry", dates: "1870-1???", vektr:99},
 { name: "Charles", dates: "1872-1???", vektr:99},
-{ name: "Albert", dates: "1873-195?", vektr:5},
+{ name: "Albert", dates: "1873-1954", vektr:5},
 { name: "Louisa", dates: "1875-1???", vektr:99},
 { name: "Herbert", dates: "1884-1???", vektr:99}//NEXT
 ]
