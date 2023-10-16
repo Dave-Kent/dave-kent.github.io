@@ -110,7 +110,7 @@ kids : [{ name: "George", dates: "1845-1???", vektr:10},
 },
 { // Family 10
     census : 1,
-dad : { name: "George Kent", dates: "1847-1???", vektr:9},
+dad : { name: "George Kent", dates: "1847-1927", vektr:9},
 mum : { name: "Mary", dates: "1849-1???", vektr:99},
 kids : [{ name: "Henry", dates: "1870-1???", vektr:99},
 { name: "Charles", dates: "1872-1???", vektr:99},
