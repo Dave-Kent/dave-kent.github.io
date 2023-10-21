@@ -21,6 +21,7 @@ Author: David Kent (dk.davidkent@gmail.com)-->
     <script src="familyStory.js"></script>
   </head>
   <body>
+    
     <nav id="mySidenav" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&#9664;</a
@@ -39,7 +40,7 @@ Author: David Kent (dk.davidkent@gmail.com)-->
       <section class="hero">
         <h1 class="hero__title">Rugby Football</h1>
         <figure class="full-width-figure">
-          <img
+          <img ondblclick="showDetail('pic-1')"
             src="https://www.dropbox.com/scl/fi/5s6lsgdbs08bsdj38y53k/HW-somerset.jpg?rlkey=g02i06vft1q4ftj4wzor7j2p4&raw=1"
             alt="Somerset rugby team 1903"
           />
@@ -65,7 +66,8 @@ Author: David Kent (dk.davidkent@gmail.com)-->
             received payment for playing.</p>
         </article>
         <figure class="full-width-figure">
-          <img src="https://www.dropbox.com/scl/fi/9bvdacniux0dlzlxbq2uk/bathA_HW_tom.jpg?rlkey=tqrlfkr16tyrm5ukdta0ekwim&raw=1" alt="Bath A rugby team 1925">
+          <img ondblclick="showDetail('pic-2')" 
+          src="https://www.dropbox.com/scl/fi/9bvdacniux0dlzlxbq2uk/bathA_HW_tom.jpg?rlkey=tqrlfkr16tyrm5ukdta0ekwim&raw=1" alt="Bath A rugby team 1925">
           <figcaption>Bath 'A' Rugby Football Team, 1903-4 (H.W. and Tom West - back row 4th and 5th from left)</figcaption>
         </figure>
         <article>
@@ -108,5 +110,10 @@ Author: David Kent (dk.davidkent@gmail.com)-->
         
       </section>
     </main>
+    <img id="pic-1" class="pic-detail" ondblclick="hideDetail('pic-1')"
+    src="https://www.dropbox.com/scl/fi/e2kogc5be1jq83g37euo3/HWsomerset_cropped.jpg?rlkey=p57bp5tj0wsffn97dwsfxs5u7&raw=1" alt="pic1">
+    <img id="pic-2" class="pic-detail" ondblclick="hideDetail('pic-2')"
+    src="https://www.dropbox.com/scl/fi/57d6zi6mbtrs3dqcibs99/bathAbros.jpg?rlkey=wwnnowp482lb8mxfisbggkc07&raw=1" alt="pic2">
+    
   </body>
 </html>

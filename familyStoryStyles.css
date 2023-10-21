@@ -97,7 +97,19 @@ figcaption {
   max-width: 90%;
   object-fit: contain;
 }
-
+ .pic-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+ } 
+ 
 .bathblitz-link {
   color: white;
   background-color: rgb(99, 99, 143);

@@ -21,4 +21,24 @@ function openCens(message, details) {
 function closeCens() {
     document.getElementById("census-pannel").style.width = "0";
 }
+function showDetail(pic) {
+    if (window.matchMedia("(max-width:600px)").matches)
+    {
+    let picture = document.getElementById(pic);
+    picture.style.zIndex="3";
+    picture.style.opacity="1";
+    //  setTimeout(fadeinDetail(pic),1000);
+    
+    }
+}
+// function fadeinDetail(x) {
+//     document.getElementById(x).style.opacity="1";
+// }
+function hideDetail(pic) {
+    let picture = document.getElementById(pic);
+    picture.style.opacity="0";
+    picture.style.zIndex="-3";
+}
+    
+
 
