@@ -295,7 +295,7 @@ function klik(person,thisFamily)
  
     if(vector === 99) // show the NOT AVAILABLE message
     {  
-        $(".cover").css("display","block");
+        showCover(0.3);
         document.getElementById("ninetynine-message").style.top = "30vh";  
     }
     else // get the next tree
@@ -314,12 +314,10 @@ function klik(person,thisFamily)
 // (child object in a kids array in a family object in the families array)
 function kliq(n,thisFamily)
 {
-    
-    
     const vector = families[thisFamily].kids[n].vektr;
     if(vector === 99)
     {
-        $(".cover").css("display","block");
+        showCover(0.3);
         document.getElementById("ninetynine-message").style.top = "30vh";  
     }
     else
@@ -338,13 +336,13 @@ function kliq(n,thisFamily)
 function ninetynineBack()
 {
     document.getElementById("ninetynine-message").style.top = "-100px";
-    $(".cover").css("display","none");
+    hideCover();
 }
 function openInfo()
 // responds to clicks on the info button
 {
     // 1) covers the main display, so that the name tags are inactive
-    $(".cover").css("display","block");
+    showCover(0.3);
     // 2) loads the next(cycled) message onto the info panel
     $("#border-info").html(information[infoIndex++%information.length]);
     // 3) shifts the info panel into view
@@ -353,7 +351,7 @@ function openInfo()
 function infoBack()
 {
     document.getElementById("border-info").style.right = "-90%";
-    $(".cover").css("display","none");
+    hideCover();
 }
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
 
