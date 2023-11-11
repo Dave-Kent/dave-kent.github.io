@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Censuses</title>
+    <link rel="stylesheet" href="familyStoryStyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ 
+    <!-- <script src="family-tree.js"></script> -->
+    <script src="familyStory.js"></script>
+    <script src="familyNotes.js"></script>
+  </head>
+  <body>
+    <main class="content">
+
+        <!-- ======================SLIDING PANEL========================= -->
+        <div class="sliding-pannel" id="census-pannel">
+            <!-- <div id="census-zm" ondblclick="hideZm()"></div> -->
+        
+            <div class="detail-container">
+                <div class="return" onclick="closeCens()">&#9654;</div>
+                <div class="detail-bar" id="census-details"></div>
+                </div>    
+            
+            <!-- imgSpace is filled by javaScript familyStory.js -->
+            <div id="imgSpace"></div>
+        </div>
+
+        <!-- ======================MAIN DATA AREA======================== -->
+        <div id="censusPanel" class="censuses-container">
+            <a id="cs-family" class="census-family"></a>
+            <div id="cs-txt">text</div>
+        </div>
+
+
+
+    </main>
+  </body>
+</html>

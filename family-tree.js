@@ -11,130 +11,9 @@
 
 
 
-const families = [
-    
-{ // Family 0
-    census : 0,
-dad : { name: "Herbert West", dates: "1877-1958", vektr:6},
-mum : { name: "Jessie Smith", dates: "1882-1973", vektr:7},
-kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
-{ name: "Leonard Aubrey", dates: "1908-1991", vektr:99},
-{ name: "Joyce Evelyn", dates: "1911-19??", vektr:99},
-{ name: "Cyril Reginald", dates: "1913-2002", vektr:99},
-{ name: "Phyllis Mary", dates: "1916-1991", vektr:99},
-{ name: "Joan Olive", dates: "1916-1981", vektr:1}//NEXT
-]
-},
-{ // Family 1
-    census : 0,
-dad : { name: "Charles Kent", dates: "1911-1989", vektr:5},
-mum : { name: "Joan West", dates: "1916-1981", vektr:0},
-kids : [{ name: "Peter Nicholas", dates: "1947", vektr:2},
-{ name: "David Jonathan", dates: "1950", vektr:3},
-{ name: "Simon James", dates: "1955", vektr:4}//NEXT
-]
-},
-{ // Family 2
-    census : 0,
-dad : { name: "Peter Kent", dates: "1947", vektr:1},
-mum : { name: "Ann", dates: "19??", vektr:99},
-kids : [{ name: "Katherine", dates: "19??", vektr:99},
-{ name: "Leah", dates: "19??", vektr:99}//NEXT
-]
-},
-{ // Family 3
-    census : 0,
-dad : { name: "David Kent", dates: "1950", vektr:1},
-mum : { name: "Helen Atkinson", dates: "1956", vektr:99},
-kids : [{ name: "Benjamin", dates: "1980", vektr:99},
-{ name: "Nicola Claire", dates: "1983", vektr:99},
-{ name: "Gavin David", dates: "1985", vektr:99}//NEXT
-]
-},
-{ // Family 4
-    census : 0,
-dad : { name: "Simon Kent", dates: "1955", vektr:1},
-mum : { name: "Susan", dates: "195?", vektr:99},
-kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT
-]
-},
-{ // Family 5
-    census : 1,
-dad : { name: "Albert Kent", dates: "1873-1954", vektr:10},
-mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
-kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
-{ name: "Charles", dates: "1911-1989", vektr:1}//NEXT
-]
-},
-{ // Family 6
-    census : 1,
-dad : { name: "Walter West", dates: "1855-1933", vektr:99},
-mum : { name: "Emma Keats", dates: "1855-19??", vektr:99},
-kids : [{ name: "William", dates: "1873-1???", vektr:99},
-{ name: "Ella", dates: "1875-1???", vektr:99},
-{ name: "Herbert Walter", dates: "1877-1958", vektr:0},
-{ name: "William James", dates: "1880-1???", vektr:99},
-{ name: "Thomas", dates: "1883-1915", vektr:99},
-{ name: "Emma Rose", dates: "1885-1???", vektr:99},
-{ name: "George", dates: "1887-1???", vektr:99},
-{ name: "Emily Rose", dates: "1888-1???", vektr:99},
-{ name: "Reginald Edward", dates: "1895-19??", vektr:99}//NEXT
-]
-},
-{ // Family 7
-    census : 0,
-dad : { name: "William Smith", dates: "1851-19??", vektr:99},
-mum : { name: "Martha Hasler", dates: "1852-1935", vektr:8},
-kids : [{ name: "Jessica Alice Annie", dates: "1882-1973", vektr:0}//NEXT
-]
-},
-{ // Family 8
-    census : 0,
-dad : { name: "Henry Hasler", dates: "1826-1???", vektr:99},
-mum : { name: "Mary Ann", dates: "1829-1???", vektr:99},
-kids : [{ name: "Martha Louisa", dates: "1852-1935", vektr:7},
-{ name: "William Peter", dates: "1854-1936", vektr:11},
-{ name: "Eliza", dates: "1856-1???", vektr:99},
-{ name: "Thomas", dates: "1859-1???", vektr:99}//NEXT
-]
-},
-{ // Family 9
-    census : 1,
-dad : { name: "John Kent", dates: "1820-1???", vektr:99},
-mum : { name: "Elizabeth", dates: "1818-1???", vektr:99},
-kids : [{ name: "George", dates: "1845-1???", vektr:10},
-{ name: "Mary Ann", dates: "1848-1???", vektr:99},
-{ name: "Reuben", dates: "1851-1???", vektr:99},
-{ name: "Martha", dates: "1854-1???", vektr:99}//NEXT
-]
-},
-{ // Family 10
-    census : 1,
-dad : { name: "George Kent", dates: "1847-1927", vektr:9},
-mum : { name: "Mary", dates: "1849-1???", vektr:99},
-kids : [{ name: "Henry", dates: "1870-1???", vektr:99},
-{ name: "Charles", dates: "1872-1???", vektr:99},
-{ name: "Albert", dates: "1873-1954", vektr:5},
-{ name: "Louisa", dates: "1875-1???", vektr:99},
-{ name: "Herbert", dates: "1884-1???", vektr:99}//NEXT
-]
-},
-{ // Family 11
-    census : 0,
-dad : { name: "William Hasler", dates: "1854-1936", vektr:8},
-mum : { name: "Maria Baker", dates: "1856-1934", vektr:99},
-kids : [{ name: "Douglas William", dates: "1882-1965", vektr:12},
-{ name: "Beatrice Ethel", dates: "1884-19??", vektr:99}//NEXT
-]
-},
-{ // Family 12
-    census : 0,
-dad : { name: "Douglas Hasler", dates: "1882-1965", vektr:11},
-mum : { name: "Violet Collins", dates: "1886-1968", vektr:99},
-kids : [{ name: "Joan Mary", dates: "1924-2022", vektr:99}//NEXT
-]
-}//NEXT//NEXT//NEXT//NEXT/NEXT//NEXT//NEXT//NEXT//NEXT//NEXT
-]
+
+// ==================== End of families array =========================
+
 // ====================================================================
 // Array of messages to show in the info panel
 var information = ['Where a name-tag in the diagram is highlighted\
@@ -209,16 +88,27 @@ function tree(familyIndex)
     
     const nkids = families[familyIndex].kids.length; // number of children 
 
+    
     // if there is a census image available, display the 'census link' tab, with the appropriate href
     if (families[familyIndex].census)
     {
-        let destination = './family-census.html#cens'+familyIndex;
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> !!!!!!!!! CHANGE THIS TO SUIT THE CENSUSPANEL SOLUTION
+        // setOutNotes(familyIndex);
         // display the tab and text separately
-        let linkId = document.getElementById("census-link");
-        linkId.style.zIndex = "1";
-        linkId.style.backgroundColor = "rgb(99, 99, 143)";
+        showCensusLink();
+        // ***************************************************************************
+    //    let linkId = document.getElementById("census-link");
+    // linkId.href = "./family-notes.html?family=" + famlyIndex;
+        document.getElementById("census-link").href = "./family-notes.html?family=" + familyIndex;
+    //    linkId.style.zIndex = "1";
+    //    linkId.style.backgroundColor = "rgb(99, 99, 143)";
+
+        //  CALL A FUNCTION TO BUILD THE CENSUS-PANEL - CURRENTLY HIDDEN (ZERO HEIGHT)
+
+        //linkId.onclick = censusPage('+familyIndex+'); // onclick="censusPage(10)"; // censusPage('+familyIndex+')
+        //console.log("reached "+familyIndex);
         // set up the anchor
-        linkId.href = destination;
+        //linkId.href = destination;
     }
     // Loops to set out the children - START
     // The tree options depend on the width of the viewport:
@@ -300,9 +190,11 @@ function klik(person,thisFamily)
     }
     else // get the next tree
     {
-        let linkId = document.getElementById("census-link");
-        linkId.style.backgroundColor = "white"; 
-        linkId.style.zIndex = "-1";
+        hideCensusLink();
+        // let linkId = document.getElementById("census-link");
+        // linkId.style.backgroundColor = "white"; 
+        // linkId.style.zIndex = "-1";
+
         // shift mainPanel up and change the contents
         $("#mainPanel").animate({top: '-80vh'}, 600,function(){$("#mainPanel").html(tree(vector))});
         // shift mainPanel back down
@@ -322,15 +214,27 @@ function kliq(n,thisFamily)
     }
     else
     {
-        let linkId = document.getElementById("census-link");
+        hideCensusLink();
+
+        // THIS IS WHERE THE DISPLAYED DATA IS CHANGED <<<<<<<<<<<<<<<<<<<<<<<<
+        // shift mainPanel down and change the contents
+        // MAYBE change the (hidden) census panel first??
+        $("#mainPanel").animate({top: '80vh'}, 600,function(){$("#mainPanel").html(tree(vector))});
+        // shift mainPanel back up
+        $("#mainPanel").animate({top: '0'}, 1000);
+        
+    }
+}
+function showCensusLink() {
+    let linkId = document.getElementById("census-link");
+    linkId.style.zIndex = "1";
+    linkId.style.backgroundColor = "rgb(99, 99, 143)";
+}
+
+function hideCensusLink() {
+    let linkId = document.getElementById("census-link");
         linkId.style.backgroundColor = "white"; 
         linkId.style.zIndex = "-1";
-        // shift mainPanel down and change the contents
-        $("#mainPanel").animate({top: '80vh'}, 600,function(){$("#mainPanel").html(tree(vector))});
-        // shift mainPanel back down
-        $("#mainPanel").animate({top: '0'}, 1000);
-        // $("#mainPanel").html(tree(vector));
-    }
 }
 
 function ninetynineBack()
@@ -353,6 +257,35 @@ function infoBack()
     document.getElementById("border-info").style.right = "-90%";
     hideCover();
 }
+
+// changes from mainPanel to censusPanel
+function censusPage() {
+    console.log("reached fn censusPage ");
+    hideCensusLink();
+    let mP = document.getElementById("mainPanel");
+    mP.style.opacity="0";
+    setTimeout(function() {
+        mP.style.height="0";
+    }, 1000);
+    let cP = document.getElementById("censusPanel");
+    cP.style.height="100%";
+    cP.style.opacity="1";
+    
+}
+
+// changes from censusPanel to mainPanel
+function treeReturn() {
+    let cP = document.getElementById("censusPanel");
+    cP.style.opacity="0";
+    setTimeout(function() {
+        cP.style.height="0";
+    }, 1000);
+    let mP = document.getElementById("mainPanel");
+    mP.style.height="100%";
+    mP.style.opacity="1";
+    showCensusLink();
+}
+
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
 
 $(document).ready(function(){
@@ -360,5 +293,6 @@ $(document).ready(function(){
     // by the query string, found by document.location.href, then split off
     // (at the equals sign) into an array (index 1)
     $("#mainPanel").html(tree(document.location.href.split('=')[1]));
+    
 }); // end of document ready function
 
