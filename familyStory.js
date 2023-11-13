@@ -140,10 +140,13 @@ const families = [
         narrow:'https://www.dropbox.com/scl/fi/1x9op85k51rxldxyeewff/GKent1911CensusV.jpg?rlkey=5e6xrmv9xdphu1dmpkg1684sy&raw=1',
         zoomed:'https://www.dropbox.com/scl/fi/iatylo7z1tr2h8b9ucwat/GKent1911CensusVz.jpg?rlkey=66zyk7t42rsgbl64bpivqb9uz&raw=1'}}]}],
     familyNotes: "<p>Between 1871 and 1891, George and his family lived near Didcot, at that time\
-    a major centre of the railway industry. \
-    The Great Western Railway had reached the town around 30 years previously. \
-    <a href='https://www.didcot.gov.uk/brief-history#heading-1047124'>Hagbourne Newtown</a> was a \
-    settlement built for the rapidly expanding population.<\p>",
+    a major centre of the railway industry. George's occupation was then shown as \'railway labourer\'.\
+    The Great Western Railway had reached the town around 30 years previously. Hagbourne Newtown was a settlement built for the \
+    rapidly expanding population.\
+    <a href='https://www.didcot.gov.uk/brief-history#heading-1047124'> (see Didcot brief history).</a>\
+    <\p>\
+    <p>After moving to Bath, his occupation was \'stationary engine driver\' (in the 1901 census) and \'engine driver gas works\'\
+     (in 1911).",
     },
     
     { // Family 11

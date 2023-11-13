@@ -174,17 +174,48 @@ figcaption {
   left: 0;
   right: 0;
 }
+/* .notes-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+} */
 /* ========================================================== */
+.notes-header {
+  height: 17vh;
+  
+  background-image: linear-gradient(rgba(01,50,32,0.4),rgba(0,0,0,0.4)),
+   url("./pictures/collage-notes01.jpg");
+  background-size: cover;
+  
+  /* background-position: top center; */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(255, 136, 0);
+}
+.notes__title {
+font-family: 'Permanent Marker', cursive;
+color: rgb(250, 207, 48);
+  font-size: 3rem;
+  text-shadow: black 3px 3px;
+}
 .censuses-container {
-  border: 2px dashed red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   padding: 20px;
 }
 .census-family {
-  border: 2px dashed green;
+  padding: 0 12px;
+  border-radius: 8px;
   text-align: center;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #111;
+    color: white;
+    background-color: rgb(99, 99, 143);
 }
 .new-address {
     display: block;
