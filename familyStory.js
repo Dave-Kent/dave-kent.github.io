@@ -49,15 +49,26 @@ const families = [
     ] // Add census info - csus
     },
     { // Family 5
-        census : 0,
+        census : 1,
     dad : { name: "Albert Kent", dates: "1873-1954", vektr:10},
     mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
     kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
     { name: "Charles", dates: "1911-1989", vektr:1}//NEXT kid - kd
-    ] // Add census info - csus
+    ],
+    familyName: 'Albert &#38; Mary Kent family', //use &amp; between dad and mum names
+    censuses:[{address:'10 Ayr Street, Twerton, Bath',
+    gmap:'https://maps.app.goo.gl/8GVeXvyN74WwPpuh8',
+    dox:[{year:'1901',
+    occupation: '1901 &#9474; Albert Kent 28, General Labourer; Mary 27, Wife; Dorothy 9 months',
+    images:{wide:'https://www.dropbox.com/scl/fi/fthd3myesvsbrz9ucwn24/Census1901AKent.jpg?rlkey=g4mfxbthlzpdfy0vpgedhr4af&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/u3yo12eq09ywprwwy4m20/Census1901AKentV.jpg?rlkey=c5y31fjf73ogup3xep25qvc3o&raw=1',
+    zoomed: ''}} // Add a year - cyr
+    ]} // New address - cadd
+    ],
+    familyNotes: '', // include <p></p> // Add census info - csus
     },
     { // Family 6
-        census : 0,
+        census : 1,
     dad : { name: "Walter West", dates: "1855-1933", vektr:99},
     mum : { name: "Emma Keats", dates: "1855-19??", vektr:99},
     kids : [{ name: "William", dates: "1873-1???", vektr:99},
@@ -69,7 +80,18 @@ const families = [
     { name: "George", dates: "1887-1???", vektr:99},
     { name: "Emily Rose", dates: "1888-1???", vektr:99},
     { name: "Reginald Edward", dates: "1895-19??", vektr:99}//NEXT kid - kd
-    ] // Add census info - csus
+    ],
+    familyName: 'Walter &#38; Emma West family', //use &amp; between dad and mum names
+    censuses:[{address:'23 Fieldings Road, Twerton, Bath',
+    gmap:'https://maps.app.goo.gl/ZMQka9ttxYea981z8',
+    dox:[{year:'1901',
+    occupation: '1901 &#9474; Walter West 46, Blacksmiths Labourer; Emma 46, Wife; James 20, Fitter Clothing Factory; Thomas 18, Labourer Iron Foundery; + girls 12,9, boy 6',
+    images:{wide:'https://www.dropbox.com/scl/fi/doxes43xsbcxbbv52idiv/Census1901WWest.jpg?rlkey=acd0ljfsdo43uqi7zhu1g7in5&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/36crva4nqf9djftyoooca/Census1901WWestV.jpg?rlkey=mtgw2iebopd0uo4smw2i5to93&raw=1',
+    zoomed: ''}} // Add a year - cyr
+    ]} // New address - cadd
+    ],
+    familyNotes: '', // include <p></p> // Add census info - csus
     },
     { // Family 7
         census : 0,
@@ -89,14 +111,30 @@ const families = [
     ] // Add census info - csus
     },
     { // Family 9
-        census : 0,
+        census : 1,
     dad : { name: "John Kent", dates: "1820-1???", vektr:99},
     mum : { name: "Elizabeth", dates: "1818-1???", vektr:99},
     kids : [{ name: "George", dates: "1845-1???", vektr:10},
     { name: "Mary Ann", dates: "1848-1???", vektr:99},
     { name: "Reuben", dates: "1851-1???", vektr:99},
     { name: "Martha", dates: "1854-1???", vektr:99}//NEXT kid - kd
-    ] // Add census info - csus
+    ],
+    familyName: 'John &#38; Elizabeth Kent family', //use &amp; between dad and mum names
+    censuses:[{address:'Old Moor, Milton, Berkshire',
+    gmap:'https://goo.gl/maps/jGsTm1gXRZo2dM8C7',
+    dox:[{year:'1851',
+    occupation: '1851 &#9474; John Kent 33, Agricultural Lab; Elizabeth 29, Wife; George 6; MaryAnn 3; Reuben 4M',
+    images:{wide:'https://www.dropbox.com/scl/fi/wn1d7id0kr9rys4qhhxpk/GKent1851Census.jpg?rlkey=0zynkmdcx05tc6lxjw6hm6a7b&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/8v2m2zn4fr62rhojuqk28/GKent1851CensusV.jpg?rlkey=pjgvlinyzqa91c4nwdmdawvxg&raw=1',
+    zoomed: ''}},
+    {year:'1861',
+    occupation: '1861 &#9474; John Kent 41, Agricultural Lab; Elizabeth 39, Wife; George 16, Ag Lab; MaryAnn 13; Reuben 10; Martha 7',
+    images:{wide:'https://www.dropbox.com/scl/fi/e0fcqzv2cbo6h8vpiasyn/GKent1861Census.jpg?rlkey=e492pwimet6ccyfym7aa2eew4&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/gd1481ww7vxgqc558sqj4/GKent1861CensusV.jpg?rlkey=t639u857dq10o2bh0f2zqco1p&raw=1',
+    zoomed: ''}} // Add a year - cyr
+    ]} // New address - cadd
+    ],
+    familyNotes: '', // include <p></p> // Add census info - csus
     },
     { // Family 10
     census : 1,

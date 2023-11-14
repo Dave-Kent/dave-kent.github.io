@@ -174,11 +174,14 @@ figcaption {
   left: 0;
   right: 0;
 }
-/* .notes-content {
-  position: absolute;
+.notes-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* position: absolute;
   left: 0;
-  right: 0;
-} */
+  right: 0; */
+}
 /* ========================================================== */
 .notes-header {
   height: 17vh;
@@ -196,9 +199,11 @@ figcaption {
   border-bottom: 2px solid rgb(255, 136, 0);
 }
 .notes__title {
-font-family: 'Permanent Marker', cursive;
+/* font-family: 'Permanent Marker', cursive; */
+
+font-family: 'Gochi Hand', cursive;
 color: rgb(250, 207, 48);
-  font-size: 3rem;
+  font-size: 4rem;
   text-shadow: black 3px 3px;
 }
 .censuses-container {
@@ -216,6 +221,8 @@ color: rgb(250, 207, 48);
     text-decoration: none;
     color: white;
     background-color: rgb(99, 99, 143);
+    position: sticky;
+    top: 15px;
 }
 .new-address {
     display: block;
