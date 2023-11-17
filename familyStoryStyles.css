@@ -234,8 +234,24 @@ color: rgb(250, 207, 48);
   justify-content: center;
 }
 .additional-notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: pink;
   border-radius: 8px;
+  max-width: 800px;
+}
+.notes-pic {
+  width: 100%;
+  /* justify-self: center; */
+  /* margin: 3%; */
+  /* max-width: 800px; */
+}
+.notes-fig {
+  width: 90%;
+  margin: 5%;
+  padding: 3%;
+  background-color:white;
 }
 /* =====================PERHAPS THIS WILL BE USEFUL ELSEWHERE==== */
 .open-census {

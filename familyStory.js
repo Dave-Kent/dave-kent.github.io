@@ -62,7 +62,12 @@ const families = [
     occupation: '1901 &#9474; Albert Kent 28, General Labourer; Mary 27, Wife; Dorothy 9 months',
     images:{wide:'https://www.dropbox.com/scl/fi/fthd3myesvsbrz9ucwn24/Census1901AKent.jpg?rlkey=g4mfxbthlzpdfy0vpgedhr4af&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/u3yo12eq09ywprwwy4m20/Census1901AKentV.jpg?rlkey=c5y31fjf73ogup3xep25qvc3o&raw=1',
-    zoomed: ''}} // Add a year - cyr
+    zoomed: ''}},
+    {year:'1911',
+    occupation: '1911 &#9474; Albert Kent 38, Main Layer Gas Works; Mary 37 wife; Dorothy Kate 10', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/ehe0r7g8t5obtgfsm1udp/AlbertKent1911rg14_14665_0545_03.jpg?rlkey=4tplqhqz8k09sbxmgkfgeqods&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/rlnu1qk4vuolpcuz50kvj/AlbertKent1911rg14_14665_0545_03V.jpg?rlkey=xo7jeouevxm8ezxtgwn9rvws3&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/1uhqkdxgbytvdvt7y16fz/AlbertKent1911rg14_14665_0545_03Vz.jpg?rlkey=bd3004apevloot99notfx3t3k&raw=1'}} // Add a year - cyr
     ]} // New address - cadd
     ],
     familyNotes: '', // include <p></p> // Add census info - csus
@@ -94,11 +99,37 @@ const families = [
     familyNotes: '', // include <p></p> // Add census info - csus
     },
     { // Family 7
-        census : 0,
+        census : 1,
     dad : { name: "William Smith", dates: "1851-19??", vektr:99},
     mum : { name: "Martha Hasler", dates: "1852-1935", vektr:8},
     kids : [{ name: "Jessica Alice Annie", dates: "1882-1973", vektr:0}//NEXT kid - kd
-    ]
+    ],
+    familyName: 'William &amp; Martha Louisa Smith family', //use &amp; between dad and mum names
+    censuses:[{address:'Somerset Industrial Home for Boys, Bath',
+    gmap:'https://maps.app.goo.gl/c7k6ctM4kk3wvq9N7',
+    dox:[{year:'1891',
+    occupation: '1891 &#9474; William Smith 40, Carpenter; Louisa 38, Nurse; Jessie 9, Scholar',
+    images:{wide:'https://www.dropbox.com/scl/fi/l7xznsdav3l9wfle3sz48/Census1891WSmith.jpg?rlkey=zqwjj4s0khe1htdrwmlon52y1&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/gi4jfkeenn2arhg7n1ro2/Census1891WSmithV.jpg?rlkey=myoqaq4llbvja6e0qivz8emtj&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/gnzgyt0bnb0wxh5qozja2/Census1891WSmithVz.jpg?rlkey=hypzzpakjvvesu9ap2fdgb526&raw=1'}} // Add a year - cyr
+    ]},
+    {address:'12a Portland Place, Bath',
+    gmap:'https://maps.app.goo.gl/AChpVU1iQi4ewmGz9',
+    dox:[{year:'1901',
+    occupation: '1901 &#9474; William Smith 50, Carpenter &amp; Licenced Victualler; Louisa 49, Pub own account; Jessie A. 19, Dressmaker',
+    images:{wide:'https://www.dropbox.com/scl/fi/xfvj77b74ymx7bl8or11i/Census1901WSmith.jpg?rlkey=zynlgyx19t3bhxdv8l8w9lmoe&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/m6bnb30twlnxsghk4ddh0/Census1901WSmithV.jpg?rlkey=wq9s90ozkjnzba00nffvluz3y&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/c1arkxd2gfuzg9q2bf7r9/Census1901WSmithVz.jpg?rlkey=r0iwv2zgk6ji689cnnrvwvkhf&raw=1'}}
+    // Add a year ^cyr
+    ]} // New address - cadd
+    ],
+    familyNotes: '<p>Walter Smith served in the Royal Engineers, daughter Jessie was born in Aldershot (main garrison of the British Army) \
+    in 1882.</p><p>After leaving the Army, the family moved to Bath and in the 1891 census his occupation is shown as Carpenter at the \
+    <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> where wife Martha Louisa was employed \
+    as a nurse.</p><p>The next census (1901) shows that the couple were then licencees of the Portland Arms, Bath. William was still a carpenter and \
+    Jessie\'s occupation was Dressmaker</p>\
+    <figure class="notes-fig"><img class="notes-pic" src="http://breweryhistory.com/wiki/images/5/54/The_Portland_Arms%2C_Portland_Place%2C_Bath_PD.jpg"\
+    alt="Portland Arms, Bath 1947"><figcaption>The Portland Arms, photo 1947, demolished 1969</figcaption></figure>', // include <p></p>
     },
     { // Family 8
         census : 0,
