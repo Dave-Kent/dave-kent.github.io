@@ -123,7 +123,7 @@ const families = [
     // Add a year ^cyr
     ]} // New address - cadd
     ],
-    familyNotes: '<p>Walter Smith served in the Royal Engineers, daughter Jessie was born in Aldershot (main garrison of the British Army) \
+    familyNotes: '<p>William Smith served in the Royal Engineers, daughter Jessie was born in Aldershot (main garrison of the British Army) \
     in 1882.</p><p>After leaving the Army, the family moved to Bath and in the 1891 census his occupation is shown as Carpenter at the \
     <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> where wife Martha Louisa was employed \
     as a nurse.</p><p>The next census (1901) shows that the couple were then licencees of the Portland Arms, Bath. William was still a carpenter and \
