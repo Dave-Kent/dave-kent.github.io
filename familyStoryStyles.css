@@ -241,17 +241,16 @@ color: rgb(250, 207, 48);
   border-radius: 8px;
   max-width: 800px;
 }
-.notes-pic {
-  width: 100%;
-  /* justify-self: center; */
-  /* margin: 3%; */
-  /* max-width: 800px; */
-}
+
 .notes-fig {
   width: 90%;
-  margin: 5%;
+  margin: auto;
   padding: 3%;
   background-color:white;
+  max-width: 600px;
+}
+.notes-fig img {
+  width: 100%;
 }
 /* =====================PERHAPS THIS WILL BE USEFUL ELSEWHERE==== */
 .open-census {
