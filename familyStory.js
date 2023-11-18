@@ -128,7 +128,7 @@ const families = [
     <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> where wife Martha Louisa was employed \
     as a nurse.</p><p>The next census (1901) shows that the couple were then licencees of the Portland Arms, Bath. William was still a carpenter and \
     Jessie\'s occupation was Dressmaker</p>\
-    <figure class="notes-fig"><img class="notes-pic" src="http://breweryhistory.com/wiki/images/5/54/The_Portland_Arms%2C_Portland_Place%2C_Bath_PD.jpg"\
+    <figure class="notes-fig"><img class="notes-pic" src="https://www.dropbox.com/scl/fi/rvepq9ob7glenrs8uj7su/The_Portland_Arms-_Portland_Place-_Bath_PD.jpg?rlkey=i0twz8j0ov5omwrznutjewlhw&raw=1"\
     alt="Portland Arms, Bath 1947"><figcaption>The Portland Arms, photo 1947, demolished 1969</figcaption></figure>', // include <p></p>
     },
     { // Family 8
