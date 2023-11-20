@@ -19,8 +19,8 @@
 var information = ['Where a name-tag in the diagram is highlighted\
  <span class="with-border">like this</span> a further branch can be reached \
  by tapping (or clicking) on that tag.', 
- 'When images of documents can be seen, the blue tag <span class="blue-tag">\
- cencuses</span> provides a link.',
+ 'When additional information can be seen, the blue tag <span class="blue-tag">\
+ &#9998; notes</span> provides a link.',
  ]
 var infoIndex = 0;
 // draws a vertical line down from x,y position by h pixels
