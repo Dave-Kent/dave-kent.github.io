@@ -60,9 +60,9 @@ const families = [
     gmap:'https://maps.app.goo.gl/8GVeXvyN74WwPpuh8',
     dox:[{year:'1901',
     occupation: '1901 &#9474; Albert Kent 28, General Labourer; Mary 27, Wife; Dorothy 9 months',
-    images:{wide:'https://www.dropbox.com/scl/fi/fthd3myesvsbrz9ucwn24/Census1901AKent.jpg?rlkey=g4mfxbthlzpdfy0vpgedhr4af&raw=1',
-    narrow:'https://www.dropbox.com/scl/fi/u3yo12eq09ywprwwy4m20/Census1901AKentV.jpg?rlkey=c5y31fjf73ogup3xep25qvc3o&raw=1',
-    zoomed: ''}},
+    images:{wide:'https://www.dropbox.com/scl/fi/xgbhkj2jpw6tfic9atbuo/Census1901AKent01.jpg?rlkey=2nbkhjyx4k2tv54bcyyznr8y3&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/zhawn8mwvvm2qsrq62hs9/Census1901AKentV01.jpg?rlkey=6l6ssmanwl3w60ssvd9y88hx2&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/690y4p08h9thvzitmip1o/Census1901AKentVz01.jpg?rlkey=medol7w44emk2zpy2uai29m18&raw=1'}},
     {year:'1911',
     occupation: '1911 &#9474; Albert Kent 38, Main Layer Gas Works; Mary 37 wife; Dorothy Kate 10', // include &#9474; after the year
     images:{wide:'https://www.dropbox.com/scl/fi/ehe0r7g8t5obtgfsm1udp/AlbertKent1911rg14_14665_0545_03.jpg?rlkey=4tplqhqz8k09sbxmgkfgeqods&raw=1',
@@ -91,9 +91,9 @@ const families = [
     gmap:'https://maps.app.goo.gl/ZMQka9ttxYea981z8',
     dox:[{year:'1901',
     occupation: '1901 &#9474; Walter West 46, Blacksmiths Labourer; Emma 46, Wife; James 20, Fitter Clothing Factory; Thomas 18, Labourer Iron Foundery; + girls 12,9, boy 6',
-    images:{wide:'https://www.dropbox.com/scl/fi/doxes43xsbcxbbv52idiv/Census1901WWest.jpg?rlkey=acd0ljfsdo43uqi7zhu1g7in5&raw=1',
-    narrow:'https://www.dropbox.com/scl/fi/36crva4nqf9djftyoooca/Census1901WWestV.jpg?rlkey=mtgw2iebopd0uo4smw2i5to93&raw=1',
-    zoomed: ''}} // Add a year - cyr
+    images:{wide:'https://www.dropbox.com/scl/fi/x9czjb9v68bnbkfktd714/Census1901WWest01.jpg?rlkey=c7x6z5o9cdkrgo5t9jw9o354a&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/orc9u5mo0jbw2by9tbi53/Census1901WWestV01.jpg?rlkey=gki5jprhpt3eyrnu42rytquc5&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/two1xu25kzqglleaq66br/Census1901WWestVz01.jpg?rlkey=a6fskmad6widthify7ziqqng1&raw=1'}} // Add a year - cyr
     ]} // New address - cadd
     ],
     familyNotes: '', // include <p></p> // Add census info - csus
@@ -111,7 +111,7 @@ const families = [
     occupation: '1891 &#9474; William Smith 40, Carpenter; Louisa 38, Nurse; Jessie 9, Scholar',
     images:{wide:'https://www.dropbox.com/scl/fi/l7xznsdav3l9wfle3sz48/Census1891WSmith.jpg?rlkey=zqwjj4s0khe1htdrwmlon52y1&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/gi4jfkeenn2arhg7n1ro2/Census1891WSmithV.jpg?rlkey=myoqaq4llbvja6e0qivz8emtj&raw=1',
-    zoomed: 'https://www.dropbox.com/scl/fi/gnzgyt0bnb0wxh5qozja2/Census1891WSmithVz.jpg?rlkey=hypzzpakjvvesu9ap2fdgb526&raw=1'}} // Add a year - cyr
+    zoomed: 'https://www.dropbox.com/scl/fi/f45dd9q0r5hua2ntb3yog/Census1891WSmithV02.jpg?rlkey=y44ni29ywxs029x5q96fyyh4y&raw=1'}} // Add a year - cyr
     ]},
     {address:'12a Portland Place, Bath',
     gmap:'https://maps.app.goo.gl/AChpVU1iQi4ewmGz9',
@@ -155,14 +155,14 @@ const families = [
     gmap:'https://goo.gl/maps/jGsTm1gXRZo2dM8C7',
     dox:[{year:'1851',
     occupation: '1851 &#9474; John Kent 33, Agricultural Lab; Elizabeth 29, Wife; George 6; MaryAnn 3; Reuben 4M',
-    images:{wide:'https://www.dropbox.com/scl/fi/wn1d7id0kr9rys4qhhxpk/GKent1851Census.jpg?rlkey=0zynkmdcx05tc6lxjw6hm6a7b&raw=1',
-    narrow:'https://www.dropbox.com/scl/fi/8v2m2zn4fr62rhojuqk28/GKent1851CensusV.jpg?rlkey=pjgvlinyzqa91c4nwdmdawvxg&raw=1',
-    zoomed: ''}},
+    images:{wide:'https://www.dropbox.com/scl/fi/x64wbg7p7cppfzoh788xe/JKent1851Census01.jpg?rlkey=nlg2i8a3h8r50r3tlyhpu4ger&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/7o8kepxpypmuigct6ract/JKent1851CensusV01.jpg?rlkey=436t7rfjcmegt3z6d69qyl2zi&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/yo5x7xz6yfg5plo2o6v6p/JKent1851CensusVz01.jpg?rlkey=fr51u8ye7m34ojqtx4t7hxz8k&raw=1'}},
     {year:'1861',
     occupation: '1861 &#9474; John Kent 41, Agricultural Lab; Elizabeth 39, Wife; George 16, Ag Lab; MaryAnn 13; Reuben 10; Martha 7',
-    images:{wide:'https://www.dropbox.com/scl/fi/e0fcqzv2cbo6h8vpiasyn/GKent1861Census.jpg?rlkey=e492pwimet6ccyfym7aa2eew4&raw=1',
-    narrow:'https://www.dropbox.com/scl/fi/gd1481ww7vxgqc558sqj4/GKent1861CensusV.jpg?rlkey=t639u857dq10o2bh0f2zqco1p&raw=1',
-    zoomed: ''}} // Add a year - cyr
+    images:{wide:'https://www.dropbox.com/scl/fi/smwizf31j8aoblk5ogwer/JKent1861Census01.jpg?rlkey=s5m9ob1km3e6nwy4yq38t2r2u&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/jtd874fnnaz9gnkuyhkup/JKent1861CensusV01.jpg?rlkey=nbkwaqdhkl43pzqmnhk03sl0b&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/tojax7rw5ocw34qsgip9v/JKent1861CensusVz01.jpg?rlkey=1l4h2w9nurgryeyxw22tx5xsb&raw=1'}} // Add a year - cyr
     ]} // New address - cadd
     ],
     familyNotes: '', // include <p></p> // Add census info - csus
@@ -209,11 +209,11 @@ const families = [
         narrow:'https://www.dropbox.com/scl/fi/1x9op85k51rxldxyeewff/GKent1911CensusV.jpg?rlkey=5e6xrmv9xdphu1dmpkg1684sy&raw=1',
         zoomed:'https://www.dropbox.com/scl/fi/iatylo7z1tr2h8b9ucwat/GKent1911CensusVz.jpg?rlkey=66zyk7t42rsgbl64bpivqb9uz&raw=1'}}]}],
     familyNotes: "<p>Between 1871 and 1891, George and his family lived near Didcot, at that time\
-    a major centre of the railway industry. George's occupation was then shown as \'railway labourer\'.\
-    The Great Western Railway had reached the town around 30 years previously. Hagbourne Newtown was a settlement built for the \
+    a major centre of the railway industry. In the 1871 and 1881 censuses George's occupation was then shown as \'Railway Labourer\'.\
+    In 1891 it was \'Shed Labourer\'.\
+    The Great Western Railway had reached Didcot around 30 years previously. Hagbourne Newtown was a settlement built for the \
     rapidly expanding population.\
-    <a href='https://www.didcot.gov.uk/brief-history#heading-1047124'> (see Didcot brief history).</a>\
-    <\p>\
+    <a href='https://www.didcot.gov.uk/brief-history#heading-1047124'> (see Didcot brief history).</a><\p>\
     <p>After moving to Bath, his occupation was \'stationary engine driver\' (in the 1901 census) and \'engine driver gas works\'\
      (in 1911).",
     },

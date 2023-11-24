@@ -5,7 +5,7 @@ function setOutNotes(fIndex) {
 
     let thisFamily = families[fIndex];
 
-    document.getElementById("cs-family").innerHTML = "<b>&#11188;</b> " + thisFamily.familyName;
+    document.getElementById("cs-family").innerHTML = "<b>&#11009;</b> " + thisFamily.familyName;
     document.getElementById("cs-family").href = "./family-tree.html?family=" + fIndex;
     let censusText = "<h1>Censuses</h1>";
     let ncensuses = thisFamily.censuses.length; 
@@ -21,8 +21,9 @@ function setOutNotes(fIndex) {
                 + thisFamily.censuses[i].dox[j].images.wide;
             }
             else {
-                censusText += '<div class="open-census narrow-census" onclick="openCens(\''
-                + thisFamily.censuses[i].dox[j].images.narrow;
+                // document.getElementById("notes-zoom-layer").innerHTML = '<img src="' + thisFamily.censuses[i].dox[j].images.zoomed + '" width="100%"/>';
+                censusText += '<div class="open-census narrow-census" onclick="narrowOpenCens(\''
+                + thisFamily.censuses[i].dox[j].images.narrow + '\',\'' + thisFamily.censuses[i].dox[j].images.zoomed;
             }
             censusText += '\',\'' + thisFamily.censuses[i].dox[j].occupation + '\')">';
             censusText += thisFamily.censuses[i].dox[j].year + '</div>';
@@ -31,18 +32,31 @@ function setOutNotes(fIndex) {
     }
     censusText += '<div class="additional-notes">' + thisFamily.familyNotes + '</div>';
     document.getElementById("cs-txt").innerHTML = censusText;
-
-    //  document.getElementById("cs-address").innerHTML = thisFamily.censuses[0].address;
 }
 
 // ========= controls for the census sliding panel ===========
 function openCens(message, details) {
+    document.getElementById("census-details").innerHTML = details;
+    document.getElementById("imgSpace").innerHTML = '<img src="' + message + '" width="100%" />';
+    
+    document.getElementById("census-pannel").style.width = "100%"; 
+}
+function narrowOpenCens(message, thinMessage, details) {
     const bar = document.getElementById("census-details");
     bar.innerHTML = details;
-    const space = document.getElementById("imgSpace");
-    // space.innerHTML = '<img id="censpic" ondblclick="zm()" src="https://www.dropbox.com/'+ message + '" width="100%" />';
-    space.innerHTML = '<img src="' + message + '" width="100%" />';
+    document.getElementById("imgSpace").innerHTML = '<img id="narrow_pic" src="' + message + '" width="100%" ondblclick="censZoom()"/>\
+    <img id="thin_pic" src="' + thinMessage + '" width="0%" ondblclick="censUnzoom()"/>';
+    
     document.getElementById("census-pannel").style.width = "100%"; 
+}
+function censZoom() {
+    document.getElementById("narrow_pic").style.width = "0%";
+    document.getElementById("thin_pic").style.width = "100%";
+}
+function censUnzoom() {
+    document.getElementById("thin_pic").style.width = "0%";
+    document.getElementById("narrow_pic").style.width = "100%";
+    
 }
 function closeCens() {
     document.getElementById("census-pannel").style.width = "0";

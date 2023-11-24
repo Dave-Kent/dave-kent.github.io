@@ -183,6 +183,19 @@ figcaption {
   right: 0; */
 }
 /* ========================================================== */
+#notes-zoom-layer {
+  /* border: 2px dashed red; */
+  width:100vw;
+  /*height: 0vh;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+  overflow-y: auto;
+}
 .notes-header {
   height: 17vh;
   
@@ -322,13 +335,7 @@ report that are relevant to us */
   color: darkgreen;
   cursor: pointer;
 }
-#census-zm {
-  position: absolute;
-  z-index: 6;
-  width: 100%;
-  height: 0;
-  background-color: red;
-}
+
 /* === For the wider screen, the sidebar is fixed === */
 @media screen and (min-width: 1015px) {
   .open-switch {
