@@ -5,7 +5,7 @@ function setOutNotes(fIndex) {
 
     let thisFamily = families[fIndex];
 
-    document.getElementById("cs-family").innerHTML = "<b>&#11009;</b> " + thisFamily.familyName;
+    document.getElementById("cs-family").innerHTML = "&#9668; " + thisFamily.familyName;
     document.getElementById("cs-family").href = "./family-tree.html?family=" + fIndex;
     let censusText = "<h1>Censuses</h1>";
     let ncensuses = thisFamily.censuses.length; 
@@ -21,7 +21,6 @@ function setOutNotes(fIndex) {
                 + thisFamily.censuses[i].dox[j].images.wide;
             }
             else {
-                // document.getElementById("notes-zoom-layer").innerHTML = '<img src="' + thisFamily.censuses[i].dox[j].images.zoomed + '" width="100%"/>';
                 censusText += '<div class="open-census narrow-census" onclick="narrowOpenCens(\''
                 + thisFamily.censuses[i].dox[j].images.narrow + '\',\'' + thisFamily.censuses[i].dox[j].images.zoomed;
             }

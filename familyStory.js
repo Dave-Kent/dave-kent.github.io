@@ -62,7 +62,7 @@ const families = [
     occupation: '1901 &#9474; Albert Kent 28, General Labourer; Mary 27, Wife; Dorothy 9 months',
     images:{wide:'https://www.dropbox.com/scl/fi/xgbhkj2jpw6tfic9atbuo/Census1901AKent01.jpg?rlkey=2nbkhjyx4k2tv54bcyyznr8y3&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/zhawn8mwvvm2qsrq62hs9/Census1901AKentV01.jpg?rlkey=6l6ssmanwl3w60ssvd9y88hx2&raw=1',
-    zoomed: 'https://www.dropbox.com/scl/fi/690y4p08h9thvzitmip1o/Census1901AKentVz01.jpg?rlkey=medol7w44emk2zpy2uai29m18&raw=1'}},
+    zoomed: 'https://www.dropbox.com/scl/fi/cf7z9te125h5hqvee92ug/Census1901AKentVz02.jpg?rlkey=tjf2gjl83git711mtrcyyqjzz&raw=1'}},
     {year:'1911',
     occupation: '1911 &#9474; Albert Kent 38, Main Layer Gas Works; Mary 37 wife; Dorothy Kate 10', // include &#9474; after the year
     images:{wide:'https://www.dropbox.com/scl/fi/ehe0r7g8t5obtgfsm1udp/AlbertKent1911rg14_14665_0545_03.jpg?rlkey=4tplqhqz8k09sbxmgkfgeqods&raw=1',
