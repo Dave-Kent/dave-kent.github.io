@@ -19,8 +19,11 @@ body {
 }
 p {
   max-width: 65ch;
-  margin: 1rem;
+  /* margin: 1rem; */
   font-size: 1.2rem;
+}
+article {
+  padding: 1rem;
 }
 /* hr = horizontal line (not touching the sides) */
 hr {
@@ -30,6 +33,12 @@ hr {
 figcaption {
   text-align: center;
   font-family: sans-serif;
+}
+blockquote {
+  max-width: 65ch;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 .header {
@@ -111,6 +120,27 @@ figcaption {
   transition-property: opacity;
   transition-duration: 1s;
  } 
+
+ /* ===== Layout for half width images ====== */
+ .dual-image {
+  width: 96%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  margin: auto;
+ }
+ .half-width-figure {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  min-width: 300px;
+  margin: auto;
+  /* max-height: 30vh; */
+  object-fit: contain;
+ }
  
 .bathblitz-link {
   color: white;
@@ -356,6 +386,7 @@ report that are relevant to us */
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
     /* height: 170vh; */
   }
 }
