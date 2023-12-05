@@ -38,7 +38,7 @@ blockquote {
   max-width: 65ch;
   padding: 1rem;
   font-size: 1.2rem;
-  font-style: italic;
+  /* font-style: italic; */
   background-color: lightblue;
   border-radius: 8px;
   border: 2px solid rgb(106, 159, 177);
@@ -46,6 +46,10 @@ blockquote {
 blockquote footer {
   font-size: 1rem;
   font-family: sans-serif;
+}
+
+q {
+  font-style: italic;
 }
 
 .header {
@@ -157,7 +161,8 @@ blockquote footer {
 }
 
 .tom-medal { 
-  padding: 15px;
+  width: 70%;
+  max-width: 400px;
 }
 
 /* =====================Sliding NAV panel================== */
