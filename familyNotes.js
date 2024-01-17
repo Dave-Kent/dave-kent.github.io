@@ -4,32 +4,45 @@ function setOutNotes(fIndex) {
     let wide = window.matchMedia("(orientation: landscape)");
 
     let thisFamily = families[fIndex];
-
+    
     document.getElementById("cs-family").innerHTML = "&#9668; " + thisFamily.familyName;
     document.getElementById("cs-family").href = "./family-tree.html?family=" + fIndex;
-    let censusText = "<h1>Censuses</h1>";
-    let ncensuses = thisFamily.censuses.length; 
-    for(i=0; i<ncensuses; i++) {
-        censusText += '<div class="censuses-table">\
-         <a class="census-address" href="' + thisFamily.censuses[i].gmap + '">'
-          + thisFamily.censuses[i].address + '</a>';
-        let ndox = thisFamily.censuses[i].dox.length;
-        for(j=0; j<ndox; j++) {
+    
+    let censusText = '<div class="additional-notes">' + thisFamily.familyNotes + '</div>';
+    // censusText is the name for the whole main contents of the 'Notes' page 
+
+    let mRecords = thisFamily.records.length; // nRecods is the loop count index
+    
+    for(n=0;n<mRecords;n++){
+    
+        if (thisFamily.records[n]==='censuses'){
+            censusText += "<h1>Censuses</h1>";
+            let ncensuses = thisFamily.censuses.length; 
+            for(i=0; i<ncensuses; i++) {
+                censusText += '<div class="censuses-table">\
+                <a class="census-address" href="' + thisFamily.censuses[i].gmap + '">'
+                + thisFamily.censuses[i].address + '</a>';
+                let ndox = thisFamily.censuses[i].dox.length;
+                for(j=0; j<ndox; j++) {
+                    
+                    if (wide.matches) {
+                        censusText += '<div class="open-census wide-census" onclick="openCens(\''
+                        + thisFamily.censuses[i].dox[j].images.wide;
+                    }
+                    else {
+                        censusText += '<div class="open-census narrow-census" onclick="narrowOpenCens(\''
+                        + thisFamily.censuses[i].dox[j].images.narrow + '\',\'' + thisFamily.censuses[i].dox[j].images.zoomed;
+                    }
+                    censusText += '\',\'' + thisFamily.censuses[i].dox[j].occupation + '\')">';
+                    censusText += thisFamily.censuses[i].dox[j].year + '</div>';
+                }
+                censusText += '</div>';
+            }
             
-            if (wide.matches) {
-                censusText += '<div class="open-census wide-census" onclick="openCens(\''
-                + thisFamily.censuses[i].dox[j].images.wide;
-            }
-            else {
-                censusText += '<div class="open-census narrow-census" onclick="narrowOpenCens(\''
-                + thisFamily.censuses[i].dox[j].images.narrow + '\',\'' + thisFamily.censuses[i].dox[j].images.zoomed;
-            }
-            censusText += '\',\'' + thisFamily.censuses[i].dox[j].occupation + '\')">';
-            censusText += thisFamily.censuses[i].dox[j].year + '</div>';
         }
-        censusText += '</div>';
-    }
-    censusText += '<div class="additional-notes">' + thisFamily.familyNotes + '</div>';
+        // if (thisFamily.records[n]==='potos'){}
+    } // end records loop
+    
     document.getElementById("cs-txt").innerHTML = censusText;
 }
 

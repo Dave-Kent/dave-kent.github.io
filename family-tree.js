@@ -1,20 +1,6 @@
 
 //       Family Tree View
 //       ================
-// Dimensions: .person divs ?px wide 60px high
-// short verticals 70px, long verticals 200px
-
-// array of families data. See VSCode snippets:
-// 'fm' calls familyStory-familiesArray:
-// 'kd' familyStory-addChild
-// POSITION THE CURSOR NEXT TO THE LAST BRACE }
-
-
-
-
-// ==================== End of families array =========================
-
-// ====================================================================
 // Array of messages to show in the info panel
 var information = ['Where a name-tag in the diagram is highlighted\
  <span class="with-border">like this</span> a further branch can be reached \
@@ -23,9 +9,8 @@ var information = ['Where a name-tag in the diagram is highlighted\
  &#9998; notes</span> provides a link.',
  ]
 var infoIndex = 0;
-// draws a vertical line down from x,y position by h pixels
-// =====================================================================
 
+// draws a vertical line down from x,y position by h pixels
 function shortVertical(x,y,h) 
 {
     return '<div class="vert"style="height:'+h+'px;top:'
@@ -88,31 +73,16 @@ function tree(familyIndex)
     
     const nkids = families[familyIndex].kids.length; // number of children 
 
-    
-    // if there is a census image available, display the 'census link' tab, with the appropriate href
-    if (families[familyIndex].census)
+    if (families[familyIndex].records[0]!=='empty')
     {
-        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> !!!!!!!!! CHANGE THIS TO SUIT THE CENSUSPANEL SOLUTION
-        // setOutNotes(familyIndex);
         // display the tab and text separately
         showCensusLink();
-        // ***************************************************************************
-    //    let linkId = document.getElementById("census-link");
-    // linkId.href = "./family-notes.html?family=" + famlyIndex;
+        // 'census-link' is now the 'notes' tab
         document.getElementById("census-link").href = "./family-notes.html?family=" + familyIndex;
-    //    linkId.style.zIndex = "1";
-    //    linkId.style.backgroundColor = "rgb(99, 99, 143)";
-
-        //  CALL A FUNCTION TO BUILD THE CENSUS-PANEL - CURRENTLY HIDDEN (ZERO HEIGHT)
-
-        //linkId.onclick = censusPage('+familyIndex+'); // onclick="censusPage(10)"; // censusPage('+familyIndex+')
-        //console.log("reached "+familyIndex);
-        // set up the anchor
-        //linkId.href = destination;
     }
+
     // Loops to set out the children - START
     // The tree options depend on the width of the viewport:
-
     let allTheKids = '';
     if (fullWidth > (nkids * 210 + 20)) // wide screen, all children in a row.
     {
@@ -149,7 +119,6 @@ function tree(familyIndex)
         
         let space = 30;
         if (fullWidth<430){space=12}; // move parent divs closer if space is tight
-        // console.log("halfWidth: "+halfWidth+" fullWidth: "+fullWidth)
         return parents(halfWidth,(halfHeight-100),space,familyIndex) + allTheKids + crossPiece;
     }
     else // narrowest screen, children ranked vertically
@@ -182,19 +151,16 @@ function tree(familyIndex)
 function klik(person,thisFamily)
 {
     const vector = families[thisFamily][person.id].vektr;
- 
+    // if the vektr value is 99, this shows that an individual is not linked to another family unit
     if(vector === 99) // show the NOT AVAILABLE message
     {  
         showCover(0.3);
         document.getElementById("ninetynine-message").style.top = "30vh";  
     }
-    else // get the next tree
+    else // get the tree for the next family
     {
         hideCensusLink();
-        // let linkId = document.getElementById("census-link");
-        // linkId.style.backgroundColor = "white"; 
-        // linkId.style.zIndex = "-1";
-
+        
         // shift mainPanel up and change the contents
         $("#mainPanel").animate({top: '-80vh'}, 600,function(){$("#mainPanel").html(tree(vector))});
         // shift mainPanel back down
@@ -238,6 +204,7 @@ function hideCensusLink() {
 }
 
 function ninetynineBack()
+// closes 99 message panel
 {
     document.getElementById("ninetynine-message").style.top = "-100px";
     hideCover();
@@ -253,37 +220,10 @@ function openInfo()
     document.getElementById("border-info").style.right = "20px";
 }
 function infoBack()
+// closes info panel
 {
     document.getElementById("border-info").style.right = "-90%";
     hideCover();
-}
-
-// changes from mainPanel to censusPanel
-function censusPage() {
-    console.log("reached fn censusPage ");
-    hideCensusLink();
-    let mP = document.getElementById("mainPanel");
-    mP.style.opacity="0";
-    setTimeout(function() {
-        mP.style.height="0";
-    }, 1000);
-    let cP = document.getElementById("censusPanel");
-    cP.style.height="100%";
-    cP.style.opacity="1";
-    
-}
-
-// changes from censusPanel to mainPanel
-function treeReturn() {
-    let cP = document.getElementById("censusPanel");
-    cP.style.opacity="0";
-    setTimeout(function() {
-        cP.style.height="0";
-    }, 1000);
-    let mP = document.getElementById("mainPanel");
-    mP.style.height="100%";
-    mP.style.opacity="1";
-    showCensusLink();
 }
 
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
@@ -293,6 +233,5 @@ $(document).ready(function(){
     // by the query string, found by document.location.href, then split off
     // (at the equals sign) into an array (index 1)
     $("#mainPanel").html(tree(document.location.href.split('=')[1]));
-    
 }); // end of document ready function
 
