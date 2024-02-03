@@ -16,6 +16,11 @@ function setOutNotes(fIndex) {
     for(n=0;n<mRecords;n++){
     
         if (thisFamily.records[n]==='censuses'){
+            // let classSpace = document.getElementById("imgSpace"); // = "censusSpace";
+            // if (classSpace.className == "photoSpace") {
+            //     classSpace.className = "censusSpace";
+            // }
+            // document.getElementById("imgSpace").className = "censusSpace";
             censusText += "<h1>Censuses</h1>";
             let ncensuses = thisFamily.censuses.length; 
             for(i=0; i<ncensuses; i++) {
@@ -40,7 +45,22 @@ function setOutNotes(fIndex) {
             }
             
         }
-        // if (thisFamily.records[n]==='potos'){}
+        if (thisFamily.records[n]==='photos'){
+            
+            // let classSpace = document.getElementById("imgSpace");
+            // if (classSpace.className == "censusSpace") {
+            //     classSpace.className = "photoSpace";
+            // }
+            censusText += "<h1>Gallery</h1>";
+            let nphotos = thisFamily.photos.length;
+            for(i=0; i<nphotos; i++) {
+                //censusText += '<div class="photos-table" onclick= "openPhoto(\'' + thisFamily.photos[i].picture + '\',\'' + thisFamily.photos[i].caption +'\')">'
+                censusText += '<div class="photos-table" onclick= "openPhoto(\'' + fIndex + '\',\'' + i+'\')">'
+                censusText += thisFamily.photos[i].caption + 
+                '<img class="photo-thumb" src="'+ thisFamily.photos[i].thumbnail+'"/>'+'</div>';
+            }
+            
+        }
     } // end records loop
     
     document.getElementById("cs-txt").innerHTML = censusText;
@@ -49,14 +69,18 @@ function setOutNotes(fIndex) {
 // ========= controls for the census sliding panel ===========
 function openCens(message, details) {
     document.getElementById("census-details").innerHTML = details;
-    document.getElementById("imgSpace").innerHTML = '<img src="' + message + '" width="100%" />';
+    let space = document.getElementById("imgSpace");
+    space.className = "censusSpace";
+    space.innerHTML = '<img src="' + message + '" width="100%" />';
     
     document.getElementById("census-pannel").style.width = "100%"; 
 }
 function narrowOpenCens(message, thinMessage, details) {
     const bar = document.getElementById("census-details");
     bar.innerHTML = details;
-    document.getElementById("imgSpace").innerHTML = '<img id="narrow_pic" src="' + message + '" width="100%" ondblclick="censZoom()"/>\
+    let space = document.getElementById("imgSpace");
+    space.className = "censusSpace";
+    space.innerHTML = '<img id="narrow_pic" src="' + message + '" width="100%" ondblclick="censZoom()"/>\
     <img id="thin_pic" src="' + thinMessage + '" width="0%" ondblclick="censUnzoom()"/>';
     
     document.getElementById("census-pannel").style.width = "100%"; 
@@ -73,11 +97,45 @@ function censUnzoom() {
 function closeCens() {
     document.getElementById("census-pannel").style.width = "0";
 }
-
+// FUNCTION OPENPHOTO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+function openPhoto(famI,photoI) {
+    // This opens the sliding panel
+    document.getElementById("census-pannel").style.width = "100%"; 
+    document.getElementById("census-details").innerHTML = families[famI].photos[photoI].caption;
+    let space = document.getElementById("imgSpace");
+    space.innerHTML = '<img id="gallery-photo" src="' + families[famI].photos[photoI].picture + '" />';
+    // console.log('space width = '+ window.innerWidth + ' space height = ' + space.offsetHeight );
+    // console.log('space ratio = ' + (window.innerWidth/space.offsetHeight) + ' photo ratio ' + families[famI].photos[photoI].ratio);
+    if ((window.innerWidth/space.offsetHeight) > families[famI].photos[photoI].ratio) {
+        console.log('taller picture')
+        space.className = "photoSpace";
+        document.getElementById("gallery-photo").style.height="100%";
+    }
+    else {
+        console.log('wider picture')
+        space.className = "photoSpaceH";
+        document.getElementById("gallery-photo").style.width="100%";
+    }
+}
+// function OLDopenPhoto(photo,text) {
+//     document.getElementById("census-pannel").style.width = "100%"; 
+//     document.getElementById("census-details").innerHTML = text;
+//     let space = document.getElementById("imgSpace");
+//     space.innerHTML = '<img id="gallery-photo" src="' + photo + '" />';
+//     if ((window.innerWidth/space.offsetHeight) < photo.ratio) {
+        
+//         space.className = "photoSpace";
+//         document.getElementById("gallery-photo").style.height="75%";
+//     }
+//     else {
+//         space.className = "photoSpaceH";
+//         document.getElementById("gallery-photo").style.width="100%";
+//     }  
+// }
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
 
 $(document).ready(function(){
-    // the first function to run is tree(). The first tree to load is given 
+    // the first function to run is setOutNotes(). The famiy index is given 
     // by the query string, found by document.location.href, then split off
     // (at the equals sign) into an array (index 1)
     $("#censusPanel").html(setOutNotes(document.location.href.split('=')[1]));

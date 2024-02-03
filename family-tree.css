@@ -28,6 +28,7 @@
     background-color: rgb(99, 99, 143);
     padding: 0 10px 0 10px;
     border-radius: 8px;
+    white-space: nowrap;
 }
 
 

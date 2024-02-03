@@ -4,7 +4,7 @@
 const families = [
     
     { // Family 0
-    records : ['empty'],
+    records : ['photos'],
     dad : { name: "Herbert West", dates: "1877-1958", vektr:6},
     mum : { name: "Jessie Smith", dates: "1882-1973", vektr:7},
     kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
@@ -13,7 +13,13 @@ const families = [
     { name: "Cyril Reginald", dates: "1913-2002", vektr:99},
     { name: "Phyllis Mary", dates: "1916-1991", vektr:99},
     { name: "Joan Olive", dates: "1916-1981", vektr:1}//NEXT kid - kd
-    ] // Add census info - csus
+    ], // Add census info - csus
+    photos: [{picture:'https://www.dropbox.com/scl/fi/cpbnh3jau8ljb7pvn9jx7/westsLyncombrHl.jpg?rlkey=r6t3uojdogmk87wa9vbog11cm&raw=1',
+    ratio:1.5,
+    caption:'1940s West family at 73 Lyncombe Hill',
+    thumbnail:'https://www.dropbox.com/scl/fi/7yng3ewwyr4hf5i13kw33/westsLync_thumb.jpg?rlkey=ayfvuf3celjjkm3yx0q2z2mfo&raw=1',
+    alt:'West family at Lyncombe Hill'}],
+    familyName: 'Herbert &#38; Jessie West family', //use &amp; between dad and mum names
     },
     { // Family 1
     records : ['empty'],
@@ -99,7 +105,7 @@ const families = [
     familyNotes: '', // include <p></p> // Add census info - csus
     },
     { // Family 7
-    records : ['censuses'],
+    records : ['censuses','photos'],
         
     dad : { name: "William Smith", dates: "1851-19??", vektr:99},
     mum : { name: "Martha Hasler", dates: "1852-1935", vektr:8},
@@ -128,9 +134,14 @@ const families = [
     in 1882.</p><p>After leaving the Army, the family moved to Bath and in the 1891 census his occupation is shown as Carpenter at the \
     <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> where wife Martha Louisa was employed \
     as a nurse.</p><p>The next census (1901) shows that the couple were then licencees of the Portland Arms, Bath. William was still a carpenter and \
-    Jessie\'s occupation was Dressmaker</p>\
-    <figure class="notes-fig"><img class="notes-pic" src="https://www.dropbox.com/scl/fi/3jxzhb7up0111taukr7th/The_Portland_Arms01.jpg?rlkey=1qgn7ai1b5i12nb0j0nss7fyc&raw=1"\
-    alt="Portland Arms, Bath 1947"><figcaption>The Portland Arms, photo 1947, demolished 1969</figcaption></figure>', // include <p></p>
+    Jessie\'s occupation was Dressmaker</p>',// include <p></p>
+    photos:[{picture:'https://www.dropbox.com/scl/fi/3jxzhb7up0111taukr7th/The_Portland_Arms01.jpg?rlkey=1qgn7ai1b5i12nb0j0nss7fyc&raw=1',
+    ratio:0.793,
+    caption:'The Portland Arms, photograph 1947, demolished 1969.',
+    thumbnail:'https://www.dropbox.com/scl/fi/9paai8gnv8eh28yc1waua/PortlandArmsThumb.jpg?rlkey=irgkbve6l9vfrzbd39u25g8ot&raw=1',
+    alt:"Portland Arms, Bath 1947"}
+    ]
+    
     },
     { // Family 8
     records : ['empty'],
