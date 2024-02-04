@@ -71,9 +71,9 @@ const families = [
     zoomed: 'https://www.dropbox.com/scl/fi/cf7z9te125h5hqvee92ug/Census1901AKentVz02.jpg?rlkey=tjf2gjl83git711mtrcyyqjzz&raw=1'}},
     {year:'1911',
     occupation: '1911 &#9474; Albert Kent 38, Main Layer Gas Works; Mary 37 wife; Dorothy Kate 10', // include &#9474; after the year
-    images:{wide:'https://www.dropbox.com/scl/fi/ehe0r7g8t5obtgfsm1udp/AlbertKent1911rg14_14665_0545_03.jpg?rlkey=4tplqhqz8k09sbxmgkfgeqods&raw=1',
-    narrow:'https://www.dropbox.com/scl/fi/rlnu1qk4vuolpcuz50kvj/AlbertKent1911rg14_14665_0545_03V.jpg?rlkey=xo7jeouevxm8ezxtgwn9rvws3&raw=1',
-    zoomed: 'https://www.dropbox.com/scl/fi/1uhqkdxgbytvdvt7y16fz/AlbertKent1911rg14_14665_0545_03Vz.jpg?rlkey=bd3004apevloot99notfx3t3k&raw=1'}} // Add a year - cyr
+    images:{wide:'https://www.dropbox.com/scl/fi/0f5trbpt2w2d9l3v0x7vo/Census1911AlbertKent.jpg?rlkey=je5fg6ju9tddtknu1kl4rpe77&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/15yiw5ijmqu374zeql17q/Census1911AlbertKentV.jpg?rlkey=19kumrlzqy8a0h8jcx7p92lxl&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/10au7ijt7lyv9xera7x4q/Census1911AlbertKentVz.jpg?rlkey=jn1wpq62yc0kvycle97don84s&raw=1'}} // Add a year - cyr
     ]} // New address - cadd
     ],
     familyNotes: '', // include <p></p> // Add census info - csus
