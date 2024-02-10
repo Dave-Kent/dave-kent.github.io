@@ -4,7 +4,7 @@
 const families = [
     
     { // Family 0
-    records : ['photos'],
+    records : ['photos','censuses'],
     dad : { name: "Herbert West", dates: "1877-1958", vektr:6},
     mum : { name: "Jessie Smith", dates: "1882-1973", vektr:7},
     kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
@@ -16,11 +16,37 @@ const families = [
     ], // Add census info - csus
     photos: [{picture:'https://www.dropbox.com/scl/fi/cpbnh3jau8ljb7pvn9jx7/westsLyncombrHl.jpg?rlkey=r6t3uojdogmk87wa9vbog11cm&raw=1',
     ratio:1.5,
-    caption:'1940s West family at 73 Lyncombe Hill',
+    title:'1940s West family at 73 Lyncombe Hill',
+    caption:'1940s West family at 73 Lyncombe Hill, L to R: Rear - Herbert, Jessie. Front - Joyce, Joan, (unknown), Phyllis, Doris, (child) Bridget Ann Pearsall.',
     thumbnail:'https://www.dropbox.com/scl/fi/7yng3ewwyr4hf5i13kw33/westsLync_thumb.jpg?rlkey=ayfvuf3celjjkm3yx0q2z2mfo&raw=1',
     alt:'West family at Lyncombe Hill'}],
     familyName: 'Herbert &#38; Jessie West family', //use &amp; between dad and mum names
-    },
+    familyNotes: '<p>Herbert and Jessie were married in 1906 at St Swithin\'s Church, Walcot, Bath (Jessie\' local parish church, when she lived at the \
+    Portland Arms, her parent\'s pub).</p><p>By 1911, they were living in the corner shop in South View Road, East Twerton and Jessie\'s mother, Martha, \
+    was shown in the Post Office directory for 1912 as the proprietor of the shop. Herbert was employed as a machine tool operator at the Stothert \
+    and Pitt works, a short distance away.</p><p>Martha died in 1935 and the family left the shop and moved to 73 Lyncombe Hill. \
+    At the start of the second world war, a population register was made <a href="https://blog.nationalarchives.gov.uk/1939-register-census-census/">(see \
+    National Archives blog)</a></p>' // include <p></p> // Add census info - csus
+    ,
+    censuses:[{address:'28,South View Road, South Twerton',
+    gmap:'https://maps.app.goo.gl/gFUtgMhJAL7kCKYg7',
+    dox:[{year:'1912 PO Directory',
+    occupation: '1912 Post Office Directory - 28 South View Road - Smith Mrs.M.A. grocer etc.',
+    images:{wide:'https://www.dropbox.com/scl/fi/6ttw0xtq895h70v4qjdek/POdirectory1912.png?rlkey=ptc0ryxudip4s4hst3twac8qq&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/xwhn6v1x7gvgo905z1j88/POdirectory1912V.png?rlkey=mbwclvhmg3251d3q4ij21m4k5&raw=1',
+    zoomed: ''}} // Add a year - cyr
+    ]},
+    {address:'73,Lyncombe Hill, Bath',
+    gmap:'https://maps.app.goo.gl/nHzeZkUWRx8ytdEJ9',
+    dox:[{year:'1939 Register',
+    occupation:'1939 Register - 73 Lyncombe Hill - West Herbert W. Engineers Threading Machinist, West Jessie A.A. Unpaid D.Duties, West Phyllis M. Private Sec to Manuf. ? \
+    West Joan O. Physicians Secretary, Baker Ann Incapacitated',
+    images:{wide:'https://www.dropbox.com/scl/fi/af8y80jhcr3z9ba8oh0xs/1939register.jpg?rlkey=1xpi6i1owsj64w71ir2p2u9y8&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/af8y80jhcr3z9ba8oh0xs/1939register.jpg?rlkey=1xpi6i1owsj64w71ir2p2u9y8&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/ww1nrvn475bfr2f0il1o9/1939registerCropped.jpg?rlkey=3bv1kb74enheyr7zm24oosrdd&raw=1'}} // Add a year - cyr
+    ]} // New address - cadd
+    ],
+},
     { // Family 1
     records : ['empty'],
     dad : { name: "Charles Kent", dates: "1911-1989", vektr:5},
@@ -64,12 +90,12 @@ const families = [
     familyName: 'Albert &#38; Mary Kent family', //use &amp; between dad and mum names
     censuses:[{address:'10 Ayr Street, Twerton, Bath',
     gmap:'https://maps.app.goo.gl/8GVeXvyN74WwPpuh8',
-    dox:[{year:'1901',
+    dox:[{year:'1901 Census',
     occupation: '1901 &#9474; Albert Kent 28, General Labourer; Mary 27, Wife; Dorothy 9 months',
     images:{wide:'https://www.dropbox.com/scl/fi/xgbhkj2jpw6tfic9atbuo/Census1901AKent01.jpg?rlkey=2nbkhjyx4k2tv54bcyyznr8y3&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/zhawn8mwvvm2qsrq62hs9/Census1901AKentV01.jpg?rlkey=6l6ssmanwl3w60ssvd9y88hx2&raw=1',
     zoomed: 'https://www.dropbox.com/scl/fi/cf7z9te125h5hqvee92ug/Census1901AKentVz02.jpg?rlkey=tjf2gjl83git711mtrcyyqjzz&raw=1'}},
-    {year:'1911',
+    {year:'1911 Census',
     occupation: '1911 &#9474; Albert Kent 38, Main Layer Gas Works; Mary 37 wife; Dorothy Kate 10', // include &#9474; after the year
     images:{wide:'https://www.dropbox.com/scl/fi/0f5trbpt2w2d9l3v0x7vo/Census1911AlbertKent.jpg?rlkey=je5fg6ju9tddtknu1kl4rpe77&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/15yiw5ijmqu374zeql17q/Census1911AlbertKentV.jpg?rlkey=19kumrlzqy8a0h8jcx7p92lxl&raw=1',
@@ -95,7 +121,7 @@ const families = [
     familyName: 'Walter &#38; Emma West family', //use &amp; between dad and mum names
     censuses:[{address:'23 Fieldings Road, Twerton, Bath',
     gmap:'https://maps.app.goo.gl/ZMQka9ttxYea981z8',
-    dox:[{year:'1901',
+    dox:[{year:'1901 Census',
     occupation: '1901 &#9474; Walter West 46, Blacksmiths Labourer; Emma 46, Wife; James 20, Fitter Clothing Factory; Thomas 18, Labourer Iron Foundery; + girls 12,9, boy 6',
     images:{wide:'https://www.dropbox.com/scl/fi/x9czjb9v68bnbkfktd714/Census1901WWest01.jpg?rlkey=c7x6z5o9cdkrgo5t9jw9o354a&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/orc9u5mo0jbw2by9tbi53/Census1901WWestV01.jpg?rlkey=gki5jprhpt3eyrnu42rytquc5&raw=1',
@@ -114,7 +140,7 @@ const families = [
     familyName: 'William &amp; Martha Louisa Smith family', //use &amp; between dad and mum names
     censuses:[{address:'Somerset Industrial Home for Boys, Bath',
     gmap:'https://maps.app.goo.gl/c7k6ctM4kk3wvq9N7',
-    dox:[{year:'1891',
+    dox:[{year:'1891 Census',
     occupation: '1891 &#9474; William Smith 40, Carpenter; Louisa 38, Nurse; Jessie 9, Scholar',
     images:{wide:'https://www.dropbox.com/scl/fi/l7xznsdav3l9wfle3sz48/Census1891WSmith.jpg?rlkey=zqwjj4s0khe1htdrwmlon52y1&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/gi4jfkeenn2arhg7n1ro2/Census1891WSmithV.jpg?rlkey=myoqaq4llbvja6e0qivz8emtj&raw=1',
@@ -122,7 +148,7 @@ const families = [
     ]},
     {address:'12a Portland Place, Bath',
     gmap:'https://maps.app.goo.gl/AChpVU1iQi4ewmGz9',
-    dox:[{year:'1901',
+    dox:[{year:'1901 Census',
     occupation: '1901 &#9474; William Smith 50, Carpenter &amp; Licenced Victualler; Louisa 49, Pub own account; Jessie A. 19, Dressmaker',
     images:{wide:'https://www.dropbox.com/scl/fi/xfvj77b74ymx7bl8or11i/Census1901WSmith.jpg?rlkey=zynlgyx19t3bhxdv8l8w9lmoe&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/m6bnb30twlnxsghk4ddh0/Census1901WSmithV.jpg?rlkey=wq9s90ozkjnzba00nffvluz3y&raw=1',
@@ -137,7 +163,8 @@ const families = [
     Jessie\'s occupation was Dressmaker</p>',// include <p></p>
     photos:[{picture:'https://www.dropbox.com/scl/fi/3jxzhb7up0111taukr7th/The_Portland_Arms01.jpg?rlkey=1qgn7ai1b5i12nb0j0nss7fyc&raw=1',
     ratio:0.793,
-    caption:'The Portland Arms, photograph 1947, demolished 1969.',
+    title:'The Portland Arms, photograph 1947, demolished 1969.',
+    caption:'The Portland Arms, photograph 1947, demolished 1969. William and Martha Smith were licencees at the start of the twentieth century.',
     thumbnail:'https://www.dropbox.com/scl/fi/9paai8gnv8eh28yc1waua/PortlandArmsThumb.jpg?rlkey=irgkbve6l9vfrzbd39u25g8ot&raw=1',
     alt:"Portland Arms, Bath 1947"}
     ]
@@ -165,12 +192,12 @@ const families = [
     familyName: 'John &#38; Elizabeth Kent family', //use &amp; between dad and mum names
     censuses:[{address:'Old Moor, Milton, Berkshire',
     gmap:'https://goo.gl/maps/jGsTm1gXRZo2dM8C7',
-    dox:[{year:'1851',
+    dox:[{year:'1851 Census',
     occupation: '1851 &#9474; John Kent 33, Agricultural Lab; Elizabeth 29, Wife; George 6; MaryAnn 3; Reuben 4M',
     images:{wide:'https://www.dropbox.com/scl/fi/x64wbg7p7cppfzoh788xe/JKent1851Census01.jpg?rlkey=nlg2i8a3h8r50r3tlyhpu4ger&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/7o8kepxpypmuigct6ract/JKent1851CensusV01.jpg?rlkey=436t7rfjcmegt3z6d69qyl2zi&raw=1',
     zoomed: 'https://www.dropbox.com/scl/fi/yo5x7xz6yfg5plo2o6v6p/JKent1851CensusVz01.jpg?rlkey=fr51u8ye7m34ojqtx4t7hxz8k&raw=1'}},
-    {year:'1861',
+    {year:'1861 Census',
     occupation: '1861 &#9474; John Kent 41, Agricultural Lab; Elizabeth 39, Wife; George 16, Ag Lab; MaryAnn 13; Reuben 10; Martha 7',
     images:{wide:'https://www.dropbox.com/scl/fi/smwizf31j8aoblk5ogwer/JKent1861Census01.jpg?rlkey=s5m9ob1km3e6nwy4yq38t2r2u&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/jtd874fnnaz9gnkuyhkup/JKent1861CensusV01.jpg?rlkey=nbkwaqdhkl43pzqmnhk03sl0b&raw=1',
@@ -192,17 +219,17 @@ const families = [
     familyName : "George &amp; Mary Ann Kent family",
     censuses:[{address:"Hagbourne Newtown, Didcot", 
     gmap:"https://maps.app.goo.gl/TRnEfAqipQMQWz8EA",
-    dox:[{year:"1871",
+    dox:[{year:"1871 Census",
     occupation:"1871 &#9474; George Kent 25, Railway Labourer - Mary 23, Wife - Henry 1",
     images:{wide:"https://www.dropbox.com/scl/fi/lv4eq07ktsb976tdtzrne/GKent1871Census.jpg?rlkey=fcmak4znbfl9pvkvir79l09fs&raw=1",
     narrow:"https://www.dropbox.com/scl/fi/aig0f32b7oxac0zum72jb/GKent1871CensusV.jpg?rlkey=ldr5v7yplhn74vpauuaoq8mvd&raw=1",
     zoomed:"https://www.dropbox.com/scl/fi/gdhdx7yq8ujyv7ma2xgx2/GKent1871CensusVz.jpg?rlkey=qh0jyuz3wn5x88dzkezb9i3h2&raw=1"}},
-    {year:"1881",
+    {year:"1881 Census",
     occupation:"1881 &#9474; George Kent 34, Railway Labr - Mary 32, Wife - Henry 11, Charles 9, Albert 8, Louisa 6",
     images:{wide:'https://www.dropbox.com/scl/fi/8l3u3r284ws4i8sjmt973/GKent1881Census.jpg?rlkey=ql562oyar9dx4vy0q9ht3axrk&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/a3139kmqtv8bgi3tpy7s7/GKent1881CensusV.jpg?rlkey=bvlyqyratfz96l97uze1m8p8p&raw=1',
     zoomed:'https://www.dropbox.com/scl/fi/hlr2xm7cqaxireew9oafu/GKent1881CensusVz.jpg?rlkey=f13r5r58xdso6gmlhx27a8eyn&raw=1'}},
-    {year:"1891",
+    {year:"1891 Census",
     occupation:"1891 &#9474; George Kent 44, Shed Labourer - Mary 42, Wife - Charles 19, Locomotive Fireman - Herbert 7",
     images:{wide:'https://www.dropbox.com/scl/fi/dbijhrbvwtzwncfprrube/GKent1891Census.jpg?rlkey=euzj5ozwysl939906zdm1zndz&raw=1',
         narrow:'https://www.dropbox.com/scl/fi/yjm2i59664777trtwvz2p/GKent1891CensusV.jpg?rlkey=ky213za7shi5w5617ii39kxej&raw=1',
@@ -210,12 +237,12 @@ const families = [
     },
     {address:"4 Ayr Street, Twerton, Bath",
     gmap:"https://maps.app.goo.gl/w1tVUeGy2BMw65NQ9",
-    dox:[{year:"1901",
+    dox:[{year:"1901 Census",
     occupation:"1901 &#9474; George Kent 55, Stationary Engine Driver - Mary 53, Wife - Herbert 17, Steam Engine Fitter",
     images:{wide:'https://www.dropbox.com/scl/fi/tpd07czplrlesdwcq266h/GKent1901Census.jpg?rlkey=or6xg8bixllmtel0t4w86z95p&raw=1',
         narrow:'https://www.dropbox.com/scl/fi/bh1mpsb2qk9kr7un6ot66/GKent1901CensusV.jpg?rlkey=yjglphk2es58bz0afev1kf4z9&raw=1',
         zoomed:'https://www.dropbox.com/scl/fi/vc644ie8qujq5b6rh0jfq/GKent1901CensusVz.jpg?rlkey=76h23n1idnbjsom7jn9c2uv15&raw=1'}},
-    {year:"1911",
+    {year:"1911 Census",
     occupation:"1911 &#9474; George Kent 64, Engine Driver Gas Works - Mary 62, Wife",
     images:{wide:'https://www.dropbox.com/scl/fi/fw5ef2nf0paqoo5t77v7u/GKent1911Census.jpg?rlkey=sk6ta3adblcatnfpwu3639mam&raw=1',
         narrow:'https://www.dropbox.com/scl/fi/1x9op85k51rxldxyeewff/GKent1911CensusV.jpg?rlkey=5e6xrmv9xdphu1dmpkg1684sy&raw=1',
@@ -223,8 +250,8 @@ const families = [
     familyNotes: "<p>Between 1871 and 1891, George and his family lived near Didcot, at that time\
     a major centre of the railway industry. In the 1871 and 1881 censuses George's occupation was then shown as \'Railway Labourer\'.\
     In 1891 it was \'Shed Labourer\'.\
-    The Great Western Railway had reached Didcot around 30 years previously. Hagbourne Newtown was a settlement built for the \
-    rapidly expanding population.\
+    The Great Western Railway had reached Didcot around 30 years previously and Hagbourne Newtown was a settlement built for the \
+    rapidly expanding population of the town.\
     <a href='https://www.didcot.gov.uk/brief-history#heading-1047124'> (see Didcot brief history).</a><\p>\
     <p>After moving to Bath, his occupation was \'stationary engine driver\' (in the 1901 census) and \'engine driver gas works\'\
      (in 1911).",
