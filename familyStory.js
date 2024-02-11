@@ -30,7 +30,13 @@ const families = [
     ,
     censuses:[{address:'28,South View Road, South Twerton',
     gmap:'https://maps.app.goo.gl/gFUtgMhJAL7kCKYg7',
-    dox:[{year:'1912 PO Directory',
+    dox:[
+    {year:'1911 Census',
+    occupation: '1911 Census - Herbert West 33 Engineers Machinist, Jessie West 29 Wife, Doris West 4, Leonard West 2, Phillis West under 2 months, Martha Smith 60 Visitor', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/l585dx1qzsuouq6ighd1i/HerbertWest1911census.jpg?rlkey=mcigrqmjmyv9zrfm9cz80oshx&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/axwtvreohncn6mvr0v3xb/HerbertWest1911censusV.jpg?rlkey=aw3lipsai0y0bl0sf492dj8xk&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/syk77o4frtrwir7xedqm0/HerbertWest1911censusVz.jpg?rlkey=v0gpyoafs02w3d4jg5a2d9g03&raw=1'}},
+        {year:'1912 PO Directory',
     occupation: '1912 Post Office Directory - 28 South View Road - Smith Mrs.M.A. grocer etc.',
     images:{wide:'https://www.dropbox.com/scl/fi/6ttw0xtq895h70v4qjdek/POdirectory1912.png?rlkey=ptc0ryxudip4s4hst3twac8qq&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/xwhn6v1x7gvgo905z1j88/POdirectory1912V.png?rlkey=mbwclvhmg3251d3q4ij21m4k5&raw=1',
@@ -133,7 +139,7 @@ const families = [
     { // Family 7
     records : ['censuses','photos'],
         
-    dad : { name: "William Smith", dates: "1851-19??", vektr:99},
+    dad : { name: "William Smith", dates: "1851-1922", vektr:99},
     mum : { name: "Martha Hasler", dates: "1852-1935", vektr:8},
     kids : [{ name: "Jessica Alice Annie", dates: "1882-1973", vektr:0}//NEXT kid - kd
     ],
