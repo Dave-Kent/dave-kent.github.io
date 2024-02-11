@@ -51,7 +51,7 @@ function setOutNotes(fIndex) {
             // if (classSpace.className == "censusSpace") {
             //     classSpace.className = "photoSpace";
             // }
-            censusText += "<h1>Gallery</h1>";
+            censusText += "<h1>Photographs</h1>";
             let nphotos = thisFamily.photos.length;
             for(i=0; i<nphotos; i++) {
                 //censusText += '<div class="photos-table" onclick= "openPhoto(\'' + thisFamily.photos[i].picture + '\',\'' + thisFamily.photos[i].caption +'\')">'
