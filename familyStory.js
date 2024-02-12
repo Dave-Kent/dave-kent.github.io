@@ -40,7 +40,7 @@ const families = [
     occupation: '1912 Post Office Directory - 28 South View Road - Smith Mrs.M.A. grocer etc.',
     images:{wide:'https://www.dropbox.com/scl/fi/6ttw0xtq895h70v4qjdek/POdirectory1912.png?rlkey=ptc0ryxudip4s4hst3twac8qq&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/xwhn6v1x7gvgo905z1j88/POdirectory1912V.png?rlkey=mbwclvhmg3251d3q4ij21m4k5&raw=1',
-    zoomed: ''}} // Add a year - cyr
+    zoomed: 'https://www.dropbox.com/scl/fi/f9fyirn3rwdfc3z6uikrk/POdirectory1912Vz.png?rlkey=hpirluydo9vagxtei9ulo0ihg&raw=1'}} // Add a year - cyr
     ]},
     {address:'73,Lyncombe Hill, Bath',
     gmap:'https://maps.app.goo.gl/nHzeZkUWRx8ytdEJ9',
