@@ -1,7 +1,7 @@
 // sets out the notes (formerly census) panel
 function setOutNotes(fIndex) {
 
-    let wide = window.matchMedia("(orientation: landscape)");
+    let wideMatch = window.matchMedia("(orientation: landscape)").matches;
 
     let thisFamily = families[fIndex];
     
@@ -10,6 +10,7 @@ function setOutNotes(fIndex) {
     
     let censusText = '<div class="additional-notes">' + thisFamily.familyNotes + '</div>';
     // censusText is the name for the whole main contents of the 'Notes' page 
+    console.log('Family notes = '+ thisFamily.familyNotes);
 
     let mRecords = thisFamily.records.length; // nRecods is the loop count index
     
@@ -30,7 +31,7 @@ function setOutNotes(fIndex) {
                 let ndox = thisFamily.censuses[i].dox.length;
                 for(j=0; j<ndox; j++) {
                     
-                    if (wide.matches) {
+                    if (wideMatch) {
                         censusText += '<div class="open-census wide-census" onclick="openCens(\''
                         + thisFamily.censuses[i].dox[j].images.wide;
                     }

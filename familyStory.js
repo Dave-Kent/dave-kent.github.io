@@ -26,8 +26,7 @@ const families = [
     was shown in the Post Office directory for 1912 as the proprietor of the shop. Herbert was employed as a machine tool operator at the Stothert \
     and Pitt works, a short distance away.</p><p>Martha died in 1935 and the family left the shop and moved to 73 Lyncombe Hill. \
     At the start of the second world war, a population register was made <a href="https://blog.nationalarchives.gov.uk/1939-register-census-census/">(see \
-    National Archives blog)</a></p>' // include <p></p> // Add census info - csus
-    ,
+    National Archives blog)</a></p>', // include <p></p> // Add census info - csus
     censuses:[{address:'28,South View Road, South Twerton',
     gmap:'https://maps.app.goo.gl/gFUtgMhJAL7kCKYg7',
     dox:[
@@ -108,7 +107,12 @@ const families = [
     zoomed: 'https://www.dropbox.com/scl/fi/10au7ijt7lyv9xera7x4q/Census1911AlbertKentVz.jpg?rlkey=jn1wpq62yc0kvycle97don84s&raw=1'}} // Add a year - cyr
     ]} // New address - cadd
     ],
-    familyNotes: '', // include <p></p> // Add census info - csus
+    familyNotes: '<p>Albert Kent was born in Didcot (currently in Oxfordshire, previously Berkshire). In the 1891 census he was shown \
+     as single, bording in a house in Southampton, \
+     aged 18, he was working as an engine cleaner. By 1901 he was living in Twerton, in the same street as his father George, and was married \
+     to Mary, who came from nearby Frome, and their first child Dorothy was nine months old, occupation general labourer.</p>\
+     <p>In the 1911 census, Alberts occupation was Main Layer - Gas Works, in the same year his fathers occupation was Engine Driver Gas works. \
+     Subsequently, Alberts son Charles would spend his whole working life with the same gas company.</p>', // include <p></p> // Add census info - csus
     },
     { // Family 6
     records : ['censuses'],
@@ -177,14 +181,26 @@ const families = [
     
     },
     { // Family 8
-    records : ['empty'],
+    records : ['censuses'],
     dad : { name: "Henry Hasler", dates: "1826-1???", vektr:99},
     mum : { name: "Mary Ann", dates: "1829-1???", vektr:99},
     kids : [{ name: "Martha Louisa", dates: "1852-1935", vektr:7},
     { name: "William Peter", dates: "1854-1936", vektr:11},
     { name: "Eliza", dates: "1856-1???", vektr:99},
     { name: "Thomas", dates: "1859-1???", vektr:99}//NEXT kid - kd
-    ] // Add census info - csus
+    ] ,
+    familyName: 'Henry &amp Mary Hasler family', //use &amp; between dad and mum names
+    censuses:[{address:'20 Cherry Garden, Weathersfield, Essex',
+    gmap:'https://maps.app.goo.gl/eAtmb7JCLDat7UWG6',
+    dox:[{year:'1861 Census',
+    occupation: '1861 &#9474; Henry Hasler 35 Agricultural Labourer, Mary Ann 32, Martha 10, Peter 7, Eliza 5, Thomas 2',
+    images:{wide:'https://www.dropbox.com/scl/fi/os73gb929v6o5hwtzedro/Census1861MHasler.jpg?rlkey=fobqu2ul2w3g7d225mkfpe9ep&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/wl09ui4jgatc08gpdonnz/Census1861MHaslerV.jpg?rlkey=4st1ggsh6h87kunyahnpa4i3m&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/zms34geev25cat9emz3f2/Census1861MHaslerVz.jpg?rlkey=wk2lr3oat7kv9w97vontzjnsf&raw=1'}} // Add a year - cyr
+    ]} // New address - cadd
+    ],
+    familyNotes: '<p>In 1861, Henry Hasler was an agricultural labourer living in the village of Weathersfield, Essex, where he had been born. \
+    Mary came from Braintree, about seven miles from Weathersfield.</p><p>The Cherry Garden address is not shown on current maps.</p>', // include <p></p>// Add census info - csus
     },
     { // Family 9
     records : ['censuses'],
