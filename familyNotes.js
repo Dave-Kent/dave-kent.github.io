@@ -10,18 +10,12 @@ function setOutNotes(fIndex) {
     
     let censusText = '<div class="additional-notes">' + thisFamily.familyNotes + '</div>';
     // censusText is the name for the whole main contents of the 'Notes' page 
-    console.log('Family notes = '+ thisFamily.familyNotes);
+    console.log('Family notes = ${thisFamily.familyNotes}');
 
     let mRecords = thisFamily.records.length; // nRecods is the loop count index
     
     for(n=0;n<mRecords;n++){
-    
         if (thisFamily.records[n]==='censuses'){
-            // let classSpace = document.getElementById("imgSpace"); // = "censusSpace";
-            // if (classSpace.className == "photoSpace") {
-            //     classSpace.className = "censusSpace";
-            // }
-            // document.getElementById("imgSpace").className = "censusSpace";
             censusText += "<h1>Documents</h1>";
             let ncensuses = thisFamily.censuses.length; 
             for(i=0; i<ncensuses; i++) {

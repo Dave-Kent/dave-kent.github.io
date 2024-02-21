@@ -86,7 +86,7 @@ const families = [
     ] // Add census info - csus
     },
     { // Family 5
-    records : ['censuses'],
+    records : ['censuses','photos'],
     dad : { name: "Albert Kent", dates: "1873-1954", vektr:10},
     mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
     kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
@@ -112,7 +112,17 @@ const families = [
      aged 18, he was working as an engine cleaner. By 1901 he was living in Twerton, in the same street as his father George, and was married \
      to Mary, who came from nearby Frome, and their first child Dorothy was nine months old, occupation general labourer.</p>\
      <p>In the 1911 census, Alberts occupation was Main Layer - Gas Works, in the same year his fathers occupation was Engine Driver Gas works. \
-     Subsequently, Alberts son Charles would spend his whole working life with the same gas company.</p>', // include <p></p> // Add census info - csus
+     Subsequently, Alberts son Charles would spend his whole working life with the same gas company.</p>\
+     <p>In 1942, during WWII, the family home in Englishcombe Lane, Bath sustained bomb damage and had to be demolished. Albert and Mary then lived \
+     in a wooden shed in the back garden, until the house was rebuilt.</p>', // include <p></p>
+     photos:[{picture:'https://www.dropbox.com/scl/fi/0pmv5lwvjcksc2n49tptj/englishcombeLnShed.jpg?rlkey=03u3i4f9sb087j2c1sinlf2xb&raw=1',
+     ratio:1.33,
+     title:'Albert and Mary Kent 1944',
+     caption:'Albert and Mary Kent, in front of the shed at 169 Englishcombe Lane, July 1944',
+     thumbnail:'./pictures/engLnShedThumb.jpg',
+     alt:'Albert and Mary Kent 1944'}// add photo &ap
+    ]
+     // PHOTOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     },
     { // Family 6
     records : ['censuses'],
