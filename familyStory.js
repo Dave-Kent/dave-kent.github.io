@@ -18,7 +18,7 @@ const families = [
     ratio:1.5,
     title:'1940s West family at 73 Lyncombe Hill',
     caption:'1940s West family at 73 Lyncombe Hill, L to R: Rear - Herbert, Jessie. Front - Joyce, Joan, (unknown), Phyllis, Doris, (child) Bridget Ann Pearsall.',
-    thumbnail:'https://www.dropbox.com/scl/fi/7yng3ewwyr4hf5i13kw33/westsLync_thumb.jpg?rlkey=ayfvuf3celjjkm3yx0q2z2mfo&raw=1',
+    thumbnail:'./pictures/westsLync_thumb.jpg',
     alt:'West family at Lyncombe Hill'}],
     familyName: 'Herbert &#38; Jessie West family', //use &amp; between dad and mum names
     familyNotes: '<p>Herbert and Jessie were married in 1906 at St Swithin\'s Church, Walcot, Bath (Jessie\' local parish church, when she lived at the \
@@ -122,7 +122,6 @@ const families = [
      thumbnail:'./pictures/engLnShedThumb.jpg',
      alt:'Albert and Mary Kent 1944'}// add photo &ap
     ]
-     // PHOTOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     },
     { // Family 6
     records : ['censuses'],
@@ -185,7 +184,7 @@ const families = [
     ratio:0.793,
     title:'The Portland Arms, photograph 1947, demolished 1969.',
     caption:'The Portland Arms, photograph 1947, demolished 1969. William and Martha Smith were licencees at the start of the twentieth century.',
-    thumbnail:'https://www.dropbox.com/scl/fi/9paai8gnv8eh28yc1waua/PortlandArmsThumb.jpg?rlkey=irgkbve6l9vfrzbd39u25g8ot&raw=1',
+    thumbnail:'./pictures/PortlandArmsThumb.jpg',
     alt:"Portland Arms, Bath 1947"}
     ]
     
