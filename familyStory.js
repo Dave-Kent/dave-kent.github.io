@@ -14,11 +14,11 @@ const families = [
     { name: "Phyllis Mary", dates: "1916-1991", vektr:99},
     { name: "Joan Olive", dates: "1916-1981", vektr:1}//NEXT kid - kd
     ], // Add census info - csus
-    photos: [{picture:'https://www.dropbox.com/scl/fi/cpbnh3jau8ljb7pvn9jx7/westsLyncombrHl.jpg?rlkey=r6t3uojdogmk87wa9vbog11cm&raw=1',
+    photos: [{picture:'https://www.dropbox.com/scl/fi/2xpgqb5rf49zrkgexqek6/KENT-6X4-05.avif?rlkey=1jas1sjwpn0ckl4hf2mjng7yw&raw=1',
     ratio:1.5,
     title:'1940s West family at 73 Lyncombe Hill',
     caption:'1940s West family at 73 Lyncombe Hill, L to R: Rear - Herbert, Jessie. Front - Joyce, Joan, (unknown), Phyllis, Doris, (child) Bridget Ann Pearsall.',
-    thumbnail:'./pictures/westsLync_thumb.jpg',
+    thumbnail:'./pictures/westsLync_thumb.avif',
     alt:'West family at Lyncombe Hill'}],
     familyName: 'Herbert &#38; Jessie West family', //use &amp; between dad and mum names
     familyNotes: '<p>Herbert and Jessie were married in 1906 at St Swithin\'s Church, Walcot, Bath (Jessie\' local parish church, when she lived at the \
@@ -97,9 +97,9 @@ const families = [
     gmap:'https://maps.app.goo.gl/8GVeXvyN74WwPpuh8',
     dox:[{year:'1901 Census',
     occupation: '1901 &#9474; Albert Kent 28, General Labourer; Mary 27, Wife; Dorothy 9 months',
-    images:{wide:'https://www.dropbox.com/scl/fi/xgbhkj2jpw6tfic9atbuo/Census1901AKent01.jpg?rlkey=2nbkhjyx4k2tv54bcyyznr8y3&raw=1',
-    narrow:'https://www.dropbox.com/scl/fi/zhawn8mwvvm2qsrq62hs9/Census1901AKentV01.jpg?rlkey=6l6ssmanwl3w60ssvd9y88hx2&raw=1',
-    zoomed: 'https://www.dropbox.com/scl/fi/cf7z9te125h5hqvee92ug/Census1901AKentVz02.jpg?rlkey=tjf2gjl83git711mtrcyyqjzz&raw=1'}},
+    images:{wide:'https://www.dropbox.com/scl/fi/rej0qqmwdycnl17w8uo8l/Census1901AKent01.avif?rlkey=9bpgcik6nvkapcxhj4z2snkg3&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/jlmkms09i3b4c4n6tv5rx/Census1901AKentV01.avif?rlkey=ml5ihoptusz27kiknvktj9466&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/yv2qixdxs98r48mn9097v/Census1901AKentVz01.avif?rlkey=0gxw2ryf00huirig54nxslk52&raw=1'}},
     {year:'1911 Census',
     occupation: '1911 &#9474; Albert Kent 38, Main Layer Gas Works; Mary 37 wife; Dorothy Kate 10', // include &#9474; after the year
     images:{wide:'https://www.dropbox.com/scl/fi/0f5trbpt2w2d9l3v0x7vo/Census1911AlbertKent.jpg?rlkey=je5fg6ju9tddtknu1kl4rpe77&raw=1',
@@ -180,7 +180,7 @@ const families = [
     <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> where wife Martha Louisa was employed \
     as a nurse.</p><p>The next census (1901) shows that the couple were then licencees of the Portland Arms, Bath. William was still a carpenter and \
     Jessie\'s occupation was Dressmaker</p>',// include <p></p>
-    photos:[{picture:'https://www.dropbox.com/scl/fi/3jxzhb7up0111taukr7th/The_Portland_Arms01.jpg?rlkey=1qgn7ai1b5i12nb0j0nss7fyc&raw=1',
+    photos:[{picture:'https://www.dropbox.com/scl/fi/uvaxfuhpgxstwe4lishtz/PortlandArms03.avif?rlkey=aaji71q4pwqr833yux6wwp6q7&raw=1',
     ratio:0.793,
     title:'The Portland Arms, photograph 1947, demolished 1969.',
     caption:'The Portland Arms, photograph 1947, demolished 1969. William and Martha Smith were licencees at the start of the twentieth century.',

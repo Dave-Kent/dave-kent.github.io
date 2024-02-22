@@ -226,20 +226,7 @@ q {
   left: 0;
   right: 0; */
 }
-/* ========================================================== */
-/* #notes-zoom-layer {
-  
-  width:100vw;
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 1s;
-  overflow-y: auto;
-} */
+
 .notes-header {
   height: 17vh;
   

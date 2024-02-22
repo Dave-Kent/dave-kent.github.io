@@ -10,10 +10,8 @@ function setOutNotes(fIndex) {
     
     let censusText = '<div class="additional-notes">' + thisFamily.familyNotes + '</div>';
     // censusText is the name for the whole main contents of the 'Notes' page 
-    console.log('Family notes = ${thisFamily.familyNotes}');
 
     let mRecords = thisFamily.records.length; // nRecods is the loop count index
-    
     for(n=0;n<mRecords;n++){
         if (thisFamily.records[n]==='censuses'){
             censusText += "<h1>Documents</h1>";
@@ -100,15 +98,15 @@ function openPhoto(famI,photoI) {
     // document.getElementById("census-details").innerHTML = families[famI].photos[photoI].caption;
     let space = document.getElementById("imgSpace");
     space.innerHTML = '<img id="gallery-photo" src="' + families[famI].photos[photoI].picture + '" />';
-    console.log('space width = '+ window.innerWidth + ' space height = ' + space.offsetHeight );
-    console.log('space ratio = ' + (window.innerWidth/space.offsetHeight) + ' photo ratio ' + families[famI].photos[photoI].ratio);
+    // console.log('space width = '+ window.innerWidth + ' space height = ' + space.offsetHeight );
+    // console.log('space ratio = ' + (window.innerWidth/space.offsetHeight) + ' photo ratio ' + families[famI].photos[photoI].ratio);
     if ((window.innerWidth/space.offsetHeight) > families[famI].photos[photoI].ratio) {
-        console.log('taller picture '+ space.offsetHeight);
+        // console.log('taller picture '+ space.offsetHeight);
         space.className = "photoSpace";
         document.getElementById("gallery-photo").style.height="100%";
     }
     else {
-        console.log('wider picture')
+        // console.log('wider picture')
         space.className = "photoSpaceH";
         document.getElementById("gallery-photo").style.width="100%";
     }
