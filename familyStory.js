@@ -3,7 +3,7 @@
 
 const families = [
     
-    { // Family 0
+    { // Family 0 ==========================================================================================================================
     records : ['photos','censuses'],
     dad : { name: "Herbert West", dates: "1877-1958", vektr:6},
     mum : { name: "Jessie Smith", dates: "1882-1973", vektr:7},
@@ -52,7 +52,7 @@ const families = [
     ]} // New address - cadd
     ],
 },
-    { // Family 1
+    { // Family 1 ===================================================================================================================
     records : ['empty'],
     dad : { name: "Charles Kent", dates: "1911-1989", vektr:5},
     mum : { name: "Joan West", dates: "1916-1981", vektr:0},
@@ -61,7 +61,7 @@ const families = [
     { name: "Simon James", dates: "1955", vektr:4}//NEXT kid - kd
     ] // Add census info - csus
     },
-    { // Family 2
+    { // Family 2 =====================================================================================================================
     records : ['empty'],
     dad : { name: "Peter Kent", dates: "1947", vektr:1},
     mum : { name: "Ann", dates: "19??", vektr:99},
@@ -69,7 +69,7 @@ const families = [
     { name: "Leah", dates: "19??", vektr:99}//NEXT kid - kd
     ] // Add census info - csus
     },
-    { // Family 3
+    { // Family 3 =====================================================================================================================
     records : ['empty'],
     dad : { name: "David Kent", dates: "1950", vektr:1},
     mum : { name: "Helen Atkinson", dates: "1956", vektr:99},
@@ -78,14 +78,14 @@ const families = [
     { name: "Gavin David", dates: "1985", vektr:99}//NEXT kid - kd
     ] // Add census info - csus
     },
-    { // Family 4
+    { // Family 4 =====================================================================================================================
     records : ['empty'],
     dad : { name: "Simon Kent", dates: "1955", vektr:1},
     mum : { name: "Susan", dates: "195?", vektr:99},
     kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT kid - kd
     ] // Add census info - csus
     },
-    { // Family 5
+    { // Family 5 =====================================================================================================================
     records : ['censuses','photos'],
     dad : { name: "Albert Kent", dates: "1873-1954", vektr:10},
     mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
@@ -123,9 +123,9 @@ const families = [
      alt:'Albert and Mary Kent 1944'}// add photo &ap
     ]
     },
-    { // Family 6
+    { // Family 6 ==================================================================================================================
     records : ['censuses'],
-    dad : { name: "Walter West", dates: "1855-1933", vektr:99},
+    dad : { name: "Walter West", dates: "1855-1933", vektr:13},
     mum : { name: "Emma Keats", dates: "1855-19??", vektr:99},
     kids : [{ name: "William", dates: "1873-1???", vektr:99},
     { name: "Ella", dates: "1875-1???", vektr:99},
@@ -149,7 +149,7 @@ const families = [
     ],
     familyNotes: '', // include <p></p> // Add census info - csus
     },
-    { // Family 7
+    { // Family 7 ==================================================================================================================
     records : ['censuses','photos'],
         
     dad : { name: "William Smith", dates: "1851-1922", vektr:99},
@@ -189,7 +189,7 @@ const families = [
     ]
     
     },
-    { // Family 8
+    { // Family 8 =============================================================================================================
     records : ['censuses'],
     dad : { name: "Henry Hasler", dates: "1826-1???", vektr:99},
     mum : { name: "Mary Ann", dates: "1829-1???", vektr:99},
@@ -211,7 +211,7 @@ const families = [
     familyNotes: '<p>In 1861, Henry Hasler was an agricultural labourer living in the village of Weathersfield, Essex, where he had been born. \
     Mary came from Braintree, about seven miles from Weathersfield.</p><p>The Cherry Garden address is not shown on current maps.</p>', // include <p></p>// Add census info - csus
     },
-    { // Family 9
+    { // Family 9 ==================================================================================================================
     records : ['censuses'],
     dad : { name: "John Kent", dates: "1820-1???", vektr:99},
     mum : { name: "Elizabeth", dates: "1818-1???", vektr:99},
@@ -237,7 +237,7 @@ const families = [
     ],
     familyNotes: '', // include <p></p> // Add census info - csus
     },
-    { // Family 10
+    { // Family 10 ================================================================================================================
     records : ['censuses'],
     dad : { name: "George Kent", dates: "1847-1927", vektr:9},
     mum : { name: "Mary", dates: "1849-1???", vektr:99},
@@ -288,7 +288,7 @@ const families = [
      (in 1911).",
     },
     
-    { // Family 11
+    { // Family 11 ==========================================================================================================
     records : ['empty'],
     dad : { name: "William Hasler", dates: "1854-1936", vektr:8},
     mum : { name: "Maria Baker", dates: "1856-1934", vektr:99},
@@ -296,13 +296,27 @@ const families = [
     { name: "Beatrice Ethel", dates: "1884-19??", vektr:99}//NEXT kid - kd
     ]// Add census info - csus
     },
-    { // Family 12
+    { // Family 12 ==========================================================================================================
     records : ['empty'],
     dad : { name: "Douglas Hasler", dates: "1882-1965", vektr:11},
     mum : { name: "Violet Collins", dates: "1886-1968", vektr:99},
     kids : [{ name: "Joan Mary", dates: "1924-2022", vektr:99}//NEXT kid - kd
     ] // Add census info - csus
-    }//NEXT family - fm
+    },
+    { // Family 13
+    records : ['empty'],
+    dad : { name: "George West", dates: "1811-1891", vektr:99},
+    mum : { name: "Sarah Dunford", dates: "1811-1???", vektr:99},
+    kids : [{ name: "James", dates: "1830-????", vektr:99},
+    { name: "Emma", dates: "1833-????", vektr:99},
+    { name: "George", dates: "1837-????", vektr:99},
+    { name: "Eliza", dates: "1841-????", vektr:99},
+    { name: "Edward", dates: "1844-????", vektr:99},
+    { name: "Elizabeth", dates: "1846-????", vektr:99},
+    { name: "Thomas", dates: "1851-????", vektr:99},
+    { name: "Walter", dates: "1855-1933", vektr:6}//NEXT kid - kd
+    ] // Add census info - csus
+    }//NEXT family - fm//NEXT family - fm
     ]
 
 // ========== controls for the navigation sidebar =============
