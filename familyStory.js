@@ -9,12 +9,18 @@ const families = [
     mum : { name: "Jessie Smith", dates: "1882-1973", vektr:7},
     kids : [{ name: "Doris Audrey", dates: "1906-1988", vektr:99},
     { name: "Leonard Aubrey", dates: "1908-1991", vektr:99},
-    { name: "Joyce Evelyn", dates: "1911-19??", vektr:99},
+    { name: "Joyce Evelyn", dates: "1911-1996", vektr:99},
     { name: "Cyril Reginald", dates: "1913-2002", vektr:99},
     { name: "Phyllis Mary", dates: "1916-1991", vektr:99},
     { name: "Joan Olive", dates: "1916-1981", vektr:1}//NEXT kid - kd
     ], // Add census info - csus
-    photos: [{picture:'https://www.dropbox.com/scl/fi/2xpgqb5rf49zrkgexqek6/KENT-6X4-05.avif?rlkey=1jas1sjwpn0ckl4hf2mjng7yw&raw=1',
+    photos: [{picture:'https://www.dropbox.com/scl/fi/57hsikcixj47bjsqdxlbf/jessieMarthaWill-02.avif?rlkey=omqv6hg3flqa5dxm11ysyl0kh&raw=1',
+    ratio:1.01,
+    title:'1915 - Jessie with Martha and William and four children',
+    caption:'1915 - L to R rear: Martha Smith, Jessie West holding Cyril, William Smith, front: Leonard, Joyce, Doris',
+    thumbnail:'./pictures/jessieMarthaWill-thumb.avif',
+    alt:'Jessie West with parents and 4 children'},
+        {picture:'https://www.dropbox.com/scl/fi/2xpgqb5rf49zrkgexqek6/KENT-6X4-05.avif?rlkey=1jas1sjwpn0ckl4hf2mjng7yw&raw=1',
     ratio:1.5,
     title:'1940s West family at 73 Lyncombe Hill',
     caption:'1940s West family at 73 Lyncombe Hill, L to R: Rear - Herbert, Jessie. Front - Joyce, Joan, (unknown), Phyllis, Doris, (child) Bridget Ann Pearsall.',
@@ -64,9 +70,9 @@ const families = [
     { // Family 2 =====================================================================================================================
     records : ['empty'],
     dad : { name: "Peter Kent", dates: "1947", vektr:1},
-    mum : { name: "Ann", dates: "19??", vektr:99},
-    kids : [{ name: "Katherine", dates: "19??", vektr:99},
-    { name: "Leah", dates: "19??", vektr:99}//NEXT kid - kd
+    mum : { name: "Ann Hawksworth", dates: "1948", vektr:99},
+    kids : [{ name: "Katherine Rachael", dates: "1977", vektr:99},
+    { name: "Leah Ann", dates: "1981", vektr:99}//NEXT kid - kd
     ] // Add census info - csus
     },
     { // Family 3 =====================================================================================================================
@@ -89,7 +95,7 @@ const families = [
     records : ['censuses','photos'],
     dad : { name: "Albert Kent", dates: "1873-1954", vektr:10},
     mum : { name: "Mary Frapwell", dates: "1874-19??", vektr:99},
-    kids : [{ name: "Dorothy", dates: "1892-19??", vektr:99},
+    kids : [{ name: "Dorothy Kate", dates: "1892-1982", vektr:99},
     { name: "Charles", dates: "1911-1989", vektr:1}//NEXT kid - kd
     ],
     familyName: 'Albert &#38; Mary Kent family', //use &amp; between dad and mum names
@@ -191,12 +197,15 @@ const families = [
     },
     { // Family 8 =============================================================================================================
     records : ['censuses'],
-    dad : { name: "Henry Hasler", dates: "1826-1???", vektr:99},
-    mum : { name: "Mary Ann", dates: "1829-1???", vektr:99},
+    dad : { name: "Henry Hasler", dates: "1825-1908", vektr:99},
+    mum : { name: "Mary Ann", dates: "1831-1914", vektr:99},
     kids : [{ name: "Martha Louisa", dates: "1852-1935", vektr:7},
     { name: "William Peter", dates: "1854-1936", vektr:11},
-    { name: "Eliza", dates: "1856-1???", vektr:99},
-    { name: "Thomas", dates: "1859-1???", vektr:99}//NEXT kid - kd
+    { name: "Eliza", dates: "1856-1887", vektr:99},
+    { name: "Thomas", dates: "1859-1928", vektr:99},
+    { name: "Dorcas", dates: "1864-1937", vektr:99},
+    { name: "Henry (Harry)", dates: "18??-1???", vektr:99},
+    { name: "Frederick", dates: "1871-1955", vektr:99}//NEXT kid - kd
     ] ,
     familyName: 'Henry &amp Mary Hasler family', //use &amp; between dad and mum names
     censuses:[{address:'20 Cherry Garden, Weathersfield, Essex',

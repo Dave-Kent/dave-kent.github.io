@@ -64,7 +64,8 @@ function openCens(message, details) {
     // document.getElementById("census-details").innerHTML = details;
     let space = document.getElementById("imgSpace");
     space.className = "censusSpace";
-    space.innerHTML = '<img src="' + message + '" width="100%" />';
+    space.innerHTML = '<img class="form-img" src="' + message + '" width="100%" />';
+    // space.innerHTML = '<img class="form-img" src="' + message + '"/>';
     
     document.getElementById("census-pannel").style.width = "100%"; 
     document.getElementById("census-details").innerHTML = details;

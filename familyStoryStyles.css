@@ -333,12 +333,12 @@ color: rgb(250, 207, 48);
 /* On a (narrow) phone display, the census date switch
 goes to a vertical census report, the switch to the
 wide screen option is not seen */
-.wide-census {
+/* .wide-census {
   display: none;
 }
 .narrow-census {
   display: inline;
-}
+} */
 /* The sliding pannel shows the census report prints
 with a top bar showing the details relevant to us */
 .sliding-pannel {
@@ -377,7 +377,10 @@ It does not allow scrolling, but the photo fills the box.  */
 /* This is the class for the imgSpace box when a census <img> fits into it. It allows
 scrolling up and down (GOOD USE OF FLEXBOX!!) */
 .censusSpace {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   overflow-y: auto;
 }
 
@@ -439,7 +442,23 @@ report that are relevant to us */
     max-width: 720px;
   }
 }
-
+/* .form-img {
+  border: 2px dashed red;
+width: 100%;  
+height: fit-content;
+}
+@media screen and (orientation: portrait) {
+  .censusSpace {
+    overflow-x: auto;
+    overflow-y: unset;
+  }
+  .form-img {
+    rotate: 90deg;
+    height: 100%;
+    width:fit-content;
+    
+  }
+} */
 
 /* census display on a landscape screen */
   @media screen and (orientation: landscape) {
