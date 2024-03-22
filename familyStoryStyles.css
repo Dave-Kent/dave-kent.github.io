@@ -274,7 +274,7 @@ color: rgb(250, 207, 48);
 .censuses-table {
   margin: 10px;
   display: flex;
-  justify-content: center;
+  justify-content:start;
 }
 .additional-notes {
   display: flex;

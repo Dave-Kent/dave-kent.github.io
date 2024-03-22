@@ -11,15 +11,21 @@ function setOutNotes(fIndex) {
     let censusText = '<div class="additional-notes">' + thisFamily.familyNotes + '</div>';
     // censusText is the name for the whole main contents of the 'Notes' page 
 
-    let mRecords = thisFamily.records.length; // nRecods is the loop count index
+    let mRecords = thisFamily.records.length; // mRecords is the loop count index
     for(n=0;n<mRecords;n++){
         if (thisFamily.records[n]==='censuses'){
             censusText += "<h1>Documents</h1>";
             let ncensuses = thisFamily.censuses.length; 
             for(i=0; i<ncensuses; i++) {
-                censusText += '<div class="censuses-table">\
-                <a class="census-address" href="' + thisFamily.censuses[i].gmap + '">'
-                + thisFamily.censuses[i].address + '</a>';
+                censusText += '<div class="censuses-table">';
+                if (thisFamily.censuses[i].gmap !== 'none') {
+                    censusText += '<a class="census-address" href="' + thisFamily.censuses[i].gmap + '">'
+                    + thisFamily.censuses[i].address + '</a>';
+                }
+                else if(thisFamily.censuses[i].address !== 'none') {
+                    censusText += '<div class="census-address">'
+                    + thisFamily.censuses[i].address + '</div>';
+                }
                 let ndox = thisFamily.censuses[i].dox.length;
                 for(j=0; j<ndox; j++) {
                     
@@ -35,6 +41,7 @@ function setOutNotes(fIndex) {
                     censusText += thisFamily.censuses[i].dox[j].year + '</div>';
                 }
                 censusText += '</div>';
+
             }
             
         }
@@ -113,21 +120,7 @@ function openPhoto(famI,photoI) {
     }
     document.getElementById("census-details").innerHTML = families[famI].photos[photoI].caption;
 }
-// function OLDopenPhoto(photo,text) {
-//     document.getElementById("census-pannel").style.width = "100%"; 
-//     document.getElementById("census-details").innerHTML = text;
-//     let space = document.getElementById("imgSpace");
-//     space.innerHTML = '<img id="gallery-photo" src="' + photo + '" />';
-//     if ((window.innerWidth/space.offsetHeight) < photo.ratio) {
-        
-//         space.className = "photoSpace";
-//         document.getElementById("gallery-photo").style.height="75%";
-//     }
-//     else {
-//         space.className = "photoSpaceH";
-//         document.getElementById("gallery-photo").style.width="100%";
-//     }  
-// }
+
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
 
 $(document).ready(function(){

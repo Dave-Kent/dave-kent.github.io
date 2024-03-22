@@ -88,7 +88,7 @@ const families = [
     records : ['empty'],
     dad : { name: "Simon Kent", dates: "1955", vektr:1},
     mum : { name: "Susan", dates: "195?", vektr:99},
-    kids : [{ name: "Jessica", dates: "19??", vektr:99}//NEXT kid - kd
+    kids : [{ name: "Jessie", dates: "19??", vektr:99}//NEXT kid - kd
     ] // Add census info - csus
     },
     { // Family 5 =====================================================================================================================
@@ -160,11 +160,12 @@ const families = [
         
     dad : { name: "William Smith", dates: "1851-1922", vektr:99},
     mum : { name: "Martha Hasler", dates: "1852-1935", vektr:8},
-    kids : [{ name: "Jessica Alice Annie", dates: "1882-1973", vektr:0}//NEXT kid - kd
+    kids : [{ name: "Jessie Alice Annie", dates: "1882-1973", vektr:0}//NEXT kid - kd
     ],
     familyName: 'William &amp; Martha Louisa Smith family', //use &amp; between dad and mum names
     censuses:[{address:'Somerset Industrial Home for Boys, Bath',
     gmap:'https://maps.app.goo.gl/c7k6ctM4kk3wvq9N7',
+    // gmap:'none',
     dox:[{year:'1891 Census',
     occupation: '1891 &#9474; William Smith 40, Carpenter; Louisa 38, Nurse; Jessie 9, Scholar',
     images:{wide:'https://www.dropbox.com/scl/fi/l7xznsdav3l9wfle3sz48/Census1891WSmith.jpg?rlkey=zqwjj4s0khe1htdrwmlon52y1&raw=1',
@@ -179,7 +180,15 @@ const families = [
     narrow:'https://www.dropbox.com/scl/fi/m6bnb30twlnxsghk4ddh0/Census1901WSmithV.jpg?rlkey=wq9s90ozkjnzba00nffvluz3y&raw=1',
     zoomed: 'https://www.dropbox.com/scl/fi/c1arkxd2gfuzg9q2bf7r9/Census1901WSmithVz.jpg?rlkey=r0iwv2zgk6ji689cnnrvwvkhf&raw=1'}}
     // Add a year ^cyr
-    ]} // New address - cadd
+    ]} ,
+    {address:'none',
+    gmap:'none',
+    dox:[{year:'W Smith saddlery training',
+    occupation:'1876 W Smith - Saddlery training certificate',
+    images:{wide:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
+    zoomed: ''}} // Add a year - cyr
+    ]}// New address - cadd
     ],
     familyNotes: '<p>William Smith served in the Royal Engineers, daughter Jessie was born in Aldershot (main garrison of the British Army) \
     in 1882.</p><p>After leaving the Army, the family moved to Bath and in the 1891 census his occupation is shown as Carpenter at the \
