@@ -187,7 +187,7 @@ const families = [
     occupation:'1876 W Smith - Saddlery training certificate',
     images:{wide:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
-    zoomed: ''}}
+    zoomed: ''}},
     {year:'W Smith reference from industrial home',
     occupation:'William Smith - reference from Somerset Industrial Home for Boys',
     images:{wide:'https://www.dropbox.com/scl/fi/hm6spb85jle7setwc6yb3/WSreferenceSIHB.avif?rlkey=ebv78jfb9sijzbbwgft6xye2q&raw=1',
