@@ -183,29 +183,60 @@ const families = [
     ]} ,
     {address:'none',
     gmap:'none',
-    dox:[{year:'1) W Smith saddlery training',
+    dox:[{year:'1) Training certificate',
     occupation:'1876 W Smith - Saddlery training certificate',
     images:{wide:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
-    narrow:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/097rgqfev6ibrwsdeft75/WSmithSaddleryV.avif?rlkey=73t2dg5qo5hcgml4sc72wzk8t&raw=1',
     zoomed: ''}},
-    {year:'W Smith reference from industrial home',
+    {year:'2) Industrial Home reference',
     occupation:'William Smith - reference from Somerset Industrial Home for Boys',
     images:{wide:'https://www.dropbox.com/scl/fi/hm6spb85jle7setwc6yb3/WSreferenceSIHB.avif?rlkey=ebv78jfb9sijzbbwgft6xye2q&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/hm6spb85jle7setwc6yb3/WSreferenceSIHB.avif?rlkey=ebv78jfb9sijzbbwgft6xye2q&raw=1',
     zoomed: ''}}// Add a year - cyr
     ]}// New address - cadd
     ],
-    familyNotes: '<p>William Smith served in the Royal Engineers, daughter Jessie was born in Aldershot (main garrison of the British Army) \
-    in 1882.</p><p>After leaving the Army, the family moved to Bath and in the 1891 census his occupation is shown as Carpenter at the \
-    <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> where wife Martha Louisa was employed \
-    as a nurse.</p><p>The next census (1901) shows that the couple were then licencees of the Portland Arms, Bath. William was still a carpenter and \
-    Jessie\'s occupation was Dressmaker</p>',// include <p></p>
+    familyNotes: '<p>In 1876 William Smith, then a wheeler in B Troop, Royal Engineers qualified to become a regimental \
+    saddletree maker. He qualified at the Royal Dockyard, Woolwich (1). By 1881, while still in the Royal Engineers, \
+    he was living in Aldershot where his daughter Jessie was born and christened. Later he left the army and moved with \
+    his family to Bath possibly in 1890 where he started work as a carpenter at the \
+    <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> (2) where his \
+    wife Martha Louisa was employed as a nurse.</p> \
+    <p>In 1897 he became licensee of the Portland Brewery, also known as the Portland Arms, which was owned by the Bath \
+    Brewery Ltd (3). The pub was at 12 Portland Place, Bath and he moved there with his family. He continued to also work \
+    as a carpenter at the Industrial Home until 1906.</p>\
+    <p>In 1909 William took over the license for 16 Longmead Street, Bath which was again owned by the Bath Brewery Ltd \
+    (4). This was a grocery and off license beer retailer which also sold tobacco. His fire insurance policy allowed for \
+    the storage and sale of ‘petroleum’ which, considering that this was 1909/10, probably referred to paraffin. William \
+    took over the license from Henry Gear and, presumably, moved there with his wife. In 1915, during World War I, William \
+    registered as a Beer House and General Store Keeper at 16 Longmead Street under the National Registration Act, 1915 \
+    (5,6). In 1918 and 1919 William was a member of the Gas, Municipal and General Workers Union. He continued to live at \
+    16 Longmead Street until his death, sometime shortly before the end of April 1922.<\p> \
+    <p>In 1922 Martha Louisa Smith, who was by then about 70, was living at 16 Longmead Street when she was widowed shortly \
+    before 28th April. At the end of April and into May she began the process of applying for the transfer of the license \
+    receiving testimonials (7) as well as a verification of testimonials from Twerton Police Station. At the same time her \
+    pension eligibility was reviewed by Customs and Excise who found that she was no longer entitled to a pension because \
+    all of the profit from the business would be hers alone not shared with William (8). Towards the end of October Martha \
+    received a copy of ‘License-Holders Handy Guide’ at 16 Longmead Street.</p>\
+    <p>By 1928 Martha had moved to 28 South View Road to live with her daughter Jessie and her family. She received a \
+    letter from Nellie - ‘your loving sister’ - living in Halifax, Nova Scotia (9). It is thought that it was her \
+    sister-in-law Ellen, one of William’s sisters. Nellie says that she is pleased to hear that Martha is now living \
+    with Jessie and her family. In February 1930 in another letter from Nellie she comments on Martha’s recent serious \
+    illness and is glad that she is, at the age of 79, getting over it. A further letter was received in December to \
+    which Martha replied in July 1931. There is a later photograph of Aunt Nellie dated 1941 (10,11). During this time \
+    Martha also received letters from Whitham in Essex.</p> \
+    <p>Martha Louisa died at 28 South View Road on 2nd July 1935 and was interred at Twerton Cemetery.</p>',// include <p></p>
     photos:[{picture:'https://www.dropbox.com/scl/fi/uvaxfuhpgxstwe4lishtz/PortlandArms03.avif?rlkey=aaji71q4pwqr833yux6wwp6q7&raw=1',
     ratio:0.793,
     title:'The Portland Arms, photograph 1947, demolished 1969.',
     caption:'The Portland Arms, photograph 1947, demolished 1969. William and Martha Smith were licencees at the start of the twentieth century.',
     thumbnail:'./pictures/PortlandArmsThumb.jpg',
-    alt:"Portland Arms, Bath 1947"}
+    alt:"Portland Arms, Bath 1947"},
+    {picture:'https://www.dropbox.com/scl/fi/57hsikcixj47bjsqdxlbf/jessieMarthaWill-02.avif?rlkey=omqv6hg3flqa5dxm11ysyl0kh&raw=1',
+    ratio:1.01,
+    title:'1915 - Martha and William with daughter Jessie and four grandchildren',
+    caption:'1915 - L to R rear: Martha Smith, Jessie West holding Cyril, William Smith, front: Leonard, Joyce, Doris',
+    thumbnail:'./pictures/jessieMarthaWill-thumb.avif',
+    alt:'Jessie West with parents and 4 children'}
     ]
     
     },
