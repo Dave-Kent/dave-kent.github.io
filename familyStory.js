@@ -183,7 +183,7 @@ const families = [
     ]} ,
     {address:'none',
     gmap:'none',
-    dox:[{year:'W Smith saddlery training',
+    dox:[{year:'1) W Smith saddlery training',
     occupation:'1876 W Smith - Saddlery training certificate',
     images:{wide:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
