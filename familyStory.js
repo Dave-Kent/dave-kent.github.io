@@ -197,6 +197,11 @@ const families = [
     occupation: '1897 - Licence for William Smith of the Portland Brewrey to sell Intoxicating Liquors', // include &#9474; after the year
     images:{wide:'https://www.dropbox.com/scl/fi/hh3ac9ze98hd509iu4fmm/portlandLicenceV01.avif?rlkey=ccofrn9inlu6b5r0z2h5p343g&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/hh3ac9ze98hd509iu4fmm/portlandLicenceV01.avif?rlkey=ccofrn9inlu6b5r0z2h5p343g&raw=1',
+    zoomed: ''}},
+    {year:'4) Beerhouse transfer',
+    occupation: '1909 - transfer of the beerhouse licence for 16 Longmead Street to William Smith', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/50n440plf7wu9b453qhbt/licenceXfer.avif?rlkey=d4muhjvtunuwc1huhf3fw3tuf&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/50n440plf7wu9b453qhbt/licenceXfer.avif?rlkey=d4muhjvtunuwc1huhf3fw3tuf&raw=1',
     zoomed: ''}}// Add a year - cyr
     ]}// New address - cadd
     ],
