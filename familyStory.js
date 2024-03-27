@@ -71,8 +71,8 @@ const families = [
     records : ['empty'],
     dad : { name: "Peter Kent", dates: "1947", vektr:1},
     mum : { name: "Ann Hawksworth", dates: "1948", vektr:99},
-    kids : [{ name: "Katherine Rachael", dates: "1977", vektr:99},
-    { name: "Leah Ann", dates: "1981", vektr:99}//NEXT kid - kd
+    kids : [{ name: "Katherine Rachael", dates: "1977", vektr:14},
+    { name: "Leah Ann", dates: "1981", vektr:15}//NEXT kid - kd
     ] // Add census info - csus
     },
     { // Family 3 =====================================================================================================================
@@ -357,7 +357,7 @@ const families = [
     kids : [{ name: "Joan Mary", dates: "1924-2022", vektr:99}//NEXT kid - kd
     ] // Add census info - csus
     },
-    { // Family 13
+    { // Family 13 ==============================================================================================
     records : ['empty'],
     dad : { name: "George West", dates: "1811-1891", vektr:99},
     mum : { name: "Sarah Dunford", dates: "1811-1???", vektr:99},
@@ -370,7 +370,22 @@ const families = [
     { name: "Thomas", dates: "1851-????", vektr:99},
     { name: "Walter", dates: "1855-1933", vektr:6}//NEXT kid - kd
     ] // Add census info - csus
-    }//NEXT family - fm//NEXT family - fm
+    },
+    { // Family 14 ==========================================================================================
+    records : ['empty'],
+    dad : { name: "Daniel Howden", dates: "1977", vektr:99},
+    mum : { name: "Katherine Kent", dates: "1977", vektr:2},
+    kids : []
+    //] // Add census info - csus
+    },
+    { // Family 15
+    records : ['empty'],
+    dad : { name: "Kevin Pope", dates: "1980", vektr:99},
+    mum : { name: "Leah Kent", dates: "1981", vektr:2},
+    kids : [{ name: "Thomas Nicholas", dates: "2011", vektr:99},
+    {name: "Benjamin", dates: "2013", vektr:99}//NEXT kid - kd
+    ] // Add census info - csus
+    }//NEXT family - fm
     ]
 
 // ========== controls for the navigation sidebar =============
