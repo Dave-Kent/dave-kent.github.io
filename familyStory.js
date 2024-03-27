@@ -188,10 +188,15 @@ const families = [
     images:{wide:'https://www.dropbox.com/scl/fi/f272vx9f5vzigmuu2l8se/WSmithSaddlery.avif?rlkey=s7zrl489l6ygetvjeoigo9tmu&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/097rgqfev6ibrwsdeft75/WSmithSaddleryV.avif?rlkey=73t2dg5qo5hcgml4sc72wzk8t&raw=1',
     zoomed: ''}},
-    {year:'2) Industrial Home reference',
-    occupation:'William Smith - reference from Somerset Industrial Home for Boys',
+    {year:'2) Testimonial',
+    occupation:'William Smith - testimonial from the superintendant of Somerset Industrial Home for Boys',
     images:{wide:'https://www.dropbox.com/scl/fi/hm6spb85jle7setwc6yb3/WSreferenceSIHB.avif?rlkey=ebv78jfb9sijzbbwgft6xye2q&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/hm6spb85jle7setwc6yb3/WSreferenceSIHB.avif?rlkey=ebv78jfb9sijzbbwgft6xye2q&raw=1',
+    zoomed: ''}},
+    {year:'3) Portland Arms licence',
+    occupation: '1897 - Licence for William Smith of the Portland Brewrey to sell Intoxicating Liquors', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/hh3ac9ze98hd509iu4fmm/portlandLicenceV01.avif?rlkey=ccofrn9inlu6b5r0z2h5p343g&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/hh3ac9ze98hd509iu4fmm/portlandLicenceV01.avif?rlkey=ccofrn9inlu6b5r0z2h5p343g&raw=1',
     zoomed: ''}}// Add a year - cyr
     ]}// New address - cadd
     ],

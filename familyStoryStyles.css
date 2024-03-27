@@ -275,6 +275,7 @@ color: rgb(250, 207, 48);
   margin: 10px;
   display: flex;
   justify-content:start;
+  flex-wrap: wrap;
 }
 .additional-notes {
   display: flex;
@@ -319,7 +320,7 @@ color: rgb(250, 207, 48);
   color: white;
   background-color: blue;
   padding: 5px;
-  margin-left: 5px;
+  margin: 3px;
   border-radius: 5px;
 }
 /* ===============================NOT THIS BIT???========= */
