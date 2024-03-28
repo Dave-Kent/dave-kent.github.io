@@ -16,7 +16,7 @@ const families = [
     ], // Add census info - csus
     photos: [{picture:'https://www.dropbox.com/scl/fi/57hsikcixj47bjsqdxlbf/jessieMarthaWill-02.avif?rlkey=omqv6hg3flqa5dxm11ysyl0kh&raw=1',
     ratio:1.01,
-    title:'1915 - Jessie with Martha and William and four children',
+    title:'(14) 1915 - Jessie with Martha and William and four children',
     caption:'1915 - L to R rear: Martha Smith, Jessie West holding Cyril, William Smith, front: Leonard, Joyce, Doris',
     thumbnail:'./pictures/jessieMarthaWill-thumb.avif',
     alt:'Jessie West with parents and 4 children'},
@@ -27,12 +27,28 @@ const families = [
     thumbnail:'./pictures/westsLync_thumb.avif',
     alt:'West family at Lyncombe Hill'}],
     familyName: 'Herbert &#38; Jessie West family', //use &amp; between dad and mum names
-    familyNotes: '<p>Herbert and Jessie were married in 1906 at St Swithin\'s Church, Walcot, Bath (Jessie\' local parish church, when she lived at the \
-    Portland Arms, her parent\'s pub).</p><p>By 1911, they were living in the corner shop in South View Road, East Twerton and Jessie\'s mother, Martha, \
+    familyNotes: '<p>Jessie Alice Annie Smith was born in Frimley, Farnham (Aldershot) on 14 July 1881 and was baptised in Aldershot on 9th October 1881. \
+    After moving to Bath with her parents and while living at the Portland Arms, Portland Place she married Herbert Walter West at \
+    <a href="https://maps.app.goo.gl/qaKSemKP6xoLtDoC9">Walcot Parish Church</a> on 12th May 1906.</p> \
+    <p>The 1911 census shows that they were living in the corner shop in South View Road, East Twerton and Jessie&apos;s mother, Martha, \
     was shown in the Post Office directory for 1912 as the proprietor of the shop. Herbert was employed as a machine tool operator at the Stothert \
-    and Pitt works, a short distance away.</p><p>Martha died in 1935 and the family left the shop and moved to 73 Lyncombe Hill. \
-    At the start of the second world war, a population register was made <a href="https://blog.nationalarchives.gov.uk/1939-register-census-census/">(see \
-    National Archives blog)</a></p>', // include <p></p> // Add census info - csus
+    and Pitt works, a short distance away.</p>\
+    <p>In 1915, during World War I, Jessie registered as a grocer at 28 South View Road, Twerton under the National Registration Act, 1915 (12,13).</p>\
+    <p>There are photographs of Jessie with four of her children Doris, Leonard, Joyce and Cyril and her parents William and Martha Louise in a garden (14). \
+    From the ages of the children the photo was taken in about 1915.</p>\
+    <p>Her last two daughters, twins Phyllis and Joan, were born on 4th August 1916 in Twerton, Bath on 4th August 1916. There is a photograph of the girls \
+    aged 7 standing outside the shop at 28 South View Road (15,16).</p>\
+    <p>Between 8th and 12th August 1935, after her mother Martha Louisa died, Jessie sold her business stock-in-trade at 28 South View Road (17,18) and, \
+    with her family, moved to <a href="https://historicengland.org.uk/listing/the-list/list-entry/1395264?section=official-list-entry">73 Lyncombe Hill</a>, Bath (19). This was a large, early 19th century, four storey townhouse which would have originally been the home of a \
+    wealthy family with servants. The servants would have worked on the lower ground floor which had a scullery under a large skylight and cellars with \
+    access for the delivery of coal via a manhole in the pavement. Up until the 1970s there were still the bells, with mechanical linkage, hanging below the ceiling on the lower \
+    ground floor for the family to summon a servant.\
+    This house gave space, not only for the large West family, but for friends and extended family members to reside.<\p>\
+    <p>In preparation for the second world war, in 1939, the government made a population register in place of a census \
+    <a href="https://blog.nationalarchives.gov.uk/1939-register-census-census/">(see National Archives blog)</a>\
+    which shows the residents of the house at that time.</p>\
+    <p>Jessie remained there until about 1970 when she went to live with various relatives until she died in \
+    1973.</p>', 
     censuses:[{address:'28,South View Road, South Twerton',
     gmap:'https://maps.app.goo.gl/gFUtgMhJAL7kCKYg7',
     dox:[
@@ -117,7 +133,7 @@ const families = [
      as single, bording in a house in Southampton, \
      aged 18, he was working as an engine cleaner. By 1901 he was living in Twerton, in the same street as his father George, and was married \
      to Mary, who came from nearby Frome, and their first child Dorothy was nine months old, occupation general labourer.</p>\
-     <p>In the 1911 census, Alberts occupation was Main Layer - Gas Works, in the same year his fathers occupation was Engine Driver Gas works. \
+     <p>In the 1911 census, Albert&apos;s occupation was Main Layer - Gas Works, in the same year his fathers occupation was Engine Driver Gas works. \
      Subsequently, Alberts son Charles would spend his whole working life with the same gas company.</p>\
      <p>In 1942, during WWII, the family home in Englishcombe Lane, Bath sustained bomb damage and had to be demolished. Albert and Mary then lived \
      in a wooden shed in the back garden, until the house was rebuilt.</p>', // include <p></p>
@@ -212,13 +228,14 @@ const families = [
     <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> (2) where his \
     wife Martha Louisa was employed as a nurse.</p> \
     <p>In 1897 he became licensee of the Portland Brewery, also known as the Portland Arms, which was owned by the Bath \
-    Brewery Ltd (3). The pub was at 12 Portland Place, Bath and he moved there with his family. He continued to also work \
-    as a carpenter at the Industrial Home until 1906.</p>\
+    Brewery Ltd (3). The pub was at 12a Portland Place, Bath and he moved there with his family. He continued to also work \
+    as a carpenter at the Industrial Home until 1906.</p> \
     <p>In 1909 William took over the license for 16 Longmead Street, Bath which was again owned by the Bath Brewery Ltd \
     (4). This was a grocery and off license beer retailer which also sold tobacco. His fire insurance policy allowed for \
-    the storage and sale of ‘petroleum’ which, considering that this was 1909/10, probably referred to paraffin. William \
+    the storage and sale of &apos;petroleum&apos; which, considering that this was 1909/10, probably referred to paraffin. William \
     took over the license from Henry Gear and, presumably, moved there with his wife. In 1915, during World War I, William \
-    registered as a Beer House and General Store Keeper at 16 Longmead Street under the National Registration Act, 1915 \
+    registered as a Beer House and General Store Keeper at 16 Longmead Street under \
+    <a href="https://en.wikipedia.org/wiki/National_Registration_Act_1915">the National Registration Act, 1915</a> \
     (5,6). In 1918 and 1919 William was a member of the Gas, Municipal and General Workers Union. He continued to live at \
     16 Longmead Street until his death, sometime shortly before the end of April 1922.<\p> \
     <p>In 1922 Martha Louisa Smith, who was by then about 70, was living at 16 Longmead Street when she was widowed shortly \
@@ -226,11 +243,11 @@ const families = [
     receiving testimonials (7) as well as a verification of testimonials from Twerton Police Station. At the same time her \
     pension eligibility was reviewed by Customs and Excise who found that she was no longer entitled to a pension because \
     all of the profit from the business would be hers alone not shared with William (8). Towards the end of October Martha \
-    received a copy of ‘License-Holders Handy Guide’ at 16 Longmead Street.</p>\
+    received a copy of &apos;License-Holders Handy Guide&apos; at 16 Longmead Street.</p>\
     <p>By 1928 Martha had moved to 28 South View Road to live with her daughter Jessie and her family. She received a \
-    letter from Nellie - ‘your loving sister’ - living in Halifax, Nova Scotia (9). It is thought that it was her \
-    sister-in-law Ellen, one of William’s sisters. Nellie says that she is pleased to hear that Martha is now living \
-    with Jessie and her family. In February 1930 in another letter from Nellie she comments on Martha’s recent serious \
+    letter from Nellie - &apos;your loving sister&apos; - living in Halifax, Nova Scotia (9). It is thought that it was her \
+    sister-in-law Ellen, one of William&apos;s sisters. Nellie says that she is pleased to hear that Martha is now living \
+    with Jessie and her family. In February 1930 in another letter from Nellie she comments on Martha&apos;s recent serious \
     illness and is glad that she is, at the age of 79, getting over it. A further letter was received in December to \
     which Martha replied in July 1931. There is a later photograph of Aunt Nellie dated 1941 (10,11). During this time \
     Martha also received letters from Whitham in Essex.</p> \
@@ -343,12 +360,12 @@ const families = [
         narrow:'https://www.dropbox.com/scl/fi/1x9op85k51rxldxyeewff/GKent1911CensusV.jpg?rlkey=5e6xrmv9xdphu1dmpkg1684sy&raw=1',
         zoomed:'https://www.dropbox.com/scl/fi/iatylo7z1tr2h8b9ucwat/GKent1911CensusVz.jpg?rlkey=66zyk7t42rsgbl64bpivqb9uz&raw=1'}}]}],
     familyNotes: "<p>Between 1871 and 1891, George and his family lived near Didcot, at that time\
-    a major centre of the railway industry. In the 1871 and 1881 censuses George's occupation was then shown as \'Railway Labourer\'.\
-    In 1891 it was \'Shed Labourer\'.\
+    a major centre of the railway industry. In the 1871 and 1881 censuses George&apos;s occupation was then shown as &apos;Railway Labourer&apos;.\
+    In 1891 it was &apos;Shed Labourer&apos;.\
     The Great Western Railway had reached Didcot around 30 years previously and Hagbourne Newtown was a settlement built for the \
     rapidly expanding population of the town.\
     <a href='https://www.didcot.gov.uk/brief-history#heading-1047124'> (see Didcot brief history).</a><\p>\
-    <p>After moving to Bath, his occupation was \'stationary engine driver\' (in the 1901 census) and \'engine driver gas works\'\
+    <p>After moving to Bath, his occupation was &apos;stationary engine driver&apos; (in the 1901 census) and &apos;engine driver gas works&apos;\
      (in 1911).",
     },
     
