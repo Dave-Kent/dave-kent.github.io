@@ -218,7 +218,22 @@ const families = [
     occupation: '1909 - transfer of the beerhouse licence for 16 Longmead Street to William Smith', // include &#9474; after the year
     images:{wide:'https://www.dropbox.com/scl/fi/50n440plf7wu9b453qhbt/licenceXfer.avif?rlkey=d4muhjvtunuwc1huhf3fw3tuf&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/50n440plf7wu9b453qhbt/licenceXfer.avif?rlkey=d4muhjvtunuwc1huhf3fw3tuf&raw=1',
-    zoomed: ''}}// Add a year - cyr
+    zoomed: 'https://www.dropbox.com/scl/fi/50n440plf7wu9b453qhbt/licenceXfer.avif?rlkey=d4muhjvtunuwc1huhf3fw3tuf&raw=1'}},
+    {year:'5) National Reg&apos;n',
+    occupation: '5) William Smith - National Registration certificate - beerhouse and general store keeper', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/l82l7hdeqwoeylh36d8wd/WSnatReg.avif?rlkey=30s54rlkccb9hy6e69z17u1w1&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/l82l7hdeqwoeylh36d8wd/WSnatReg.avif?rlkey=30s54rlkccb9hy6e69z17u1w1&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/l82l7hdeqwoeylh36d8wd/WSnatReg.avif?rlkey=30s54rlkccb9hy6e69z17u1w1&raw=1'}},
+    {year:'7) Trade testimonial',
+    occupation: '7) 1922 - Martha Smith - trade supplier testimonial', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/31uu4bzp3a9spr2r6c0iv/MStestimonial.avif?rlkey=4q5bx0bvle2f5n7kbnjien50f&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/31uu4bzp3a9spr2r6c0iv/MStestimonial.avif?rlkey=4q5bx0bvle2f5n7kbnjien50f&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/31uu4bzp3a9spr2r6c0iv/MStestimonial.avif?rlkey=4q5bx0bvle2f5n7kbnjien50f&raw=1'}},
+    {year:'8) Pension notice',
+    occupation: '8) 1922 - Martha Smith - Notice of change of entitlement to the Old Age Pension', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/5mrby5nrz4z6wr0qm2abq/MSpension.avif?rlkey=ldwpnzjh5181eoew6m7uolqhl&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/5mrby5nrz4z6wr0qm2abq/MSpension.avif?rlkey=ldwpnzjh5181eoew6m7uolqhl&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/5mrby5nrz4z6wr0qm2abq/MSpension.avif?rlkey=ldwpnzjh5181eoew6m7uolqhl&raw=1'}}// Add a year - cyr
     ]}// New address - cadd
     ],
     familyNotes: '<p>In 1876 William Smith, then a wheeler in B Troop, Royal Engineers qualified to become a regimental \

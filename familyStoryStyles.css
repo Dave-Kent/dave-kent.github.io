@@ -221,7 +221,8 @@ q {
 .notes-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
   /* position: absolute;
   left: 0;
   right: 0; */
@@ -229,7 +230,7 @@ q {
 
 .notes-header {
   height: 17vh;
-  
+  width: 100vw;
   background-image: linear-gradient(rgba(01,50,32,0.4),rgba(0,0,0,0.4)),
    url("./pictures/collage-notes01.jpg");
   background-size: cover;
@@ -253,6 +254,7 @@ color: rgb(250, 207, 48);
   flex-direction: column;
   align-items: center;
   padding: 8px 15px;
+  max-width: 800px;
 }
 .census-family {
   margin-bottom: 5px;
