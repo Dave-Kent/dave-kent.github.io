@@ -233,11 +233,17 @@ const families = [
     occupation: '8) 1922 - Martha Smith - Notice of change of entitlement to the Old Age Pension', // include &#9474; after the year
     images:{wide:'https://www.dropbox.com/scl/fi/5mrby5nrz4z6wr0qm2abq/MSpension.avif?rlkey=ldwpnzjh5181eoew6m7uolqhl&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/5mrby5nrz4z6wr0qm2abq/MSpension.avif?rlkey=ldwpnzjh5181eoew6m7uolqhl&raw=1',
-    zoomed: 'https://www.dropbox.com/scl/fi/5mrby5nrz4z6wr0qm2abq/MSpension.avif?rlkey=ldwpnzjh5181eoew6m7uolqhl&raw=1'}}// Add a year - cyr
+    zoomed: 'https://www.dropbox.com/scl/fi/5mrby5nrz4z6wr0qm2abq/MSpension.avif?rlkey=ldwpnzjh5181eoew6m7uolqhl&raw=1'}},
+    {year:'9) Aunt Nellie letter',
+    occupation: '9) 1928 - Letter to Martha Smith from Aunt Nellie in Halifax, Nova Scotia', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/vrsyth7dwb99us6m6r0zk/nellieLetter.avif?rlkey=3ul7zppnvpj2d7n8ijg1jw5si&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/vrsyth7dwb99us6m6r0zk/nellieLetter.avif?rlkey=3ul7zppnvpj2d7n8ijg1jw5si&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/vrsyth7dwb99us6m6r0zk/nellieLetter.avif?rlkey=3ul7zppnvpj2d7n8ijg1jw5si&raw=1'}}// Add a year - cyr
     ]}// New address - cadd
     ],
-    familyNotes: '<p>In 1876 William Smith, then a wheeler in B Troop, Royal Engineers qualified to become a regimental \
-    saddletree maker. He qualified at the Royal Dockyard, Woolwich (1). By 1881, while still in the Royal Engineers, \
+    familyNotes: '<p>In 1876 William Smith was serving in Royal Engineers (15th Troop) with the trade role of Wheeler. \
+    He then qualified for the additional role of Regimental Saddletree Maker. \
+    He qualified at the Royal Dockyard, Woolwich (1). By 1881, while still in the Royal Engineers, \
     he was living in Aldershot where his daughter Jessie was born and christened. Later he left the army and moved with \
     his family to Bath possibly in 1890 where he started work as a carpenter at the \
     <a href="https://www.childrenshomes.org.uk/BathIH/index.shtml">Somerset Industrial Home for Boys</a> (2) where his \
@@ -278,7 +284,13 @@ const families = [
     title:'1915 - Martha and William with daughter Jessie and four grandchildren',
     caption:'1915 - L to R rear: Martha Smith, Jessie West holding Cyril, William Smith, front: Leonard, Joyce, Doris',
     thumbnail:'./pictures/jessieMarthaWill-thumb.avif',
-    alt:'Jessie West with parents and 4 children'}
+    alt:'Jessie West with parents and 4 children'},
+    {picture:'https://www.dropbox.com/scl/fi/9z29wu2av6d7uyclsofn6/nelliePhoto.avif?rlkey=ni3c81mhxm2jdyyknefshmj89&raw=1',
+    ratio:0.71,
+    title:'Aunt Nellie aged 81 - 1941',
+    caption:'"Aunt Nellie" Born 1860 (January) Photo taken 1941',
+    thumbnail:'./pictures/nellieThumb.avif',
+    alt:'Aunt Nellie 1941 aged 81'}
     ]
     
     },
