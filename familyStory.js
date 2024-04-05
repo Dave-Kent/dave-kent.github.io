@@ -71,6 +71,15 @@ const families = [
     images:{wide:'https://www.dropbox.com/scl/fi/af8y80jhcr3z9ba8oh0xs/1939register.jpg?rlkey=1xpi6i1owsj64w71ir2p2u9y8&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/af8y80jhcr3z9ba8oh0xs/1939register.jpg?rlkey=1xpi6i1owsj64w71ir2p2u9y8&raw=1',
     zoomed: 'https://www.dropbox.com/scl/fi/ww1nrvn475bfr2f0il1o9/1939registerCropped.jpg?rlkey=3bv1kb74enheyr7zm24oosrdd&raw=1'}} // Add a year - cyr
+    ]},
+    {address:'none',
+    gmap:'none',
+    dox:[{year:'12) National Registration',
+    occupation:'12) Jessie Alice Annie West - National Registration as a grocer at 28, South View Road, \
+    East Twerton',
+    images:{wide:'https://www.dropbox.com/scl/fi/sofr2ekdf72b669so7t2a/jessieNatReg.avif?rlkey=5874ewob2wldfczaqw3p2fw9a&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/sofr2ekdf72b669so7t2a/jessieNatReg.avif?rlkey=5874ewob2wldfczaqw3p2fw9a&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/sofr2ekdf72b669so7t2a/jessieNatReg.avif?rlkey=5874ewob2wldfczaqw3p2fw9a&raw=1'}} // Add a year - cyr
     ]} // New address - cadd
     ],
 },
