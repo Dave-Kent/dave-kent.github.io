@@ -108,16 +108,18 @@ function openPhoto(famI,photoI) {
     space.innerHTML = '<img id="gallery-photo" src="' + families[famI].photos[photoI].picture + '" />';
     // console.log('space width = '+ window.innerWidth + ' space height = ' + space.offsetHeight );
     // console.log('space ratio = ' + (window.innerWidth/space.offsetHeight) + ' photo ratio ' + families[famI].photos[photoI].ratio);
-    if ((window.innerWidth/space.offsetHeight) > families[famI].photos[photoI].ratio) {
+    // NEW STUFF START
+    //if ((window.innerWidth/space.offsetHeight) > families[famI].photos[photoI].ratio) {
         // console.log('taller picture '+ space.offsetHeight);
-        space.className = "photoSpace";
-        document.getElementById("gallery-photo").style.height="100%";
-    }
-    else {
+    //    space.className = "photoSpace";
+    //    document.getElementById("gallery-photo").style.height="100%";
+    //}
+    //else {
         // console.log('wider picture')
-        space.className = "photoSpaceH";
-        document.getElementById("gallery-photo").style.width="100%";
-    }
+    //    space.className = "photoSpaceH";
+    //    document.getElementById("gallery-photo").style.width="100%";
+    //}
+    // NEW STUFF END
     document.getElementById("census-details").innerHTML = families[famI].photos[photoI].caption;
 }
 

@@ -15,13 +15,13 @@ const families = [
     { name: "Joan Olive", dates: "1916-1981", vektr:1}//NEXT kid - kd
     ], // Add census info - csus
     photos: [{picture:'https://www.dropbox.com/scl/fi/57hsikcixj47bjsqdxlbf/jessieMarthaWill-02.avif?rlkey=omqv6hg3flqa5dxm11ysyl0kh&raw=1',
-    ratio:1.01,
+    //ratio:1.01,
     title:'(14) 1915 - Jessie with Martha and William and four children',
     caption:'1915 - L to R rear: Martha Smith, Jessie West holding Cyril, William Smith, front: Leonard, Joyce, Doris',
     thumbnail:'./pictures/jessieMarthaWill-thumb.avif',
     alt:'Jessie West with parents and 4 children'},
         {picture:'https://www.dropbox.com/scl/fi/2xpgqb5rf49zrkgexqek6/KENT-6X4-05.avif?rlkey=1jas1sjwpn0ckl4hf2mjng7yw&raw=1',
-    ratio:1.5,
+    //ratio:1.5,
     title:'1940s West family at 73 Lyncombe Hill',
     caption:'1940s West family at 73 Lyncombe Hill, L to R: Rear - Herbert, Jessie. Front - Joyce, Joan, (unknown), Phyllis, Doris, (child) Bridget Ann Pearsall.',
     thumbnail:'./pictures/westsLync_thumb.avif',
@@ -147,7 +147,7 @@ const families = [
      <p>In 1942, during WWII, the family home in Englishcombe Lane, Bath sustained bomb damage and had to be demolished. Albert and Mary then lived \
      in a wooden shed in the back garden, until the house was rebuilt.</p>', // include <p></p>
      photos:[{picture:'https://www.dropbox.com/scl/fi/0pmv5lwvjcksc2n49tptj/englishcombeLnShed.jpg?rlkey=03u3i4f9sb087j2c1sinlf2xb&raw=1',
-     ratio:1.33,
+     //ratio:1.33,
      title:'Albert and Mary Kent 1944',
      caption:'Albert and Mary Kent, in front of the shed at 169 Englishcombe Lane, July 1944',
      thumbnail:'./pictures/engLnShedThumb.jpg',
@@ -230,8 +230,8 @@ const families = [
     zoomed: 'https://www.dropbox.com/scl/fi/50n440plf7wu9b453qhbt/licenceXfer.avif?rlkey=d4muhjvtunuwc1huhf3fw3tuf&raw=1'}},
     {year:'5) National Reg&apos;n',
     occupation: '5) William Smith - National Registration certificate - beerhouse and general store keeper', // include &#9474; after the year
-    images:{wide:'https://www.dropbox.com/scl/fi/l82l7hdeqwoeylh36d8wd/WSnatReg.avif?rlkey=30s54rlkccb9hy6e69z17u1w1&raw=1',
-    narrow:'https://www.dropbox.com/scl/fi/l82l7hdeqwoeylh36d8wd/WSnatReg.avif?rlkey=30s54rlkccb9hy6e69z17u1w1&raw=1',
+    images:{wide:'https://www.dropbox.com/scl/fi/ph0j892jlmusmtxlwn07z/WSnatReg02.avif?rlkey=3v6ng22ktabimspo3pgv1dgcg&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/ple9ifyl18vstvwz8guos/WSnatReg02V.avif?rlkey=yy5qd2y0un2gigjrwccm88mkn&raw=1',
     zoomed: 'https://www.dropbox.com/scl/fi/l82l7hdeqwoeylh36d8wd/WSnatReg.avif?rlkey=30s54rlkccb9hy6e69z17u1w1&raw=1'}},
     {year:'7) Trade testimonial',
     occupation: '7) 1922 - Martha Smith - trade supplier testimonial', // include &#9474; after the year
@@ -283,19 +283,19 @@ const families = [
     Martha also received letters from Whitham in Essex.</p> \
     <p>Martha Louisa died at 28 South View Road on 2nd July 1935 and was interred at Twerton Cemetery.</p>',// include <p></p>
     photos:[{picture:'https://www.dropbox.com/scl/fi/uvaxfuhpgxstwe4lishtz/PortlandArms03.avif?rlkey=aaji71q4pwqr833yux6wwp6q7&raw=1',
-    ratio:0.793,
+    // ratio:0.793,
     title:'The Portland Arms, photograph 1947, demolished 1969.',
     caption:'The Portland Arms, photograph 1947, demolished 1969. William and Martha Smith were licencees at the start of the twentieth century.',
     thumbnail:'./pictures/PortlandArmsThumb.jpg',
     alt:"Portland Arms, Bath 1947"},
     {picture:'https://www.dropbox.com/scl/fi/57hsikcixj47bjsqdxlbf/jessieMarthaWill-02.avif?rlkey=omqv6hg3flqa5dxm11ysyl0kh&raw=1',
-    ratio:1.01,
+    //ratio:1.01,
     title:'1915 - Martha and William with daughter Jessie and four grandchildren',
     caption:'1915 - L to R rear: Martha Smith, Jessie West holding Cyril, William Smith, front: Leonard, Joyce, Doris',
     thumbnail:'./pictures/jessieMarthaWill-thumb.avif',
     alt:'Jessie West with parents and 4 children'},
     {picture:'https://www.dropbox.com/scl/fi/9z29wu2av6d7uyclsofn6/nelliePhoto.avif?rlkey=ni3c81mhxm2jdyyknefshmj89&raw=1',
-    ratio:0.71,
+    //ratio:0.71,
     title:'Aunt Nellie aged 81 - 1941',
     caption:'"Aunt Nellie" Born 1860 (January) Photo taken 1941',
     thumbnail:'./pictures/nellieThumb.avif',
