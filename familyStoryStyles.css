@@ -367,6 +367,7 @@ with a top bar showing the details relevant to us */
   width: 100%;
   height: 100%;
   object-fit: contain;
+  touch-action: pinch-zoom;
 }
 /*  This is the class for the imgSpace box, when a photo <img> fits into it.
 It does not allow scrolling, but the photo fills the box.  */
