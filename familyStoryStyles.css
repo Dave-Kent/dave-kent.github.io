@@ -401,6 +401,7 @@ scrolling up and down (GOOD USE OF FLEXBOX!!) */
   return switch */
 .detail-container {
   display: flex;
+  touch-action: none;
 }
 /* The detail bar shows the details in the census
 report that are relevant to us */
