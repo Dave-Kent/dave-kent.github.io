@@ -2,7 +2,7 @@
 function setOutNotes(fIndex) {
 
     let wideMatch = window.matchMedia("(orientation: landscape)").matches;
-
+// console.log('widematch=' + wideMatch)
     let thisFamily = families[fIndex];
     
     document.getElementById("cs-family").innerHTML = "&#9668; " + thisFamily.familyName;
@@ -41,25 +41,17 @@ function setOutNotes(fIndex) {
                     censusText += thisFamily.censuses[i].dox[j].year + '</div>';
                 }
                 censusText += '</div>';
-
             }
-            
         }
         if (thisFamily.records[n]==='photos'){
-            
-            // let classSpace = document.getElementById("imgSpace");
-            // if (classSpace.className == "censusSpace") {
-            //     classSpace.className = "photoSpace";
-            // }
             censusText += "<h1>Photographs</h1>";
             let nphotos = thisFamily.photos.length;
             for(i=0; i<nphotos; i++) {
-                //censusText += '<div class="photos-table" onclick= "openPhoto(\'' + thisFamily.photos[i].picture + '\',\'' + thisFamily.photos[i].caption +'\')">'
-                censusText += '<div class="photos-table" onclick= "openPhoto(\'' + fIndex + '\',\'' + i+'\')">'
+                // console.log('widematch-photos=' + wideMatch);
+                censusText += '<div class="photos-table" onclick= "openPhoto(\'' + fIndex + '\',\'' + i+'\',\'' + wideMatch + '\')">';
                 censusText += thisFamily.photos[i].title + 
                 '<img class="photo-thumb" src="'+ thisFamily.photos[i].thumbnail+'"/>'+'</div>';
-            }
-            
+            }  
         }
     } // end records loop
     
@@ -68,12 +60,9 @@ function setOutNotes(fIndex) {
 
 // ========= controls for the census sliding panel ===========
 function openCens(message, details) {
-    // document.getElementById("census-details").innerHTML = details;
     let space = document.getElementById("imgSpace");
     space.className = "censusSpace";
     space.innerHTML = '<img class="form-img" src="' + message + '" width="100%" />';
-    // space.innerHTML = '<img class="form-img" src="' + message + '"/>';
-    
     document.getElementById("census-pannel").style.width = "100%"; 
     document.getElementById("census-details").innerHTML = details;
 }
@@ -100,26 +89,19 @@ function closeCens() {
     document.getElementById("census-pannel").style.width = "0";
 }
 // FUNCTION OPENPHOTO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-function openPhoto(famI,photoI) {
+function openPhoto(famI,photoI,ldscape) {
     // This opens the sliding panel
     document.getElementById("census-pannel").style.width = "100%"; 
-    // document.getElementById("census-details").innerHTML = families[famI].photos[photoI].caption;
     let space = document.getElementById("imgSpace");
-    space.innerHTML = '<img id="gallery-photo" src="' + families[famI].photos[photoI].picture + '" />';
-    // console.log('space width = '+ window.innerWidth + ' space height = ' + space.offsetHeight );
-    // console.log('space ratio = ' + (window.innerWidth/space.offsetHeight) + ' photo ratio ' + families[famI].photos[photoI].ratio);
-    // NEW STUFF START
-    //if ((window.innerWidth/space.offsetHeight) > families[famI].photos[photoI].ratio) {
-        // console.log('taller picture '+ space.offsetHeight);
-    //    space.className = "photoSpace";
-    //    document.getElementById("gallery-photo").style.height="100%";
-    //}
-    //else {
-        // console.log('wider picture')
-    //    space.className = "photoSpaceH";
-    //    document.getElementById("gallery-photo").style.width="100%";
-    //}
-    // NEW STUFF END
+    // console.log('landscape='+ ldscape);
+    if (ldscape==='true')  {
+        space.innerHTML = '<img id="gallery-photo" src="' + families[famI].photos[photoI].picture + '" />';
+        // console.log('picture');
+    }
+    else {
+        space.innerHTML = '<img id="gallery-photo" src="' + families[famI].photos[photoI].pictureV + '" />';
+        // console.log('not landscape - pictureV');
+    }
     document.getElementById("census-details").innerHTML = families[famI].photos[photoI].caption;
 }
 

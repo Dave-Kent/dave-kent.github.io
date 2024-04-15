@@ -64,7 +64,7 @@
 			"prefix": ["adphoto","&ap"],
 			"body": [
 				"{picture:'$1',",
-				"ratio:$2,",
+				"pictureV:'$2',",
 				"title:$3,",
 				"caption:'$4',",
 				"thumbnail:'$5',",
