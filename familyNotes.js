@@ -99,12 +99,22 @@ function openPhoto(famI,photoI,ldscape) {
         // console.log('picture');
     }
     else {
-        space.innerHTML = '<img id="gallery-photo" src="' + families[famI].photos[photoI].pictureV + '" />';
-        // console.log('not landscape - pictureV');
+        space.innerHTML = '<img id="gallery-photoV" src="' + families[famI].photos[photoI].pictureV + '" ondblclick="photoZm()" /> \
+        <img id="gallery-photoZ" src="' + families[famI].photos[photoI].pictureZ + '" ondblclick="photoUnZm()" />';
+        console.log('not landscape - pictureV')
     }
     document.getElementById("census-details").innerHTML = families[famI].photos[photoI].caption;
 }
-
+function photoZm() {
+    document.getElementById("gallery-photoV").style.height = "0%";
+    document.getElementById("gallery-photoZ").style.height = "100%";
+    console.log('zoom image');
+}
+function photoUnZm() {
+    document.getElementById("gallery-photoZ").style.height = "0%";
+    document.getElementById("gallery-photoV").style.height = "100%";
+    console.log('unzoom image');
+}
 //       <<<<<<<<<<<<<<<<<<<<<<=== START HERE ===>>>>>>>>>>>>>>>>>>>>>>
 
 $(document).ready(function(){
