@@ -374,8 +374,6 @@ with a top bar showing the details relevant to us */
 }
 #gallery-photoZ {
   width: 100%;
-  /* position: absolute;
-  top: 0; */
   height: 0%;
   object-fit: contain;
 }

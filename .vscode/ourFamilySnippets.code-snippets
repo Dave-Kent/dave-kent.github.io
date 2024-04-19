@@ -65,10 +65,11 @@
 			"body": [
 				"{picture:'$1',",
 				"pictureV:'$2',",
-				"title:$3,",
-				"caption:'$4',",
-				"thumbnail:'$5',",
-				"alt:'$6'}"
+				"pictureZ:'$3',",
+				"title:'$4',",
+				"caption:'$5',",
+				"thumbnail:'$6',",
+				"alt:'$7'},"
 			]
 		},
 		 "Families array": {
