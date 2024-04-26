@@ -88,7 +88,12 @@ const families = [
     East Twerton',
     images:{wide:'https://www.dropbox.com/scl/fi/9zuie2wkmu190l0jetlj3/jessieNatReg02.avif?rlkey=ix6w9yoyyzxfn91t2kxzmuw9n&raw=1',
     narrow:'https://www.dropbox.com/scl/fi/pwt4953340z7t7ghny9dc/jessieNatReg02V.avif?rlkey=yfnsehtp5dv9aeddx84sgdhhv&raw=1',
-    zoomed: 'https://www.dropbox.com/scl/fi/sofr2ekdf72b669so7t2a/jessieNatReg.avif?rlkey=5874ewob2wldfczaqw3p2fw9a&raw=1'}} // Add a year - cyr
+    zoomed: 'https://www.dropbox.com/scl/fi/sofr2ekdf72b669so7t2a/jessieNatReg.avif?rlkey=5874ewob2wldfczaqw3p2fw9a&raw=1'}},
+    {year:'17,18) Stock in trade',
+    occupation: '17,18) 1935 - transfer of the business in South View Road.', // include &#9474; after the year
+    images:{wide:'https://www.dropbox.com/scl/fi/61gbutq3mb0wys4km3mu1/shopStock01.avif?rlkey=lepi447zwvw2i3exubb837xgr&raw=1',
+    narrow:'https://www.dropbox.com/scl/fi/hvv9es8svhv3kco20p52a/shopStockV.avif?rlkey=0abm77s3y1iizsj8qe56pwr5n&raw=1',
+    zoomed: 'https://www.dropbox.com/scl/fi/3m05a8pb8z5mmlabqvzhj/shopStockZ.avif?rlkey=13hfw35pd3cdjv6pqtro5p9tv&raw=1'}} // Add a year - cyr
     ]} // New address - cadd
     ],
 },
@@ -150,7 +155,7 @@ const families = [
     familyNotes: '<p>Albert Kent was born in Didcot (currently in Oxfordshire, previously Berkshire). In the 1891 census he was shown \
      as single, bording in a house in Southampton, \
      aged 18, he was working as an engine cleaner. By 1901 he was living in Twerton, in the same street as his father George, and was married \
-     to Mary, who came from nearby Frome, and their first child Dorothy was nine months old, occupation general labourer.</p>\
+     to Mary, who came from nearby Frome, and their first child Dorothy was nine months old, his occupation was general labourer.</p>\
      <p>In the 1911 census, Albert&apos;s occupation was Main Layer - Gas Works, in the same year his fathers occupation was Engine Driver Gas works. \
      Subsequently, Alberts son Charles would spend his whole working life with the same gas company.</p>\
      <p>In 1942, during WWII, the family home in Englishcombe Lane, Bath sustained bomb damage and had to be demolished. Albert and Mary then lived \
