@@ -54,7 +54,7 @@ q {
 
 .header {
   height: 17vh;
-  background-image: url("./pictures/collage07.jpg");
+  background-image: url("./pictures/collage-main02.avif");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -232,7 +232,7 @@ q {
   height: 17vh;
   width: 100vw;
   background-image: linear-gradient(rgba(01,50,32,0.4),rgba(0,0,0,0.4)),
-   url("./pictures/collage-notes01.jpg");
+   url("./pictures/collage-notes04.avif");
   background-size: cover;
   
   /* background-position: top center; */
