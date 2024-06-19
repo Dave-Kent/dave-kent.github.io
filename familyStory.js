@@ -166,7 +166,7 @@ const families = [
      //ratio:1.33,
      title:'Albert and Mary Kent 1944',
      caption:'Albert and Mary Kent, in front of the shed at 169 Englishcombe Lane, July 1944',
-     thumbnail:'./pictures/engLnShedThumb.jpg',
+     thumbnail:'./pictures/engLnShedThumb.avif',
      alt:'Albert and Mary Kent 1944'}// add photo &ap
     ]
     },
